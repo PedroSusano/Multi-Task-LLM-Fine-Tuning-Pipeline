@@ -1,0 +1,24 @@
+unsloth[cu126-torch260]>=2025.7.5 
+evaluate>=0.4.0
+
+#torch==2.6.0 --index-url https://download.pytorch.org/whl/cu126
+#torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu126
+#flash-attn==2.8.1         # built for torch‑2.4 / cu121
+#xformers==0.0.29.post3    # built for torch‑2.4 / cu121
+
+# ── Unsloth (auto‑patches Flash‑Attention & xFormers) ─────────────
+#unsloth[cu124-torch260]>=2025.7.5   # pulls the right extras automatically
+#unsloth_zoo==2025.7.7  
+
+# ---- training stack ----
+#transformers==4.53.2
+#datasets==3.4.1
+#accelerate==1.2.1
+#bitsandbytes>=0.45.0
+#scikit-learn==1.6.0
+#tensorboard==2.18.0
+#evaluate>=0.4.0
+#pandas==2.2.2
+#trl==0.13.0
+#peft==0.14.0
+#"protobuf>=4"

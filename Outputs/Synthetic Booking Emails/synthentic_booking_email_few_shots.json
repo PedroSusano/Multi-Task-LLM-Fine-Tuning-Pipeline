@@ -1,0 +1,1982 @@
+[
+    {
+        "email_id":"rentalcars_198246",
+        "raw_response":"Customer name: John Silva\nCar model: Hyundai i20\nPickup: 2025-10-20 16:00 em Gaia Station\nDropoff: 2025-10-24 16:15 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"rentalcars_948749",
+        "raw_response":"Customer name: Tiago Smith\nCar model: Toyota Yaris\nPickup: 2025-07-04 20:15 em Porto Airport\nDropoff: 2025-07-17 19:45 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_197251",
+        "raw_response":"Customer name: Miguel Santos\nCar model: Nissan Micra\nPickup: 2026-01-11 13:30 at Funchal Airport\nDropoff: 2026-01-13 17:30 at Gaia"
+    },
+    {
+        "email_id":"rentalcars_182627",
+        "raw_response":"Customer name: Joana Marques\nCar model: Volkswagen Golf\nPickup: 2026-04-09 18:30 at Gaia Station\nDropoff: 2026-04-14 17:15 at Funch"
+    },
+    {
+        "email_id":"rentalcars_379946",
+        "raw_response":"Customer name: Emily Coelho\nCar model: Toyota Yaris\nPickup: 2026-06-25 18:00 em Santa Cruz Downtown\nDropoff: 2026-07-06 17:15 em Gaia"
+    },
+    {
+        "email_id":"rentalcars_771088",
+        "raw_response":"Customer name: Sara Smith\nCar model: Seat Ibiza\nPickup: 2026-06-18 11:30 em Lisbon Airport\nDropoff: 2026-06-27 20:00 em Funchal Airport"
+    },
+    {
+        "email_id":"rentalcars_694731",
+        "raw_response":"Customer name: Maria Garcia\nCar model: Renault Clio\nPickup: 2025-12-09 18:45 em Lisbon Airport\nDropoff: 2025-12-13 14:45 em Porto Airport\n diligently"
+    },
+    {
+        "email_id":"rentalcars_375504",
+        "raw_response":"Customer name: Laura Costa\nCar model: Nissan Micra\nPickup: 2026-04-26 17:45 em Lisbon Airport\nDropoff: 2026-05-03 13:15 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"rentalcars_260265",
+        "raw_response":"Customer name: John Santos\nCar model: Nissan Micra\nPickup: 2026-05-18 20:45 em Faro Airport\nDropoff: 2026-05-21 17:00 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"rentalcars_813328",
+        "raw_response":"Customer name: Laura Silva\nCar model: Hyundai i20\nPickup: 2025-08-28 16:30 at Funchal Airport\nDropoff: 2025-09-08 20:30 at Porto Airport"
+    },
+    {
+        "email_id":"rentalcars_665579",
+        "raw_response":"Customer name: Diana Oliveira\nCar model: Peugeot 208\nPickup: 2026-03-29 17:30 at Funchal Airport\nDropoff: 2026-03-30 15:00 at Porto"
+    },
+    {
+        "email_id":"rentalcars_182582",
+        "raw_response":"Customer name: Emily Pereira\nCar model: Nissan Micra\nPickup: 2025-08-13 15:00 em Lisbon Airport\nDropoff: 2025-08-25 20:15 em Gaia Station"
+    },
+    {
+        "email_id":"rentalcars_653306",
+        "raw_response":"Customer name: Pedro Smith\nCar model: Seat Ibiza\nPickup: 2026-05-07 11:15 em Faro Airport\nDropoff: 2026-05-14 19:30 at Gaia Station"
+    },
+    {
+        "email_id":"rentalcars_226882",
+        "raw_response":"Customer name: Laura Fernandes\nCar model: Volkswagen Golf\nPickup: 2025-11-04 09:30 em Santa Cruz Downtown\nDropoff: 2025-11-08 08:15 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_340062",
+        "raw_response":"Customer name: Inês Silva\nCar model: Nissan Micra\nPickup: 2025-08-04 13:00 em Porto Airport\nDropoff: 2025-08-05 16:15 em Gaia Station"
+    },
+    {
+        "email_id":"rentalcars_698782",
+        "raw_response":"Customer name: Pedro Martins\nCar model: Ford Fiesta\nPickup: 2026-04-22 11:45 em Lisbon Airport\nDropoff: 2026-04-30 20:45 em Funchal Airport"
+    },
+    {
+        "email_id":"rentalcars_531071",
+        "raw_response":"Customer name: Miguel Marques\nCar model: Seat Ibiza\nPickup: 2026-02-25 19:00 em Funchal Airport\nDropoff: 2026-03-11 18:00 em Far"
+    },
+    {
+        "email_id":"rentalcars_300896",
+        "raw_response":"Customer name: Maria Garcia\nCar model: Toyota Yaris\nPickup: 2025-10-06 15:15 em Porto Airport\nDropoff: 2025-10-15 14:15 em Faro Airport"
+    },
+    {
+        "email_id":"rentalcars_947272",
+        "raw_response":"Customer name: Maria Fernandes\nCar model: Nissan Micra\nPickup: 2026-04-08 08:00 em Lisbon Airport\nDropoff: 2026-04-10 09:15 em Faro Airport"
+    },
+    {
+        "email_id":"rentalcars_161483",
+        "raw_response":"Customer name: Rui Marques\nCar model: Nissan Micra\nPickup: 2025-09-23 08:45 em Porto Airport\nDropoff: 2025-09-30 12:45 em Faro"
+    },
+    {
+        "email_id":"rentalcars_161324",
+        "raw_response":"Customer name: Ana Garcia\nCar model: Nissan Micra\nPickup: 2026-04-23 16:00 em Funchal Airport\nDropoff: 2026-05-05 19:30 em Santa Cruz"
+    },
+    {
+        "email_id":"rentalcars_265080",
+        "raw_response":"Customer name: Rui Costa\nCar model: Hyundai i20\nPickup: 2025-07-30 09:15 em Gaia Station\nDropoff: 2025-08-08 09:00 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_358175",
+        "raw_response":"Customer name: Joana Pereira\nCar model: Seat Ibiza\nPickup: 2026-04-23 08:00 em Porto Airport\nDropoff: 2026-05-03 14:30 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_804318",
+        "raw_response":"Customer name: Sara Oliveira\nCar model: Ford Fiesta\nPickup: 2026-05-27 15:30 at Funchal Airport\nDropoff: 2026-06-01 20:00 at Faro Airport"
+    },
+    {
+        "email_id":"rentalcars_378082",
+        "raw_response":"Customer name: Emily Costa\nCar model: Peugeot 208\nPickup: 2025-09-06 09:15 em Lisbon Airport\nDropoff: 2025-09-12 13:30 em Faro Airport"
+    },
+    {
+        "email_id":"rentalcars_654634",
+        "raw_response":"Customer name: Diana Coelho\nCar model: Ford Fiesta\nPickup: 2025-07-05 16:30 em Lisbon Airport\nDropoff: 2025-07-16 18:00 em Porto Airport\n diligently"
+    },
+    {
+        "email_id":"rentalcars_262998",
+        "raw_response":"Customer name: Carlos Costa\nCar model: Peugeot 208\nPickup: 2025-11-17 17:15 em Lisbon Airport\nDropoff: 2025-11-22 19:30 em Gaia Station"
+    },
+    {
+        "email_id":"rentalcars_196781",
+        "raw_response":"Customer name: Ana Silva\nCar model: Peugeot 208\nPickup: 2026-05-21 12:00 em Lisbon Airport\nDropoff: 2026-05-28 08:30 at Gaia Station"
+    },
+    {
+        "email_id":"rentalcars_839945",
+        "raw_response":"Customer name: David Costa\nCar model: Seat Ibiza\nPickup: 2026-02-04 08:00 em Santa Cruz Downtown\nDropoff: 2026-02-13 09:15 em Funchal"
+    },
+    {
+        "email_id":"rentalcars_233636",
+        "raw_response":"Customer name: Pedro Marques\nCar model: Ford Fiesta\nPickup: 2025-07-22 13:00 em Gaia Station\nDropoff: 2025-07-27 13:15 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_750810",
+        "raw_response":"Customer name: Laura Marques\nCar model: Seat Ibiza\nPickup: 2025-09-18 10:15 em Lisbon Airport\nDropoff: 2025-09-22 14:00 em Gaia Station"
+    },
+    {
+        "email_id":"rentalcars_870763",
+        "raw_response":"Customer name: Sara Coelho\nCar model: Toyota Yaris\nPickup: 2025-11-05 10:00 em Faro Airport\nDropoff: 2025-11-10 14:00 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_420015",
+        "raw_response":"Customer name: David Johnson\nCar model: Peugeot 208\nPickup: 2025-10-25 08:15 em Porto Airport\nDropoff: 2025-10-29 14:30 em Funchal"
+    },
+    {
+        "email_id":"rentalcars_812526",
+        "raw_response":"Customer name: Laura Marques\nCar model: Volkswagen Golf\nPickup: 2026-04-01 08:00 em Santa Cruz Downtown\nDropoff: 2026-04-07 12:15 em Porto Airport"
+    },
+    {
+        "email_id":"rentalcars_863934",
+        "raw_response":"Customer name: Sara Johnson\nCar model: Hyundai i20\nPickup: 2025-12-08 17:00 em Porto Airport\nDropoff: 2025-12-15 14:15 em Funchal Airport"
+    },
+    {
+        "email_id":"rentalcars_820221",
+        "raw_response":"Customer name: Joana Costa\nCar model: Ford Fiesta\nPickup: 2026-06-09 13:45 em Santa Cruz Downtown\nDropoff: 2026-06-13 09:30 em Porto Airport"
+    },
+    {
+        "email_id":"rentalcars_424308",
+        "raw_response":"Customer name: Ana Costa\nCar model: Toyota Yaris\nPickup: 2026-06-07 13:45 em Santa Cruz Downtown\nDropoff: 2026-06-14 19:30 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_884475",
+        "raw_response":"Customer name: Sara Coelho\nCar model: Hyundai i20\nPickup: 2025-09-28 17:30 em Porto Airport\nDropoff: 2025-10-08 14:00 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_437902",
+        "raw_response":"Customer name: Tiago Coelho\nCar model: Ford Fiesta\nPickup: 2026-02-24 15:15 em Gaia Station\nDropoff: 2026-03-04 16:45 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_749342",
+        "raw_response":"Customer name: Inês Coelho\nCar model: Volkswagen Golf\nPickup: 2025-12-19 20:15 em Lisbon Airport\nDropoff: 2025-12-21 18:30 em Funchal"
+    },
+    {
+        "email_id":"rentalcars_991014",
+        "raw_response":"Customer name: David Pereira\nCar model: Renault Clio\nPickup: 2025-08-07 14:15 em Faro Airport\nDropoff: 2025-08-15 19:45 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_916232",
+        "raw_response":"Customer name: John Santos\nCar model: Renault Clio\nPickup: 2026-02-03 10:45 em Funchal Airport\nDropoff: 2026-02-07 08:15 em Faro"
+    },
+    {
+        "email_id":"rentalcars_686075",
+        "raw_response":"Customer name: Inês Costa\nCar model: Renault Clio\nPickup: 2026-05-01 20:45 em Santa Cruz Downtown\nDropoff: 2026-05-07 17:45 em Faro"
+    },
+    {
+        "email_id":"rentalcars_371782",
+        "raw_response":"Customer name: David Fernandes\nCar model: Peugeot 208\nPickup: 2025-11-04 18:30 em Gaia Station\nDropoff: 2025-11-18 20:45 em Lisbon"
+    },
+    {
+        "email_id":"rentalcars_345884",
+        "raw_response":"Customer name: Carlos Smith\nCar model: Renault Clio\nPickup: 2025-11-17 13:00 em Lisbon Airport\nDropoff: 2025-11-23 10:15 em Faro Airport"
+    },
+    {
+        "email_id":"rentalcars_527398",
+        "raw_response":"Customer name: Maria Marques\nCar model: Volkswagen Golf\nPickup: 2025-12-17 15:45 em Faro Airport\nDropoff: 2025-12-26 08:15 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"rentalcars_498858",
+        "raw_response":"Customer name: Diana Pereira\nCar model: Toyota Yaris\nPickup: 2026-03-02 13:30 em Faro Airport\nDropoff: 2026-03-03 20:45 em Santa Cruz"
+    },
+    {
+        "email_id":"rentalcars_609232",
+        "raw_response":"Customer name: Ana Marques\nCar model: Volkswagen Golf\nPickup: 2025-07-15 13:45 em Faro Airport\nDropoff: 2025-07-22 19:15 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_795205",
+        "raw_response":"Customer name: Tiago Pereira\nCar model: Peugeot 208\nPickup: 2025-07-14 18:45 em Lisbon Airport\nDropoff: 2025-07-16 10:45 em F"
+    },
+    {
+        "email_id":"rentalcars_442722",
+        "raw_response":"Customer name: Emily Fernandes\nCar model: Nissan Micra\nPickup: 2025-12-20 14:30 em Porto Airport\nDropoff: 2026-01-02 20:45 em Funchal"
+    },
+    {
+        "email_id":"rentalcars_466960",
+        "raw_response":"Customer name: Laura Silva\nCar model: Renault Clio\nPickup: 2025-10-23 09:00 em Lisbon Airport\nDropoff: 2025-11-03 20:00 em Funchal Airport"
+    },
+    {
+        "email_id":"rentalcars_219946",
+        "raw_response":"Customer name: David Coelho\nCar model: Ford Fiesta\nPickup: 2026-04-15 15:30 em Lisbon Airport\nDropoff: 2026-04-19 20:30 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"rentalcars_213349",
+        "raw_response":"Customer name: Pedro Smith\nCar model: Toyota Yaris\nPickup: 2026-04-23 12:45 em Funchal Airport\nDropoff: 2026-04-24 14:15 em Santa Cruz"
+    },
+    {
+        "email_id":"rentalcars_991597",
+        "raw_response":"Customer name: Diana Smith\nCar model: Hyundai i20\nPickup: 2026-06-16 20:00 em Porto Airport\nDropoff: 2026-06-26 20:00 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"rentalcars_778998",
+        "raw_response":"Customer name: Maria Costa\nCar model: Nissan Micra\nPickup: 2025-12-22 14:45 em Porto Airport\nDropoff: 2025-12-23 09:45 em Gaia Station"
+    },
+    {
+        "email_id":"rentalcars_869440",
+        "raw_response":"Customer name: Sara Oliveira\nCar model: Peugeot 208\nPickup: 2026-03-25 12:45 em Gaia Station\nDropoff: 2026-04-05 15:45 em Santa Cruz"
+    },
+    {
+        "email_id":"rentalcars_392477",
+        "raw_response":"Customer name: Emily Santos\nCar model: Nissan Micra\nPickup: 2026-02-16 20:45 em Porto Airport\nDropoff: 2026-02-20 17:45 em Funchal Airport"
+    },
+    {
+        "email_id":"rentalcars_322423",
+        "raw_response":"Customer name: Pedro Fernandes\nCar model: Toyota Yaris\nPickup: 2025-12-29 12:30 em Santa Cruz Downtown\nDropoff: 2026-01-11 12:30 em Funch"
+    },
+    {
+        "email_id":"rentalcars_612311",
+        "raw_response":"Customer name: Carlos Marques\nCar model: Ford Fiesta\nPickup: 2026-04-11 11:45 em Faro Airport\nDropoff: 2026-04-24 18:45 em Funchal"
+    },
+    {
+        "email_id":"rentalcars_355123",
+        "raw_response":"Customer name: Sara Martins\nCar model: Seat Ibiza\nPickup: 2025-12-04 17:30 em Faro Airport\nDropoff: 2025-12-15 15:30 em Gaia Station"
+    },
+    {
+        "email_id":"rentalcars_421517",
+        "raw_response":"Customer name: David Smith\nCar model: Renault Clio\nPickup: 2025-11-06 09:15 em Gaia Station\nDropoff: 2025-11-10 13:00 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"rentalcars_389930",
+        "raw_response":"Customer name: Carlos Fernandes\nCar model: Seat Ibiza\nPickup: 2026-04-28 16:30 em Porto Airport\nDropoff: 2026-05-11 09:15 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_660081",
+        "raw_response":"Customer name: John Martins\nCar model: Nissan Micra\nPickup: 2025-09-03 08:00 em Gaia Station\nDropoff: 2025-09-08 16:30 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_398151",
+        "raw_response":"Customer name: John Pereira\nCar model: Ford Fiesta\nPickup: 2026-02-26 15:30 em Porto Airport\nDropoff: 2026-03-06 10:00 em Faro Airport"
+    },
+    {
+        "email_id":"rentalcars_177680",
+        "raw_response":"Customer name: Sara Fernandes\nCar model: Ford Fiesta\nPickup: 2026-04-22 18:00 em Santa Cruz Downtown\nDropoff: 2026-05-03 10:15 em Porto Airport"
+    },
+    {
+        "email_id":"rentalcars_901577",
+        "raw_response":"Customer name: Maria Costa\nCar model: Hyundai i20\nPickup: 2026-01-30 17:15 em Faro Airport\nDropoff: 2026-02-09 20:45 em Porto Airport"
+    },
+    {
+        "email_id":"rentalcars_739244",
+        "raw_response":"Customer name: Tiago Silva\nCar model: Ford Fiesta\nPickup: 2025-08-20 11:15 em Lisbon Airport\nDropoff: 2025-09-02 12:00 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"rentalcars_822858",
+        "raw_response":"Customer name: Sara Fernandes\nCar model: Nissan Micra\nPickup: 2026-05-01 12:00 em Gaia Station\nDropoff: 2026-05-09 11:30 em Porto Airport"
+    },
+    {
+        "email_id":"rentalcars_926097",
+        "raw_response":"Customer name: Emily Smith\nCar model: Renault Clio\nPickup: 2026-05-17 18:15 em Santa Cruz Downtown\nDropoff: 2026-05-27 14:00 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_174878",
+        "raw_response":"Customer name: Rui Oliveira\nCar model: Nissan Micra\nPickup: 2025-07-31 20:30 em Faro Airport\nDropoff: 2025-08-03 17:30 em Funch"
+    },
+    {
+        "email_id":"rentalcars_385470",
+        "raw_response":"Customer name: Carlos Marques\nCar model: Seat Ibiza\nPickup: 2026-03-14 15:45 em Faro Airport\nDropoff: 2026-03-23 09:00 em Gaia"
+    },
+    {
+        "email_id":"rentalcars_340044",
+        "raw_response":"Customer name: John Santos\nCar model: Renault Clio\nPickup: 2026-06-11 17:00 em Santa Cruz Downtown\nDropoff: 2026-06-25 20:30 em Funchal"
+    },
+    {
+        "email_id":"rentalcars_391668",
+        "raw_response":"Customer name: Inês Fernandes\nCar model: Seat Ibiza\nPickup: 2025-10-01 14:45 em Porto Airport\nDropoff: 2025-10-11 09:45 em Faro"
+    },
+    {
+        "email_id":"rentalcars_445824",
+        "raw_response":"Customer name: Maria Oliveira\nCar model: Nissan Micra\nPickup: 2026-01-27 15:30 em Santa Cruz Downtown\nDropoff: 2026-02-08 18:45 em Funchal"
+    },
+    {
+        "email_id":"rentalcars_221552",
+        "raw_response":"Customer name: Ana Johnson\nCar model: Toyota Yaris\nPickup: 2026-01-23 16:00 em Faro Airport\nDropoff: 2026-02-06 18:45 em Funchal"
+    },
+    {
+        "email_id":"rentalcars_755788",
+        "raw_response":"Customer name: Tiago Fernandes\nCar model: Nissan Micra\nPickup: 2026-02-12 08:15 em Porto Airport\nDropoff: 2026-02-25 12:15 em Faro"
+    },
+    {
+        "email_id":"rentalcars_938141",
+        "raw_response":"Customer name: Inês Pereira\nCar model: Ford Fiesta\nPickup: 2025-10-31 10:30 em Santa Cruz Downtown\nDropoff: 2025-11-12 16:00 em Faro"
+    },
+    {
+        "email_id":"rentalcars_583863",
+        "raw_response":"Customer name: Rui Santos\nCar model: Peugeot 208\nPickup: 2025-08-30 10:45 em Santa Cruz Downtown\nDropoff: 2025-09-10 19:30 em Ga"
+    },
+    {
+        "email_id":"rentalcars_355570",
+        "raw_response":"Customer name: David Fernandes\nCar model: Hyundai i20\nPickup: 2026-02-19 10:45 em Funchal Airport\nDropoff: 2026-02-28 11:15 em Porto"
+    },
+    {
+        "email_id":"rentalcars_380150",
+        "raw_response":"Customer name: Diana Costa\nCar model: Nissan Micra\nPickup: 2025-07-02 19:30 em Lisbon Airport\nDropoff: 2025-07-07 17:45 em Faro Airport"
+    },
+    {
+        "email_id":"rentalcars_495533",
+        "raw_response":"Customer name: Laura Costa\nCar model: Volkswagen Golf\nPickup: 2026-02-19 11:15 em Lisbon Airport\nDropoff: 2026-02-25 17:45 em Faro Airport\n diligently"
+    },
+    {
+        "email_id":"rentalcars_950823",
+        "raw_response":"Customer name: David Martins\nCar model: Seat Ibiza\nPickup: 2026-01-12 18:15 em Lisbon Airport\nDropoff: 2026-01-19 15:00 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"rentalcars_204555",
+        "raw_response":"Customer name: Rui Fernandes\nCar model: Peugeot 208\nPickup: 2026-03-27 08:15 em Funchal Airport\nDropoff: 2026-04-04 14:15"
+    },
+    {
+        "email_id":"rentalcars_781403",
+        "raw_response":"Customer name: Carlos Marques\nCar model: Ford Fiesta\nPickup: 2025-08-11 13:45 em Santa Cruz Downtown\nDropoff: 2025-08-25 13:45 em Funchal"
+    },
+    {
+        "email_id":"rentalcars_338536",
+        "raw_response":"Customer name: Inês Smith\nCar model: Volkswagen Golf\nPickup: 2025-08-16 09:00 em Gaia Station\nDropoff: 2025-08-23 15:15 em Porto Airport"
+    },
+    {
+        "email_id":"rentalcars_407618",
+        "raw_response":"Customer name: Diana Silva\nCar model: Renault Clio\nPickup: 2025-12-31 14:15 em Santa Cruz Downtown\nDropoff: 2026-01-06 11:45 em Gaia Station"
+    },
+    {
+        "email_id":"rentalcars_501126",
+        "raw_response":"Customer name: Maria Pereira\nCar model: Peugeot 208\nPickup: 2026-05-14 11:45 em Lisbon Airport\nDropoff: 2026-05-25 17:15 em Faro"
+    },
+    {
+        "email_id":"rentalcars_943718",
+        "raw_response":"Customer name: Inês Silva\nCar model: Peugeot 208\nPickup: 2026-02-24 18:15 em Porto Airport\nDropoff: 2026-03-01 09:45 em Santa Cruz"
+    },
+    {
+        "email_id":"rentalcars_362246",
+        "raw_response":"Customer name: Sara Martins\nCar model: Hyundai i20\nPickup: 2026-02-19 12:15 em Funchal Airport\nDropoff: 2026-03-05 14:45 em Lisbon Airport"
+    },
+    {
+        "email_id":"rentalcars_833247",
+        "raw_response":"Customer name: Tiago Smith\nCar model: Volkswagen Golf\nPickup: 2025-11-29 18:45 em Santa Cruz Downtown\nDropoff: 2025-11-30 12:00 em Gaia Station"
+    },
+    {
+        "email_id":"rentalcars_973294",
+        "raw_response":"Customer name: Carlos Fernandes\nCar model: Toyota Yaris\nPickup: 2025-11-24 20:15 em Lisbon Airport\nDropoff: 2025-12-07 17:30 at Gaia Station"
+    },
+    {
+        "email_id":"rentalcars_904751",
+        "raw_response":"Customer name: Inês Martins\nCar model: Volkswagen Golf\nPickup: 2026-06-03 10:00 em Porto Airport\nDropoff: 2026-06-14 18:00 em Faro Airport"
+    },
+    {
+        "email_id":"rentalcars_194511",
+        "raw_response":"Customer name: Carlos Oliveira\nCar model: Seat Ibiza\nPickup: 2025-11-29 19:45 em Lisbon Airport\nDropoff: 2025-12-05 10:15 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"rentalcars_970813",
+        "raw_response":"Customer name: Joana Smith\nCar model: Ford Fiesta\nPickup: 2025-09-23 15:30 em Funchal Airport\nDropoff: 2025-09-28 19:30 em Faro"
+    },
+    {
+        "email_id":"rentalcars_859396",
+        "raw_response":"Customer name: Emily Coelho\nCar model: Ford Fiesta\nPickup: 2026-06-11 20:30 at Funchal Airport\nDropoff: 2026-06-18 09:45 at Porto Airport"
+    },
+    {
+        "email_id":"rentalcars_805000",
+        "raw_response":"Customer name: Inês Martins\nCar model: Seat Ibiza\nPickup: 2025-11-12 14:30 em Faro Airport\nDropoff: 2025-11-22 09:15 em Funch"
+    },
+    {
+        "email_id":"rentalcars_166287",
+        "raw_response":"Customer name: Emily Coelho\nCar model: Volkswagen Golf\nPickup: 2026-05-22 15:30 at Funchal Airport\nDropoff: 2026-06-05 18:45 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_221761",
+        "raw_response":"Customer name: Ana Fernandes\nCar model: Hyundai i20\nPickup: 2025-08-19 16:15 at Porto Airport\nDropoff: 2025-08-23 14:45 at Gaia Station"
+    },
+    {
+        "email_id":"discover_cars_535037",
+        "raw_response":"Customer name: Carlos Oliveira\nCar model: Toyota Yaris\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-06-03 12:00 at Porto Airport"
+    },
+    {
+        "email_id":"discover_cars_204180",
+        "raw_response":"Customer name: Emily Johnson\nCar model: Ford Fiesta\nPickup: 2026-06-17 16:30 at Porto Airport\nDropoff: 2026-06-23 08:45 at Lisbon Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"discover_cars_196126",
+        "raw_response":"Customer name: Rui Fernandes\nCar model: Toyota Yaris\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-06-09 08:30 at Santa"
+    },
+    {
+        "email_id":"discover_cars_317220",
+        "raw_response":"Customer name: Diana Costa\nCar model: Peugeot 208\nPickup: 2026-04-27 11:30 at Santa Cruz Downtown\nDropoff: 2026-05-01 20:15 at Funch"
+    },
+    {
+        "email_id":"discover_cars_666456",
+        "raw_response":"Customer name: Pedro Oliveira\nCar model: Seat Ibiza\nPickup: 2025-11-06 10:00 at Lisbon Airport\nDropoff: 2025-11-19 18:00 at Funchal Airport"
+    },
+    {
+        "email_id":"discover_cars_439498",
+        "raw_response":"Customer name: Emily Pereira\nCar model: Ford Fiesta\nPickup: 2025-07-09 12:00 at Santa Cruz Downtown\nDropoff: 2025-07-12 10:45 at Funchal"
+    },
+    {
+        "email_id":"discover_cars_638169",
+        "raw_response":"Customer name: Diana Johnson\nCar model: Peugeot 208\nPickup: 2026-04-30 15:15 at Gaia Station\nDropoff: 2026-05-02 17:00 at Santa Cruz"
+    },
+    {
+        "email_id":"discover_cars_763829",
+        "raw_response":"Customer name: Ana Pereira\nCar model: Hyundai i20\nPickup: 2026-04-26 19:30 at Faro Airport\nDropoff: 2026-05-05 14:30 at Santa Cruz"
+    },
+    {
+        "email_id":"discover_cars_994217",
+        "raw_response":"Customer name: Carlos Santos\nCar model: Seat Ibiza\nPickup: 2026-06-01 20:15 at Lisbon Airport\nDropoff: 2026-06-12 14:45 at Faro Airport"
+    },
+    {
+        "email_id":"discover_cars_865054",
+        "raw_response":"Customer name: Sara Marques\nCar model: Nissan Micra\nPickup: 2025-08-18 14:30 at Porto Airport\nDropoff: 2025-08-24 18:30 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_197758",
+        "raw_response":"Customer name: Rui Santos\nCar model: Seat Ibiza\nPickup: 2026-02-07 19:30 at Santa Cruz Downtown\nDropoff: 2026-02-09 20:15 at Funch"
+    },
+    {
+        "email_id":"discover_cars_797660",
+        "raw_response":"Customer name: Sara Johnson\nCar model: Toyota Yaris\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-02-16 12:30 at Funchal"
+    },
+    {
+        "email_id":"discover_cars_988432",
+        "raw_response":"Customer name: David Garcia\nCar model: Hyundai i20\nPickup: 2025-08-25 16:30 at Santa Cruz Downtown\nDropoff: 2025-08-31 09:30 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_743378",
+        "raw_response":"Customer name: Diana Pereira\nCar model: Peugeot 208\nPickup: 2026-06-11 16:00 at Funchal Airport\nDropoff: 2026-06-22 17:30 at"
+    },
+    {
+        "email_id":"discover_cars_468074",
+        "raw_response":"Customer name: Ana Johnson\nCar model: Ford Fiesta\nPickup: 2025-07-04 10:45 at Gaia Station\nDropoff: 2025-07-07 09:15 at Funchal Airport"
+    },
+    {
+        "email_id":"discover_cars_540226",
+        "raw_response":"Customer name: Emily Marques\nCar model: Volkswagen Golf\nPickup: 2026-02-18 10:30 at Santa Cruz Downtown\nDropoff: 2026-02-24 12:30 at Funchal"
+    },
+    {
+        "email_id":"discover_cars_152179",
+        "raw_response":"Customer name: Diana Pereira\nCar model: Nissan Micra\nPickup: 2026-06-11 12:45 at Faro Airport\nDropoff: 2026-06-13 18:45 at Santa Cruz"
+    },
+    {
+        "email_id":"discover_cars_219346",
+        "raw_response":"Customer name: Emily Costa\nCar model: Peugeot 208\nPickup: 2025-12-24 09:30 at Santa Cruz Downtown\nDropoff: 2025-12-31 18:45 at Gaia"
+    },
+    {
+        "email_id":"discover_cars_157443",
+        "raw_response":"Customer name: Sara Pereira\nCar model: Volkswagen Golf\nPickup: 2025-07-04 12:15 at Porto Airport\nDropoff: 2025-07-08 20:15 at Funchal Airport"
+    },
+    {
+        "email_id":"discover_cars_235461",
+        "raw_response":"Customer name: Sara Oliveira\nCar model: Volkswagen Golf\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-01-20 16:30 at Faro Airport"
+    },
+    {
+        "email_id":"discover_cars_428267",
+        "raw_response":"Customer name: David Santos\nCar model: Hyundai i20\nPickup: 2026-04-21 17:45 at Porto Airport\nDropoff: 2026-04-28 19:45 at Funchal Airport"
+    },
+    {
+        "email_id":"discover_cars_940247",
+        "raw_response":"Customer name: Miguel Oliveira\nCar model: Hyundai i20\nPickup: 2026-05-13 19:30 at Funchal Airport\nDropoff: 2026-05-21 09:45 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_514991",
+        "raw_response":"Customer name: Laura Santos\nCar model: Ford Fiesta\nPickup: 2025-12-06 13:15 at Funchal Airport\nDropoff: 2025-12-18 13:15 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"discover_cars_468154",
+        "raw_response":"Customer name: Emily Johnson\nCar model: Renault Clio\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-05-27 10:15 at Porto Airport"
+    },
+    {
+        "email_id":"discover_cars_179013",
+        "raw_response":"Customer name: Diana Coelho\nCar model: Seat Ibiza\nPickup: 2025-09-29 18:45 at Gaia Station\nDropoff: 2025-10-12 15:45 at Santa Cruz"
+    },
+    {
+        "email_id":"discover_cars_258290",
+        "raw_response":"Customer name: Inês Johnson\nCar model: Volkswagen Golf\nPickup: 2026-02-11 15:45 at Porto Airport\nDropoff: 2026-02-13 18:30 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"discover_cars_584172",
+        "raw_response":"Customer name: Maria Smith\nCar model: Hyundai i20\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-02-18 12:00 at Funchal"
+    },
+    {
+        "email_id":"discover_cars_143015",
+        "raw_response":"Customer name: Laura Martins\nCar model: Volkswagen Golf\nPickup: 2026-02-16 17:15 at Santa Cruz Downtown\nDropoff: 2026-03-01 13:45 at Lisbon Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"discover_cars_849014",
+        "raw_response":"Customer name: Diana Johnson\nCar model: Nissan Micra\nPickup: 2025-08-13 18:15 at Gaia Station\nDropoff: 2025-08-22 08:15 at Faro Airport"
+    },
+    {
+        "email_id":"discover_cars_481574",
+        "raw_response":"Customer name: Tiago Oliveira\nCar model: Volkswagen Golf\nPickup: 2025-11-12 20:30 at Santa Cruz Downtown\nDropoff: 2026-01-12 20:30 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"discover_cars_169113",
+        "raw_response":"Customer name: Inês Johnson\nCar model: Renault Clio\nPickup: 2025-12-16 16:45 at Gaia Station\nDropoff: 2025-12-18 12:30 at Santa Cruz"
+    },
+    {
+        "email_id":"discover_cars_248298",
+        "raw_response":"Customer name: Tiago Coelho\nCar model: Hyundai i20\nPickup: 2025-12-27 18:45 at Porto Airport\nDropoff: 2026-01-01 10:00 at Santa Cruz"
+    },
+    {
+        "email_id":"discover_cars_802667",
+        "raw_response":"Customer name: Miguel Oliveira\nCar model: Volkswagen Golf\nPickup: 2026-06-25 19:00 at Santa Cruz Downtown\nDropoff: 2026-07-09 18:45 at Porto Airport\n diligently"
+    },
+    {
+        "email_id":"discover_cars_458332",
+        "raw_response":"Customer name: Pedro Garcia\nCar model: Volkswagen Golf\nPickup: 2026-03-06 11:15 at Porto Airport\nDropoff: 2026-03-10 10:00 at Funchal Airport"
+    },
+    {
+        "email_id":"discover_cars_237414",
+        "raw_response":"Customer name: Joana Pereira\nCar model: Volkswagen Golf\nPickup: 2026-05-02 10:15 at Gaia Station\nDropoff: 2026-05-09 10:15 at Faro"
+    },
+    {
+        "email_id":"discover_cars_349068",
+        "raw_response":"Customer name: Inês Martins\nCar model: Toyota Yaris\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-02-23 11:15 at Faro"
+    },
+    {
+        "email_id":"discover_cars_584106",
+        "raw_response":"Customer name: Tiago Fernandes\nCar model: Peugeot 208\nPickup: 2025-11-22 14:45 at Santa Cruz Downtown\nDropoff: 2025-12-05 10:15 at"
+    },
+    {
+        "email_id":"discover_cars_681478",
+        "raw_response":"Customer name: David Johnson\nCar model: Nissan Micra\nPickup: 2025-08-22 16:00 at Lisbon Airport\nDropoff: 2025-09-03 12:00 at Porto Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"discover_cars_196168",
+        "raw_response":"Customer name: Pedro Marques\nCar model: Seat Ibiza\nPickup: 2025-10-22 15:30 at Funchal Airport\nDropoff: 2025-11-05 08:45 at Far"
+    },
+    {
+        "email_id":"discover_cars_335445",
+        "raw_response":"Customer name: Maria Johnson\nCar model: Peugeot 208\nPickup: 2025-07-15 09:30 at Lisbon Airport\nDropoff: 2025-07-21 20:15 at Funchal"
+    },
+    {
+        "email_id":"discover_cars_971482",
+        "raw_response":"Customer name: David Martins\nCar model: Toyota Yaris\nPickup: 2025-09-10 19:45 at Funchal Airport\nDropoff: 2025-09-23 15:00 at Porto Airport"
+    },
+    {
+        "email_id":"discover_cars_738457",
+        "raw_response":"Customer name: Laura Martins\nCar model: Hyundai i20\nPickup: 2026-03-28 09:30 at Funchal Airport\nDropoff: 2026-04-04 11:30 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_165858",
+        "raw_response":"Customer name: Tiago Fernandes\nCar model: Peugeot 208\nPickup: 2025-08-26 15:00 at Gaia Station\nDropoff: 2025-09-09 18:15 at"
+    },
+    {
+        "email_id":"discover_cars_352249",
+        "raw_response":"Customer name: Tiago Johnson\nCar model: Volkswagen Golf\nPickup: 2026-04-19 10:00 at Funchal Airport\nDropoff: 2026-04-26 16:30 at Santa Cruz"
+    },
+    {
+        "email_id":"discover_cars_766549",
+        "raw_response":"Customer name: David Silva\nCar model: Ford Fiesta\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-01-21 13:00 at Lisbon Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"discover_cars_239890",
+        "raw_response":"Customer name: Carlos Johnson\nCar model: Nissan Micra\nPickup: 2025-07-23 16:30 at Gaia Station\nDropoff: 2025-07-29 18:15 at Faro Airport"
+    },
+    {
+        "email_id":"discover_cars_166165",
+        "raw_response":"Customer name: Diana Oliveira\nCar model: Peugeot 208\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-02-21 08:15 at Porto Airport"
+    },
+    {
+        "email_id":"discover_cars_596395",
+        "raw_response":"Customer name: Rui Costa\nCar model: Seat Ibiza\nPickup: 2025-11-07 20:15 at Funchal Airport\nDropoff: 2025-11-08 12:30 at Ga"
+    },
+    {
+        "email_id":"discover_cars_558176",
+        "raw_response":"Customer name: Diana Johnson\nCar model: Nissan Micra\nPickup: 2026-01-21 15:45 at Faro Airport\nDropoff: 2026-02-02 13:15 at Gaia Station"
+    },
+    {
+        "email_id":"discover_cars_379676",
+        "raw_response":"Customer name: Diana Costa\nCar model: Seat Ibiza\nPickup: 2025-08-12 14:00 at Santa Cruz Downtown\nDropoff: 2025-08-24 14:15 at Porto Airport"
+    },
+    {
+        "email_id":"discover_cars_410000",
+        "raw_response":"Customer name: Miguel Coelho\nCar model: Volkswagen Golf\nPickup: 2025-12-04 17:45 at Porto Airport\nDropoff: 2025-12-12 10:45 at Faro Airport"
+    },
+    {
+        "email_id":"discover_cars_744718",
+        "raw_response":"Customer name: Joana Johnson\nCar model: Renault Clio\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-02-13 09:45 at Santa Cruz"
+    },
+    {
+        "email_id":"discover_cars_811027",
+        "raw_response":"Customer name: Pedro Pereira\nCar model: Volkswagen Golf\nPickup: 2026-02-10 10:00 at Porto Airport\nDropoff: 2026-02-11 11:30 at Faro Airport"
+    },
+    {
+        "email_id":"discover_cars_488984",
+        "raw_response":"Customer name: Inês Fernandes\nCar model: Hyundai i20\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-01-15 17:15 at Porto"
+    },
+    {
+        "email_id":"discover_cars_218959",
+        "raw_response":"Customer name: Ana Garcia\nCar model: Peugeot 208\nPickup: 2025-07-14 10:45 at Santa Cruz Downtown\nDropoff: 2025-07-26 16:45 at Funch"
+    },
+    {
+        "email_id":"discover_cars_324993",
+        "raw_response":"Customer name: Carlos Fernandes\nCar model: Nissan Micra\nPickup: 2026-05-10 19:45 at Lisbon Airport\nDropoff: 2026-05-15 11:00 at Funchal"
+    },
+    {
+        "email_id":"discover_cars_192055",
+        "raw_response":"Customer name: Carlos Fernandes\nCar model: Peugeot 208\nPickup: 2026-06-15 13:30 at Santa Cruz Downtown\nDropoff: 2026-06-29 19:00 at Porto"
+    },
+    {
+        "email_id":"discover_cars_834233",
+        "raw_response":"Customer name: Carlos Martins\nCar model: Renault Clio\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-05-26 16:15 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_478427",
+        "raw_response":"Customer name: David Silva\nCar model: Ford Fiesta\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-04-20 20:15 at Funchal Airport"
+    },
+    {
+        "email_id":"discover_cars_601916",
+        "raw_response":"Customer name: Carlos Martins\nCar model: Ford Fiesta\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-03-27 20:45 at Lisbon Airport\n diligently"
+    },
+    {
+        "email_id":"discover_cars_461249",
+        "raw_response":"Customer name: Inês Costa\nCar model: Volkswagen Golf\nPickup: 2025-09-04 20:15 at Faro Airport\nDropoff: 2025-09-18 20:15 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"discover_cars_418897",
+        "raw_response":"Customer name: Laura Oliveira\nCar model: Toyota Yaris\nPickup: 2025-09-23 13:15 at Funchal Airport\nDropoff: 2025-09-26 13:30 at Porto Airport"
+    },
+    {
+        "email_id":"discover_cars_231250",
+        "raw_response":"Customer name: Laura Smith\nCar model: Renault Clio\nPickup: 2026-05-17 17:00 at Santa Cruz Downtown\nDropoff: 2026-05-22 16:15 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_454019",
+        "raw_response":"Customer name: Carlos Pereira\nCar model: Hyundai i20\nPickup: 2026-04-15 08:00 at Gaia Station\nDropoff: 2026-04-16 08:30 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_757629",
+        "raw_response":"Customer name: John Fernandes\nCar model: Peugeot 208\nPickup: 2026-04-06 18:30 at Gaia Station\nDropoff: 2026-04-11 15:15 at Far"
+    },
+    {
+        "email_id":"discover_cars_265759",
+        "raw_response":"Customer name: Carlos Silva\nCar model: Seat Ibiza\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-02-18 11:30 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_462147",
+        "raw_response":"Customer name: Miguel Martins\nCar model: Nissan Micra\nPickup: 2026-01-21 20:30 at Porto Airport\nDropoff: 2026-01-24 16:00 at Lisbon Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"discover_cars_247720",
+        "raw_response":"Customer name: David Garcia\nCar model: Seat Ibiza\nPickup: 2025-08-19 12:45 at Lisbon Airport\nDropoff: 2025-08-20 17:45 at Porto Airport\n diligently"
+    },
+    {
+        "email_id":"discover_cars_639728",
+        "raw_response":"Customer name: Pedro Fernandes\nCar model: Nissan Micra\nPickup: 2026-02-25 12:45 at Faro Airport\nDropoff: 2026-03-05 08:00 at Santa Cruz"
+    },
+    {
+        "email_id":"discover_cars_470037",
+        "raw_response":"Customer name: Emily Pereira\nCar model: Volkswagen Golf\nPickup: 2025-07-25 12:45 at Porto Airport\nDropoff: 2025-07-26 17:45 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"discover_cars_377319",
+        "raw_response":"Customer name: Sara Oliveira\nCar model: Toyota Yaris\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-01-17 08:45 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"discover_cars_505116",
+        "raw_response":"Customer name: Ana Santos\nCar model: Hyundai i20\nPickup: 2026-03-16 20:30 at Lisbon Airport\nDropoff: 2026-03-24 17:00 at Funchal Airport"
+    },
+    {
+        "email_id":"discover_cars_483366",
+        "raw_response":"Customer name: Miguel Costa\nCar model: Seat Ibiza\nPickup: 2025-09-12 17:45 at Funchal Airport\nDropoff: 2025-09-16 16:00 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_256175",
+        "raw_response":"Customer name: Laura Fernandes\nCar model: Peugeot 208\nPickup: 2026-05-07 10:30 at Lisbon Airport\nDropoff: 2026-05-16 17:30 at Faro"
+    },
+    {
+        "email_id":"discover_cars_658198",
+        "raw_response":"Customer name: Laura Costa\nCar model: Ford Fiesta\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-03-20 15:00 at Gaia Station"
+    },
+    {
+        "email_id":"discover_cars_935457",
+        "raw_response":"Customer name: Tiago Smith\nCar model: Nissan Micra\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-06-29 12:15 at Funch"
+    },
+    {
+        "email_id":"discover_cars_749840",
+        "raw_response":"Customer name: Inês Martins\nCar model: Nissan Micra\nPickup: 2026-01-11 18:15 at Lisbon Airport\nDropoff: 2026-01-14 08:00 at Funchal"
+    },
+    {
+        "email_id":"discover_cars_824042",
+        "raw_response":"Customer name: Pedro Marques\nCar model: Toyota Yaris\nPickup: 2025-10-13 16:45 at Gaia Station\nDropoff: 2025-10-20 19:00 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_651002",
+        "raw_response":"Customer name: Inês Fernandes\nCar model: Peugeot 208\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-01-15 16:30 at"
+    },
+    {
+        "email_id":"discover_cars_392559",
+        "raw_response":"Customer name: Emily Garcia\nCar model: Nissan Micra\nPickup: 2026-04-12 11:30 at Gaia Station\nDropoff: 2026-04-17 20:30 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_934042",
+        "raw_response":"Customer name: Miguel Costa\nCar model: Volkswagen Golf\nPickup: 2025-11-18 09:45 at Lisbon Airport\nDropoff: 2025-11-23 14:30 at Porto Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"discover_cars_463188",
+        "raw_response":"Customer name: Carlos Santos\nCar model: Peugeot 208\nPickup: 2026-02-12 12:45 at Santa Cruz Downtown\nDropoff: 2026-02-23 11:15 at Porto Airport"
+    },
+    {
+        "email_id":"discover_cars_715336",
+        "raw_response":"Customer name: Tiago Martins\nCar model: Seat Ibiza\nPickup: 2025-10-31 08:15 at Funchal Airport\nDropoff: 2025-11-04 18:15 at Far"
+    },
+    {
+        "email_id":"discover_cars_908206",
+        "raw_response":"Customer name: Maria Coelho\nCar model: Toyota Yaris\nPickup: 2025-09-09 16:15 at Faro Airport\nDropoff: 2025-09-10 14:45 at Gaia"
+    },
+    {
+        "email_id":"discover_cars_399279",
+        "raw_response":"Customer name: Ana Johnson\nCar model: Volkswagen Golf\nPickup: 2026-05-27 20:00 at Santa Cruz Downtown\nDropoff: 2026-05-28 18:15 at Gaia Station"
+    },
+    {
+        "email_id":"discover_cars_978292",
+        "raw_response":"Customer name: Pedro Marques\nCar model: Ford Fiesta\nPickup: 2025-09-29 14:45 at Funchal Airport\nDropoff: 2025-09-30 10:30 at Porto Airport"
+    },
+    {
+        "email_id":"discover_cars_576419",
+        "raw_response":"Customer name: Miguel Smith\nCar model: Ford Fiesta\nPickup: 2025-07-28 16:15 at Funchal Airport\nDropoff: 2026-05-25 16:45 at Porto Airport"
+    },
+    {
+        "email_id":"discover_cars_779776",
+        "raw_response":"Customer name: Carlos Fernandes\nCar model: Toyota Yaris\nPickup: 2025-11-09 10:00 at Porto Airport\nDropoff: 2025-11-21 19:30 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"discover_cars_525187",
+        "raw_response":"Customer name: Rui Coelho\nCar model: Seat Ibiza\nPickup: 2026-02-04 13:00 at Lisbon Airport\nDropoff: 2026-02-13 14:00 at Faro"
+    },
+    {
+        "email_id":"discover_cars_502206",
+        "raw_response":"Customer name: John Smith\nCar model: Volkswagen Golf\nPickup: 2025-10-29 20:30 at Santa Cruz Downtown\nDropoff: 2025-11-06 13:30 at Gaia Station"
+    },
+    {
+        "email_id":"discover_cars_347781",
+        "raw_response":"Customer name: Miguel Martins\nCar model: Peugeot 208\nPickup: 2025-08-01 09:45 at Faro Airport\nDropoff: 2025-08-12 12:15 at Gaia"
+    },
+    {
+        "email_id":"discover_cars_485397",
+        "raw_response":"Customer name: Inês Smith\nCar model: Seat Ibiza\nPickup: 2026-05-11 11:15 at Faro Airport\nDropoff: 2026-05-15 15:15 at Gaia"
+    },
+    {
+        "email_id":"discover_cars_894139",
+        "raw_response":"Customer name: Laura Fernandes\nCar model: Ford Fiesta\nPickup: 2026-04-02 18:15 at Gaia Station\nDropoff: 2026-04-15 20:15 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"discover_cars_479358",
+        "raw_response":"Customer name: Laura Martins\nCar model: Renault Clio\nPickup: 2025-08-09 09:00 at Santa Cruz Downtown\nDropoff: 2025-08-19 16:15 at Lisbon Airport"
+    },
+    {
+        "email_id":"discover_cars_221886",
+        "raw_response":""
+    },
+    {
+        "email_id":"discover_cars_160541",
+        "raw_response":"Customer name: David Pereira\nCar model: Volkswagen Golf\nPickup: 2026-04-13 18:30 at Faro Airport\nDropoff: 2026-04-21 19:00 at Porto Airport"
+    },
+    {
+        "email_id":"discover_cars_147489",
+        "raw_response":"Customer name: Tiago Santos\nCar model: Volkswagen Golf\nPickup: 2025-12-29 16:00 at Funchal Airport\nDropoff: 2026-02-08 16:00 at Faro"
+    },
+    {
+        "email_id":"discover_cars_903028",
+        "raw_response":"Customer name: Pedro Oliveira\nCar model: Renault Clio\nPickup: 2025-07-28 16:15 at Funchal Airport\nDropoff: 2026-05-25 18:45 at Faro"
+    },
+    {
+        "email_id":"renticop_booking_287143",
+        "raw_response":"Customer name: Miguel Santos\nCar model: Nissan Micra\nPickup: 2026-04-02 16:15 em Funchal Airport\nDropoff: 2026-04-09 19:15 em Porto Airport"
+    },
+    {
+        "email_id":"renticop_booking_657772",
+        "raw_response":"Customer name: Laura Marques\nCar model: Toyota Yaris\nPickup: 2025-12-28 11:15 em Lisbon Airport\nDropoff: 2026-01-25 15:30 em Porto Airport"
+    },
+    {
+        "email_id":"renticop_booking_133782",
+        "raw_response":"Customer name: Carlos Santos\nCar model: Volkswagen Golf\nPickup: 2025-07-28 16:15 at Funchal Airport\nDropoff: 2026-06-11 11:15 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"renticop_booking_151040",
+        "raw_response":"Customer name: Inês Martins\nCar model: Volkswagen Golf\nPickup: 2025-11-03 08:45 em Santa Cruz Downtown\nDropoff: 2025-11-15 15:15 em Lisbon Airport"
+    },
+    {
+        "email_id":"renticop_booking_955413",
+        "raw_response":"Customer name: Ana Garcia\nCar model: Toyota Yaris\nPickup: 2026-04-21 17:30 em Lisbon Airport\nDropoff: 2026-04-27 11:30 em Gaia Station"
+    },
+    {
+        "email_id":"renticop_booking_683761",
+        "raw_response":"Customer name: Ana Silva\nCar model: Hyundai i20\nPickup: 2026-04-29 10:45 em Funchal Airport\nDropoff: 2026-05-11 16:45 em Porto Airport"
+    },
+    {
+        "email_id":"renticop_booking_536548",
+        "raw_response":"Customer name: Miguel Martins\nCar model: Renault Clio\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-01-29 10:45 em Porto Airport"
+    },
+    {
+        "email_id":"renticop_booking_689704",
+        "raw_response":"Customer name: Joana Silva\nCar model: Seat Ibiza\nLevantar: 2025-11-12 20:15 em Gaia Station\nDevolver: 2026-01-28 16:15 em Porto"
+    },
+    {
+        "email_id":"renticop_booking_988283",
+        "raw_response":"Customer name: Joana Fernandes\nCar model: Volkswagen Golf\nLevantar: 2025-12-28 16:15 em Faro Airport\nDevolver: 2026-01-08 08:30 em Ga"
+    },
+    {
+        "email_id":"renticop_booking_859489",
+        "raw_response":"Customer name: Emily Pereira\nCar model: Toyota Yaris\nPickup: 2026-06-09 11:45 em Porto Airport\nDropoff: 2026-06-18 11:30 em Funchal"
+    },
+    {
+        "email_id":"renticop_booking_883159",
+        "raw_response":""
+    },
+    {
+        "email_id":"renticop_booking_476710",
+        "raw_response":""
+    },
+    {
+        "email_id":"renticop_booking_534037",
+        "raw_response":"Customer name: Miguel Johnson\nCar model: Hyundai i20\nPickup: 2025-07-24 11:15 em Santa Cruz Downtown\nDropoff: 2025-08-03 08:30 em Gaia Station"
+    },
+    {
+        "email_id":"renticop_booking_341192",
+        "raw_response":"Customer name: Emily Johnson\nCar model: Nissan Micra\nLevantar: 2025-12-28 11:45 em Gaia Station\nDevolver: 2026-01-21 16:30 em Faro"
+    },
+    {
+        "email_id":"renticop_booking_277487",
+        "raw_response":"Customer name: Carlos Johnson\nCar model: Ford Fiesta\nPickup: 2025-09-10 16:45 em Santa Cruz Downtown\nDropoff: 2025-09-22 10:00 em Funchal Airport"
+    },
+    {
+        "email_id":"renticop_booking_901467",
+        "raw_response":"Customer name: Inês Silva\nCar model: Nissan Micra\nPickup: 2025-07-04 10:15 em Funchal Airport\nDropoff: 2025-07-11 09:15 em Lisbon"
+    },
+    {
+        "email_id":"renticop_booking_799143",
+        "raw_response":"Customer name: Tiago Coelho\nCar model: Volkswagen Golf\nPickup: 2026-05-12 18:45 em Santa Cruz Downtown\nDropoff: 2026-05-20 08:00 em Faro"
+    },
+    {
+        "email_id":"renticop_booking_661762",
+        "raw_response":""
+    },
+    {
+        "email_id":"renticop_booking_364679",
+        "raw_response":""
+    },
+    {
+        "email_id":"renticop_booking_817269",
+        "raw_response":"Customer name: Emily Smith\nCar model: Nissan Micra\nLevantar: 2025-08-11 18:00 em Faro Airport\nDevolver: 2025-08-22 09:45 em Santa Cruz"
+    },
+    {
+        "email_id":"renticop_booking_279708",
+        "raw_response":""
+    },
+    {
+        "email_id":"renticop_booking_694316",
+        "raw_response":"Customer name: Rui Martins\nCar model: Volkswagen Golf\nPickup: 2025-12-31 16:00 em Santa Cruz Downtown\nDropoff: 2026-03-06 18:30 em Gaia Station"
+    },
+    {
+        "email_id":"renticop_booking_116418",
+        "raw_response":"Customer name: Rui Johnson\nCar model: Toyota Yaris\nPickup: 2025-10-15 10:45 em Lisbon Airport\nDropoff: 2025-10-25 09:30 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"renticop_booking_809922",
+        "raw_response":"Customer name: Rui Marques\nCar model: Seat Ibiza\nPickup: 2026-04-03 14:15 em Santa Cruz Downtown\nDropoff: 2026-04-09 20:00 em Ga"
+    },
+    {
+        "email_id":"renticop_booking_979414",
+        "raw_response":"Customer name: Sara Garcia\nCar model: Peugeot 208\nLevantar: 2025-08-08 17:45 em Funchal Airport\nDevolver: 2025-08-14 20:30 em"
+    },
+    {
+        "email_id":"renticop_booking_339220",
+        "raw_response":"Customer name: David Fernandes\nCar model: Peugeot 208\nPickup: 2025-12-30 14:45 em Funchal Airport\nDropoff: 2026-01-08 10:45 em"
+    },
+    {
+        "email_id":"renticop_booking_186023",
+        "raw_response":"Customer name: Carlos Santos\nCar model: Ford Fiesta\nPickup: 2025-11-15 14:15 em Porto Airport\nDropoff: 2025-11-18 19:45 em Funchal Airport"
+    },
+    {
+        "email_id":"renticop_booking_477400",
+        "raw_response":"Customer name: Ana Fernandes\nCar model: Hyundai i20\nPickup: 2025-11-16 10:00 em Faro Airport\nDropoff: 2025-11-18 10:45 em Santa Cruz"
+    },
+    {
+        "email_id":"renticop_booking_681141",
+        "raw_response":"Customer name: Maria Johnson\nCar model: Hyundai i20\nPickup: 2025-08-17 17:30 em Porto Airport\nDropoff: 2025-08-27 14:00 em Faro Airport"
+    },
+    {
+        "email_id":"renticop_booking_354533",
+        "raw_response":"Customer name: Carlos Costa\nCar model: Renault Clio\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-04-28 10:15 em Faro Airport"
+    },
+    {
+        "email_id":"renticop_booking_541557",
+        "raw_response":"Customer name: Sara Smith\nCar model: Nissan Micra\nLevantar: 2025-12-01 20:00 em Lisbon Airport\nDevolver: 2025-12-09 13:30 em Gaia Station"
+    },
+    {
+        "email_id":"renticop_booking_212168",
+        "raw_response":"Customer name: Emily Fernandes\nCar model: Seat Ibiza\nLevantar: 2025-09-08 08:45 em Porto Airport\nDevolver: 2025-09-13 13:45 em Faro"
+    },
+    {
+        "email_id":"renticop_booking_723266",
+        "raw_response":"Customer name: Rui Coelho\nCar model: Seat Ibiza\nLevantar: 2025-09-08 13:15 em Lisbon Airport\nDevolver: 2025-09-13 15:30 em Far"
+    },
+    {
+        "email_id":"renticop_booking_614858",
+        "raw_response":"Customer name: Carlos Coelho\nCar model: Ford Fiesta\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-05-04 14:30 em Porto Airport"
+    },
+    {
+        "email_id":"renticop_booking_672133",
+        "raw_response":"Customer name: Emily Pereira\nCar model: Nissan Micra\nLevantar: 2025-10-01 20:00 em Gaia Station\nDevolver: 2025-10-12 19:45 em Lisbon"
+    },
+    {
+        "email_id":"renticop_booking_172518",
+        "raw_response":"Customer name: Rui Martins\nCar model: Renault Clio\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-01-26 15:15 em Lisbon Airport"
+    },
+    {
+        "email_id":"renticop_booking_177558",
+        "raw_response":"Customer name: Diana Marques\nCar model: Seat Ibiza\nPickup: 2026-02-15 15:45 em Santa Cruz Downtown\nDropoff: 2026-02-25 16:45 em Funch"
+    },
+    {
+        "email_id":"renticop_booking_722665",
+        "raw_response":"Customer name: Diana Costa\nCar model: Volkswagen Golf\nPickup: 2026-05-23 09:15 em Lisbon Airport\nDropoff: 2026-05-25 18:30 em Gaia Station\n diligently"
+    },
+    {
+        "email_id":"renticop_booking_778159",
+        "raw_response":"Customer name: Inês Coelho\nCar model: Toyota Yaris\nPickup: 2025-12-21 13:45 em Funchal Airport\nDropoff: 2026-02-03 09:00 em"
+    },
+    {
+        "email_id":"renticop_booking_708717",
+        "raw_response":"Customer name: Laura Costa\nCar model: Renault Clio\nPickup: 2025-07-28 16:15 at Funchal Airport\nDropoff: 2026-06-28 13:45 em Gaia"
+    },
+    {
+        "email_id":"renticop_booking_209627",
+        "raw_response":"Customer name: John Fernandes\nCar model: Toyota Yaris\nPickup: 2025-11-29 09:00 em Porto Airport\nDropoff: 2025-12-06 19:15 em Faro Airport"
+    },
+    {
+        "email_id":"renticop_booking_202365",
+        "raw_response":"Customer name: Miguel Fernandes\nCar model: Ford Fiesta\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-02-22 13:00 em Funchal"
+    },
+    {
+        "email_id":"renticop_booking_214675",
+        "raw_response":"Customer name: Miguel Coelho\nCar model: Seat Ibiza\nLevantar: 2026-06-12 10:15 em Santa Cruz Downtown\nDevolver: 2026-06-25 16:15 em Lisbon"
+    },
+    {
+        "email_id":"renticop_booking_936507",
+        "raw_response":"Customer name: David Garcia\nCar model: Toyota Yaris\nPickup: 2025-12-28 10:15 em Faro Airport\nDropoff: 2026-02-04 18:45 em Funchal"
+    },
+    {
+        "email_id":"renticop_booking_104666",
+        "raw_response":"Customer name: Sara Marques\nCar model: Renault Clio\nPickup: 2025-07-28 16:15 at Funchal Airport\nDropoff: 2026-06-30 20:00 em F"
+    },
+    {
+        "email_id":"renticop_booking_219490",
+        "raw_response":"Customer name: Emily Fernandes\nCar model: Ford Fiesta\nPickup: 2025-11-12 15:30 em Santa Cruz Downtown\nDropoff: 2025-11-23 17:45 em Faro Airport"
+    },
+    {
+        "email_id":"renticop_booking_747351",
+        "raw_response":"Customer name: Rui Fernandes\nCar model: Seat Ibiza\nLevantar: 2025-09-27 18:30 em Gaia Station\nDevolver: 2025-10-11 17:00 em"
+    },
+    {
+        "email_id":"renticop_booking_291936",
+        "raw_response":"Customer name: Ana Santos\nCar model: Hyundai i20\nPickup: 2025-12-28 10:45 em Santa Cruz Downtown\nDropoff: 2026-01-20 14:15 em Faro Airport"
+    },
+    {
+        "email_id":"renticop_booking_827117",
+        "raw_response":"Customer name: Inês Costa\nCar model: Nissan Micra\nPickup: 2026-05-27 16:15 em Lisbon Airport\nDropoff: 2026-05-30 15:30 em Porto Airport"
+    },
+    {
+        "email_id":"renticop_booking_110048",
+        "raw_response":"Customer name: Rui Johnson\nCar model: Nissan Micra\nLevantar: 2026-03-06 11:45 em Faro Airport\nDevolver: 2026-03-09 16:45 em Ga"
+    },
+    {
+        "email_id":"renticop_booking_612438",
+        "raw_response":"Customer name: Rui Fernandes\nCar model: Peugeot 208\nPickup: 2025-09-24 17:00 em Porto Airport\nDropoff: 2025-09-26 20:15 em F"
+    },
+    {
+        "email_id":"renticop_booking_918665",
+        "raw_response":"Customer name: Ana Oliveira\nCar model: Peugeot 208\nPickup: 2026-02-20 19:45 em Santa Cruz Downtown\nDropoff: 2026-03-02 16:00 em Funch"
+    },
+    {
+        "email_id":"renticop_booking_668373",
+        "raw_response":"Customer name: Rui Johnson\nCar model: Toyota Yaris\nPickup: 2025-07-22 19:45 em Faro Airport\nDropoff: 2025-08-04 16:15 em Funch"
+    },
+    {
+        "email_id":"renticop_booking_375581",
+        "raw_response":"Customer name: John Fernandes\nCar model: Seat Ibiza\nLevantar: 2025-12-26 09:45 em Lisbon Airport\nDevolver: 2026-01-09 09:15 em Gaia"
+    },
+    {
+        "email_id":"renticop_booking_548965",
+        "raw_response":"Customer name: Tiago Coelho\nCar model: Peugeot 208\nPickup: 2025-09-23 10:15 em Santa Cruz Downtown\nDropoff: 2025-10-03 11:00 em"
+    },
+    {
+        "email_id":"renticop_booking_838253",
+        "raw_response":"Customer name: Pedro Johnson\nCar model: Volkswagen Golf\nPickup: 2025-11-27 17:30 em Lisbon Airport\nDropoff: 2025-12-02 16:00 em Faro Airport\n diligently"
+    },
+    {
+        "email_id":"renticop_booking_233051",
+        "raw_response":"Customer name: Rui Coelho\nCar model: Hyundai i20\nPickup: 2026-06-25 10:15 em Lisbon Airport\nDropoff: 2026-07-09 10:30 em Gaia"
+    },
+    {
+        "email_id":"renticop_booking_381770",
+        "raw_response":"Customer name: Tiago Coelho\nCar model: Peugeot 208\nPickup: 2026-05-18 14:45 em Faro Airport\nDropoff: 2026-05-25 09:00 em"
+    },
+    {
+        "email_id":"renticop_booking_576782",
+        "raw_response":"Customer name: Joana Johnson\nCar model: Seat Ibiza\nLevantar: 2026-03-07 17:00 em Gaia Station\nDevolver: 2026-03-13 20:00 em Far"
+    },
+    {
+        "email_id":"renticop_booking_517035",
+        "raw_response":"Customer name: Diana Costa\nCar model: Renault Clio\nPickup: 2025-10-20 11:45 em Porto Airport\nDropoff: 2025-10-27 12:30 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"renticop_booking_815707",
+        "raw_response":"Customer name: David Johnson\nCar model: Nissan Micra\nLevantar: 2025-07-25 09:45 em Lisbon Airport\nDevolver: 2025-07-26 08:00 em Faro Airport"
+    },
+    {
+        "email_id":"renticop_booking_822040",
+        "raw_response":"Customer name: Sara Garcia\nCar model: Peugeot 208\nLevantar: 2025-09-06 12:15 em Gaia Station\nDevolver: 2025-09-17 12:00 em Porto"
+    },
+    {
+        "email_id":"renticop_booking_273565",
+        "raw_response":"Customer name: Inês Coelho\nCar model: Ford Fiesta\nPickup: 2025-07-27 18:30 em Faro Airport\nDropoff: 2025-08-03 19:15 em Gaia"
+    },
+    {
+        "email_id":"renticop_booking_599968",
+        "raw_response":"Customer name: John Garcia\nCar model: Seat Ibiza\nLevantar: 2025-08-09 17:15 em Funchal Airport\nDevolver: 2025-08-12 16:45 em Ga"
+    },
+    {
+        "email_id":"renticop_booking_827744",
+        "raw_response":"Customer name: Rui Marques\nCar model: Ford Fiesta\nPickup: 2025-09-06 09:15 em Gaia Station\nDropoff: 2025-09-14 14:00 em Funch"
+    },
+    {
+        "email_id":"renticop_booking_243790",
+        "raw_response":"Customer name: Joana Smith\nCar model: Volkswagen Golf\nPickup: 2025-11-12 20:15 em Funchal Airport\nDropoff: 2026-01-25 18:15 em Santa Cruz"
+    },
+    {
+        "email_id":"renticop_booking_468247",
+        "raw_response":"Customer name: Pedro Fernandes\nCar model: Ford Fiesta\nPickup: 2025-10-18 19:15 em Lisbon Airport\nDropoff: 2025-10-29 14:45 em Funchal Airport"
+    },
+    {
+        "email_id":"renticop_booking_865470",
+        "raw_response":"Customer name: Maria Pereira\nCar model: Ford Fiesta\nPickup: 2025-12-12 16:30 at Funchal Airport\nDropoff: 2026-01-19 20:15 em Porto Airport"
+    },
+    {
+        "email_id":"renticop_booking_856211",
+        "raw_response":"Customer name: Tiago Pereira\nCar model: Toyota Yaris\nPickup: 2026-05-08 20:00 em Lisbon Airport\nDropoff: 2026-05-13 18:30 em Santa Cruz"
+    },
+    {
+        "email_id":"renticop_booking_157219",
+        "raw_response":"Customer name: Ana Coelho\nCar model: Ford Fiesta\nPickup: 2025-10-31 14:00 em Gaia Station\nDropoff: 2025-11-08 11:45 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"renticop_booking_431845",
+        "raw_response":"Customer name: John Johnson\nCar model: Volkswagen Golf\nLevantar: 2025-09-06 17:45 em Faro Airport\nDevolver: 2025-09-13 13:15 em Funchal"
+    },
+    {
+        "email_id":"renticop_booking_326222",
+        "raw_response":"Customer name: John Smith\nCar model: Hyundai i20\nPickup: 2025-07-21 20:45 em Gaia Station\nDropoff: 2025-07-22 16:30 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"renticop_booking_771652",
+        "raw_response":"Customer name: Sara Santos\nCar model: Toyota Yaris\nPickup: 2025-07-28 16:15 at Funchal Airport\nDropoff: 2026-04-10 12:00 em Funch"
+    },
+    {
+        "email_id":"renticop_booking_442622",
+        "raw_response":"Customer name: Pedro Costa\nCar model: Volkswagen Golf\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-01-27 12:45 em Lisbon Airport\n diligently"
+    },
+    {
+        "email_id":"renticop_booking_221620",
+        "raw_response":"Customer name: Joana Marques\nCar model: Renault Clio\nPickup: 2025-07-28 16:15 at Funchal Airport\nDropoff: 2026-02-28 12:15 em"
+    },
+    {
+        "email_id":"renticop_booking_463546",
+        "raw_response":"Customer name: Pedro Fernandes\nCar model: Peugeot 208\nPickup: 2026-03-25 20:30 em Lisbon Airport\nDropoff: 2026-04-03 10:30 em Gaia"
+    },
+    {
+        "email_id":"renticop_booking_451284",
+        "raw_response":"Customer name: Maria Silva\nCar model: Seat Ibiza\nLevantar: 2025-12-12 16:00 em Faro Airport\nDevolver: 2026-02-10 12:00 em Santa Cruz"
+    },
+    {
+        "email_id":"renticop_booking_274987",
+        "raw_response":"Customer name: Rui Pereira\nCar model: Volkswagen Golf\nPickup: 2025-12-28 12:00 em Lisbon Airport\nDropoff: 2026-01-08 17:00 em Gaia Station"
+    },
+    {
+        "email_id":"renticop_booking_356430",
+        "raw_response":"Customer name: Rui Silva\nCar model: Hyundai i20\nPickup: 2025-07-24 13:45 em Funchal Airport\nDropoff: 2025-08-01 10:15 em Santa"
+    },
+    {
+        "email_id":"renticop_booking_855276",
+        "raw_response":"Customer name: Emily Marques\nCar model: Volkswagen Golf\nPickup: 2025-12-11 09:30 em Lisbon Airport\nDropoff: 2025-12-16 09:00 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"renticop_booking_396020",
+        "raw_response":"Customer name: Maria Fernandes\nCar model: Peugeot 208\nPickup: 2025-12-07 09:45 em Lisbon Airport\nDropoff: 2025-12-13 08:30 em Porto Airport"
+    },
+    {
+        "email_id":"renticop_booking_486162",
+        "raw_response":"Customer name: Emily Fernandes\nCar model: Hyundai i20\nPickup: 2026-04-29 20:15 em Lisbon Airport\nDropoff: 2026-05-07 19:15 em Funchal"
+    },
+    {
+        "email_id":"renticop_booking_766833",
+        "raw_response":"Customer name: Laura Johnson\nCar model: Ford Fiesta\nPickup: 2025-07-28 16:15 at Funchal Airport\nDropoff: 2026-06-22 20:45 em Porto Airport"
+    },
+    {
+        "email_id":"renticop_booking_615929",
+        "raw_response":"Customer name: Emily Marques\nCar model: Hyundai i20\nPickup: 2025-07-31 19:30 em Lisbon Airport\nDropoff: 2025-08-03 09:00 em Santa Cruz Downtown"
+    },
+    {
+        "email_id":"renticop_booking_884229",
+        "raw_response":"Customer name: Miguel Fernandes\nCar model: Volkswagen Golf\nPickup: 2025-08-13 09:15 em Funchal Airport\nDropoff: 2025-08-23 18:45 em Santa Cruz"
+    },
+    {
+        "email_id":"renticop_booking_405844",
+        "raw_response":"Customer name: Pedro Garcia\nCar model: Peugeot 208\nPickup: 2025-11-11 13:45 em Porto Airport\nDropoff: 2025-11-25 19:30 em Faro Airport"
+    },
+    {
+        "email_id":"renticop_booking_917823",
+        "raw_response":"Customer name: Emily Oliveira\nCar model: Hyundai i20\nLevantar: 2026-04-26 10:00 em Faro Airport\nDevolver: 2026-04-28 10:45 em Porto Airport"
+    },
+    {
+        "email_id":"renticop_booking_573869",
+        "raw_response":"Customer name: Miguel Garcia\nCar model: Volkswagen Golf\nPickup: 2025-12-05 12:00 em Gaia Station\nDropoff: 2025-12-13 09:15 em Porto Airport\n diligently"
+    },
+    {
+        "email_id":"renticop_booking_255528",
+        "raw_response":"Customer name: Rui Johnson\nCar model: Peugeot 208\nPickup: 2025-08-16 11:30 em Gaia Station\nDropoff: 2025-08-28 14:00 em Porto"
+    },
+    {
+        "email_id":"renticop_booking_524035",
+        "raw_response":"Customer name: Pedro Silva\nCar model: Ford Fiesta\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-02-26 09:45 em Lisbon Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"renticop_booking_237064",
+        "raw_response":"Customer name: Rui Garcia\nCar model: Ford Fiesta\nPickup: 2025-10-10 14:30 em Santa Cruz Downtown\nDropoff: 2025-10-24 18:00 em Porto Airport"
+    },
+    {
+        "email_id":"renticop_booking_777366",
+        "raw_response":"Customer name: Maria Garcia\nCar model: Volkswagen Golf\nPickup: 2025-12-26 10:00 em Funchal Airport\nDropoff: 2026-02-26 20:30 em Faro Airport"
+    },
+    {
+        "email_id":"renticop_booking_961599",
+        "raw_response":"Customer name: Tiago Marques\nCar model: Toyota Yaris\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-01-27 18:45 em Porto"
+    },
+    {
+        "email_id":"renticop_booking_567676",
+        "raw_response":"Customer name: Ana Smith\nCar model: Nissan Micra\nLevantar: 2025-09-15 17:15 em Faro Airport\nDevolver: 2025-09-16 18:30 em Santa Cruz"
+    },
+    {
+        "email_id":"renticop_booking_243902",
+        "raw_response":"Customer name: Ana Marques\nCar model: Seat Ibiza\nLevantar: 2026-01-31 18:15 em Faro Airport\nDevolver: 2026-02-04 18:00 em Ga"
+    },
+    {
+        "email_id":"renticop_booking_460745",
+        "raw_response":"Customer name: Diana Fernandes\nCar model: Toyota Yaris\nPickup: 2026-04-16 13:45 em Funchal Airport\nDropoff: 2026-04-25 12:15 em Porto"
+    },
+    {
+        "email_id":"renticop_booking_161437",
+        "raw_response":"Customer name: Diana Smith\nCar model: Toyota Yaris\nPickup: 2026-02-27 13:15 em Lisbon Airport\nDropoff: 2026-03-08 10:00 em Gaia Station"
+    },
+    {
+        "email_id":"renticop_booking_158624",
+        "raw_response":"Customer name: Rui Martins\nCar model: Seat Ibiza\nLevantar: 2025-10-21 20:45 em Lisbon Airport\nDevolver: 2025-10-31 13:15 em Santa Cruz"
+    },
+    {
+        "email_id":"renticop_booking_720298",
+        "raw_response":"Customer name: Carlos Johnson\nCar model: Nissan Micra\nPickup: 2025-07-15 19:30 em Santa Cruz Downtown\nDropoff: 2025-07-27 17:15 em Lisbon Airport"
+    },
+    {
+        "email_id":"renticop_booking_139807",
+        "raw_response":"Customer name: Pedro Fernandes\nCar model: Toyota Yaris\nPickup: 2025-08-16 11:15 em Funchal Airport\nDropoff: 2025-08-17 08:45 em Porto"
+    },
+    {
+        "email_id":"renticop_reservation_286080",
+        "raw_response":"Customer name: Miguel Martins\nCar model: Seat Ibiza\nPickup: 2025-12-13 08:15 (Funchal Airport)\nDropoff: 2025-12-14 17:15 (Santa Cruz"
+    },
+    {
+        "email_id":"renticop_reservation_794303",
+        "raw_response":"Customer name: Miguel Martins\nCar model: Hyundai i20\nPickup: 2026-01-19 09:30 (Lisbon Airport)\nDropoff: 2026-01-29 12:30 (Gaia"
+    },
+    {
+        "email_id":"renticop_reservation_432695",
+        "raw_response":"Customer name: David Coelho\nCar model: Peugeot 208\nPickup: 2025-09-28 16:30 (Faro Airport)\nDropoff: 2025-10-10 11:15 (Port"
+    },
+    {
+        "email_id":"renticop_reservation_836109",
+        "raw_response":"Customer name: Carlos Silva\nCar model: Ford Fiesta\nPickup: 2026-04-20 20:00 (Santa Cruz Downtown)\nDropoff: 2026-04-27 10:30 (Lisbon Airport"
+    },
+    {
+        "email_id":"renticop_reservation_881549",
+        "raw_response":"Customer name: Pedro Johnson\nCar model: Nissan Micra\nPickup: 2025-08-09 13:30 at Gaia Station\nDropoff: 2025-08-13 10:00 at Porto Airport"
+    },
+    {
+        "email_id":"renticop_reservation_826847",
+        "raw_response":"Customer name: Emily Garcia\nCar model: Nissan Micra\nPickup: 2025-08-04 12:00 (Funchal Airport)\nDropoff: 2025-08-10 19:00 (Faro"
+    },
+    {
+        "email_id":"renticop_reservation_617033",
+        "raw_response":"Customer name: Pedro Marques\nCar model: Toyota Yaris\nPickup: 2026-01-10 16:45 (Santa Cruz Downtown)\nDropoff: 2026-01-16 09:45 (Gaia"
+    },
+    {
+        "email_id":"renticop_reservation_409234",
+        "raw_response":"Customer name: Maria Silva\nCar model: Renault Clio\nPickup: 2025-07-11 12:00 (Lisbon Airport)\nDropoff: 2025-07-17 09:30 (Faro"
+    },
+    {
+        "email_id":"renticop_reservation_454366",
+        "raw_response":"Customer name: Laura Santos\nCar model: Renault Clio\nPickup: 2026-05-01 15:00 (Santa Cruz Downtown)\nDropoff: 2026-05-11 14:15 (Faro Airport"
+    },
+    {
+        "email_id":"renticop_reservation_299212",
+        "raw_response":"Customer name: Miguel Garcia\nCar model: Ford Fiesta\nPickup: 2026-01-26 16:30 (Porto Airport)\nDropoff: 2026-02-07 18:30 (Lisbon Airport"
+    },
+    {
+        "email_id":"renticop_reservation_980651",
+        "raw_response":"Customer name: Tiago Costa\nCar model: Nissan Micra\nPickup: 2026-03-09 08:30 at Funchal Airport\nDropoff: 2026-03-12 08:45 at Porto"
+    },
+    {
+        "email_id":"renticop_reservation_279130",
+        "raw_response":"Customer name: John Garcia\nCar model: Peugeot 208\nPickup: 2026-05-23 09:45 (Faro Airport)\nDropoff: 2026-05-28 09:30 (Gaia"
+    },
+    {
+        "email_id":"renticop_reservation_293862",
+        "raw_response":"Customer name: Laura Marques\nCar model: Nissan Micra\nPickup: 2026-01-06 13:15 (Porto Airport)\nDropoff: 2026-01-13 15:00 (Faro"
+    },
+    {
+        "email_id":"renticop_reservation_691655",
+        "raw_response":"Customer name: Rui Smith\nCar model: Toyota Yaris\nPickup: 2025-08-01 20:00 (Santa Cruz Downtown)\nDropoff: 2025-08-04 09:30 (Faro"
+    },
+    {
+        "email_id":"renticop_reservation_958160",
+        "raw_response":"Customer name: Rui Marques\nCar model: Ford Fiesta\nPickup: 2026-03-25 16:45 (Faro Airport)\nDropoff: 2026-04-01 17:15 (Porto"
+    },
+    {
+        "email_id":"renticop_reservation_136415",
+        "raw_response":"Customer name: Rui Martins\nCar model: Hyundai i20\nPickup: 2026-03-15 16:15 (Lisbon Airport)\nDropoff: 2026-03-25 09:45 (F"
+    },
+    {
+        "email_id":"renticop_reservation_311727",
+        "raw_response":"Customer name: InÃªs Marques\nCar model: Hyundai i20\nPickup: 2026-05-18 17:30 (Funchal Airport)\nDropoff: 2026-05-21 13:"
+    },
+    {
+        "email_id":"renticop_reservation_644932",
+        "raw_response":""
+    },
+    {
+        "email_id":"renticop_reservation_923914",
+        "raw_response":""
+    },
+    {
+        "email_id":"renticop_reservation_280564",
+        "raw_response":""
+    },
+    {
+        "email_id":"renticop_reservation_490532",
+        "raw_response":"Customer name: David Smith\nCar model: Ford Fiesta\nPickup: 2025-07-11 20:30 (Faro Airport)\nDropoff: 2025-07-17 12:30 (Gaia Station)"
+    },
+    {
+        "email_id":"renticop_reservation_415076",
+        "raw_response":"Customer name: Emily Oliveira\nCar model: Ford Fiesta\nPickup: 2026-02-12 13:30 at Santa Cruz Downtown\nDropoff: 2026-02-25 19:45 at Gaia Station"
+    },
+    {
+        "email_id":"renticop_reservation_876936",
+        "raw_response":"Customer name: Emily Marques\nCar model: Hyundai i20\nPickup: 2026-03-06 16:30 at Funchal Airport\nDropoff: 2026-03-19 08:15 at Porto"
+    },
+    {
+        "email_id":"renticop_reservation_696296",
+        "raw_response":"Customer name: Rui Costa\nCar model: Volkswagen Golf\nPickup: 2025-07-15 11:15 (Funchal Airport)\nDropoff: 2025-07-18 08:15 (Faro"
+    },
+    {
+        "email_id":"renticop_reservation_387286",
+        "raw_response":"Customer name: Carlos Garcia\nCar model: Toyota Yaris\nPickup: 2026-01-05 15:45 (Gaia Station)\nDropoff: 2026-01-19 18:00 (Funchal"
+    },
+    {
+        "email_id":"renticop_reservation_286209",
+        "raw_response":"Customer name: Tiago Fernandes\nCar model: Ford Fiesta\nPickup: 2026-02-28 16:30 (Porto Airport)\nDropoff: 2026-03-10 13:15 (Gaia"
+    },
+    {
+        "email_id":"renticop_reservation_270820",
+        "raw_response":"Customer name: Sara Silva\nCar model: Peugeot 208\nPickup: 2026-04-19 11:15 (Gaia Station)\nDropoff: 2026-05-02 18:15 (Lis"
+    },
+    {
+        "email_id":"renticop_reservation_918207",
+        "raw_response":"Customer name: Laura Silva\nCar model: Toyota Yaris\nPickup: 2026-06-15 15:15 (Santa Cruz Downtown)\nDropoff: 2026-06-16 18:15 (Funchal"
+    },
+    {
+        "email_id":"renticop_reservation_847362",
+        "raw_response":"Customer name: Diana Smith\nCar model: Toyota Yaris\nPickup: 2026-06-29 12:45 (Faro Airport)\nDropoff: 2026-07-10 14:30 (Porto Airport"
+    },
+    {
+        "email_id":"renticop_reservation_964352",
+        "raw_response":"Customer name: InÃªs Costa\nCar model: Peugeot 208\nPickup: 2026-05-16 17:00 (Santa Cruz Downtown)\nDropoff: 2026-05-23 08:30"
+    },
+    {
+        "email_id":"renticop_reservation_166938",
+        "raw_response":"Customer name: Maria Fernandes\nCar model: Toyota Yaris\nPickup: 2025-12-20 18:30 at Gaia Station\nDropoff: 2025-12-25 12:30 at Porto Airport"
+    },
+    {
+        "email_id":"renticop_reservation_159532",
+        "raw_response":"Customer name: Diana Garcia\nCar model: Nissan Micra\nPickup: 2026-05-04 18:30 at Gaia Station\nDropoff: 2026-05-11 18:15 at Funchal"
+    },
+    {
+        "email_id":"renticop_reservation_524252",
+        "raw_response":"Customer name: Ana Marques\nCar model: Nissan Micra\nPickup: 2026-01-15 08:15 (Gaia Station)\nDropoff: 2026-01-27 13:15 (Santa Cruz"
+    },
+    {
+        "email_id":"renticop_reservation_631958",
+        "raw_response":"Customer name: InÃªs Johnson\nCar model: Peugeot 208\nPickup: 2025-12-01 10:15 (Faro Airport)\nDropoff: 2025-12-15 12:00"
+    },
+    {
+        "email_id":"renticop_reservation_812730",
+        "raw_response":"Customer name: Laura Oliveira\nCar model: Hyundai i20\nPickup: 2025-12-19 09:15 (Gaia Station)\nDropoff: 2025-12-30 13:15 (Porto Airport"
+    },
+    {
+        "email_id":"renticop_reservation_373216",
+        "raw_response":"Customer name: Miguel Johnson\nCar model: Ford Fiesta\nPickup: 2026-04-26 15:00 (Gaia Station)\nDropoff: 2026-05-01 15:00 (Santa Cruz Downtown)"
+    },
+    {
+        "email_id":"renticop_reservation_225636",
+        "raw_response":"Customer name: Emily Costa\nCar model: Hyundai i20\nPickup: 2026-06-14 16:30 at Lisbon Airport\nDropoff: 2026-06-21 14:00 at Porto Airport\n diligently"
+    },
+    {
+        "email_id":"renticop_reservation_250181",
+        "raw_response":"Customer name: Joana Fernandes\nCar model: Renault Clio\nPickup: 2025-12-09 19:15 (Faro Airport)\nDropoff: 2025-12-23 20:00 (Port"
+    },
+    {
+        "email_id":"renticop_reservation_574012",
+        "raw_response":"Customer name: John Silva\nCar model: Renault Clio\nPickup: 2025-11-18 20:15 (Faro Airport)\nDropoff: 2025-11-22 17:15 (Funchal"
+    },
+    {
+        "email_id":"renticop_reservation_522988",
+        "raw_response":"Customer name: InÃªs Marques\nCar model: Volkswagen Golf\nPickup: 2026-02-05 14:00 (Gaia Station)\nDropoff: 2026-02-13 08:15 ("
+    },
+    {
+        "email_id":"renticop_reservation_299834",
+        "raw_response":"Customer name: Diana Costa\nCar model: Ford Fiesta\nPickup: 2025-07-10 08:15 (Porto Airport)\nDropoff: 2025-07-21 11:30 (Lisbon Airport"
+    },
+    {
+        "email_id":"renticop_reservation_275133",
+        "raw_response":"Customer name: Tiago Smith\nCar model: Seat Ibiza\nPickup: 2025-08-03 08:30 at Gaia Station\nDropoff: 2025-08-17 12:45 at Santa Cruz"
+    },
+    {
+        "email_id":"renticop_reservation_459381",
+        "raw_response":"Customer name: InÃªs Oliveira\nCar model: Toyota Yaris\nPickup: 2026-03-08 20:15 (Funchal Airport)\nDropoff: 2026-03-14 10:45"
+    },
+    {
+        "email_id":"renticop_reservation_869735",
+        "raw_response":"Customer name: Pedro Garcia\nCar model: Hyundai i20\nPickup: 2025-07-12 16:15 (Gaia Station)\nDropoff: 2025-07-22 09:30 (Funchal"
+    },
+    {
+        "email_id":"renticop_reservation_753404",
+        "raw_response":"Customer name: Ana Costa\nCar model: Ford Fiesta\nPickup: 2025-07-25 08:00 (Funchal Airport)\nDropoff: 2025-08-04 18:00 (Gaia Station"
+    },
+    {
+        "email_id":"renticop_reservation_673867",
+        "raw_response":"Customer name: Sara Santos\nCar model: Ford Fiesta\nPickup: 2025-11-07 19:15 (Porto Airport)\nDropoff: 2025-11-15 11:00 (Faro Airport)"
+    },
+    {
+        "email_id":"renticop_reservation_735053",
+        "raw_response":"Customer name: Ana Pereira\nCar model: Ford Fiesta\nPickup: 2026-06-24 14:00 (Porto Airport)\nDropoff: 2026-06-27 16:00 (Funchal"
+    },
+    {
+        "email_id":"renticop_reservation_915749",
+        "raw_response":"Customer name: Tiago Garcia\nCar model: Volkswagen Golf\nPickup: 2025-11-12 16:15 (Porto Airport)\nDropoff: 2025-11-26 13:45 (Lisbon"
+    },
+    {
+        "email_id":"renticop_reservation_821634",
+        "raw_response":"Customer name: Joana Garcia\nCar model: Nissan Micra\nPickup: 2026-03-04 11:00 (Funchal Airport)\nDropoff: 2026-03-10 08:00 (Santa"
+    },
+    {
+        "email_id":"renticop_reservation_178693",
+        "raw_response":"Customer name: Maria Costa\nCar model: Volkswagen Golf\nPickup: 2025-08-21 18:15 (Porto Airport)\nDropoff: 2025-08-26 15:30 (Faro Airport)"
+    },
+    {
+        "email_id":"renticop_reservation_993647",
+        "raw_response":"Customer name: Pedro Silva\nCar model: Renault Clio\nPickup: 2025-11-26 20:30 (Funchal Airport)\nDropoff: 2025-12-02 14:00 (Lis"
+    },
+    {
+        "email_id":"renticop_reservation_752011",
+        "raw_response":"Customer name: Joana Fernandes\nCar model: Hyundai i20\nPickup: 2025-11-15 09:30 (Funchal Airport)\nDropoff: 2025-11-27 13:15 ("
+    },
+    {
+        "email_id":"renticop_reservation_823415",
+        "raw_response":"Customer name: Ana Marques\nCar model: Renault Clio\nPickup: 2026-03-02 14:15 (Gaia Station)\nDropoff: 2026-03-15 09:15 (Funch"
+    },
+    {
+        "email_id":"renticop_reservation_606121",
+        "raw_response":"Customer name: Joana Pereira\nCar model: Volkswagen Golf\nPickup: 2026-04-18 15:15 (Porto Airport)\nDropoff: 2026-04-29 17:45 (Santa Cruz"
+    },
+    {
+        "email_id":"renticop_reservation_237002",
+        "raw_response":"Customer name: Joana Martins\nCar model: Seat Ibiza\nPickup: 2026-03-05 09:45 (Funchal Airport)\nDropoff: 2026-03-13 15:00 (Port"
+    },
+    {
+        "email_id":"renticop_reservation_650311",
+        "raw_response":"Customer name: Rui Coelho\nCar model: Ford Fiesta\nPickup: 2026-04-22 17:15 (Santa Cruz Downtown)\nDropoff: 2026-05-04 18:30 (Gaia"
+    },
+    {
+        "email_id":"renticop_reservation_605339",
+        "raw_response":"Customer name: Carlos Garcia\nCar model: Renault Clio\nPickup: 2025-12-25 18:45 (Funchal Airport)\nDropoff: 2026-01-05 10:00 (Gaia"
+    },
+    {
+        "email_id":"renticop_reservation_273438",
+        "raw_response":"Customer name: David Fernandes\nCar model: Toyota Yaris\nPickup: 2025-08-08 15:30 (Porto Airport)\nDropoff: 2025-08-21 11:30 (Funch"
+    },
+    {
+        "email_id":"renticop_reservation_956794",
+        "raw_response":"Customer name: Sara Marques\nCar model: Nissan Micra\nPickup: 2025-10-29 15:45 (Funchal Airport)\nDropoff: 2025-10-31 20:45 (F"
+    },
+    {
+        "email_id":"renticop_reservation_785111",
+        "raw_response":"Customer name: David Martins\nCar model: Peugeot 208\nPickup: 2025-07-10 14:45 (Funchal Airport)\nDropoff: 2025-07-12 08:00 (Santa"
+    },
+    {
+        "email_id":"renticop_reservation_786393",
+        "raw_response":"Customer name: Laura Garcia\nCar model: Nissan Micra\nPickup: 2026-06-09 13:30 (Faro Airport)\nDropoff: 2026-06-17 08:15 (Porto Airport"
+    },
+    {
+        "email_id":"renticop_reservation_574514",
+        "raw_response":"Customer name: Miguel Martins\nCar model: Peugeot 208\nPickup: 2025-08-28 20:15 (Porto Airport)\nDropoff: 2025-08-30 08:30 (Gaia"
+    },
+    {
+        "email_id":"renticop_reservation_211486",
+        "raw_response":"Customer name: Miguel Martins\nCar model: Toyota Yaris\nPickup: 2025-07-24 15:15 (Funchal Airport)\nDropoff: 2025-07-27 19:45 (Porto"
+    },
+    {
+        "email_id":"renticop_reservation_326061",
+        "raw_response":"Customer name: Joana Marques\nCar model: Volkswagen Golf\nPickup: 2026-02-20 20:15 (Funchal Airport)\nDropoff: 2026-03-06 19:30 (F"
+    },
+    {
+        "email_id":"renticop_reservation_717413",
+        "raw_response":"Customer name: Rui Coelho\nCar model: Volkswagen Golf\nPickup: 2025-09-02 15:45 (Faro Airport)\nDropoff: 2025-09-15 18:15 (Funch"
+    },
+    {
+        "email_id":"renticop_reservation_606390",
+        "raw_response":"Customer name: Sara Pereira\nCar model: Seat Ibiza\nPickup: 2026-03-18 10:15 (Funchal Airport)\nDropoff: 2026-03-31 19:15 (F"
+    },
+    {
+        "email_id":"renticop_reservation_738576",
+        "raw_response":"Customer name: Sara Marques\nCar model: Renault Clio\nPickup: 2026-06-20 11:30 (Porto Airport)\nDropoff: 2026-07-03 14:30 (Faro"
+    },
+    {
+        "email_id":"renticop_reservation_884782",
+        "raw_response":"Customer name: Tiago Martins\nCar model: Peugeot 208\nPickup: 2026-03-20 19:30 (Lisbon Airport)\nDropoff: 2026-03-25 19:15 ("
+    },
+    {
+        "email_id":"renticop_reservation_239116",
+        "raw_response":"Customer name: Joana Coelho\nCar model: Nissan Micra\nPickup: 2026-06-29 10:30 (Porto Airport)\nDropoff: 2026-07-10 19:00 (Santa"
+    },
+    {
+        "email_id":"renticop_reservation_537757",
+        "raw_response":"Customer name: InÃªs Martins\nCar model: Volkswagen Golf\nPickup: 2026-06-11 16:30 at Santa Cruz Downtown\nDropoff: 2026-06-23 14:00 at F"
+    },
+    {
+        "email_id":"renticop_reservation_159354",
+        "raw_response":"Customer name: John Coelho\nCar model: Peugeot 208\nPickup: 2025-10-11 20:15 (Lisbon Airport)\nDropoff: 2025-10-16 12:30 ("
+    },
+    {
+        "email_id":"renticop_reservation_476105",
+        "raw_response":"Customer name: Laura Silva\nCar model: Peugeot 208\nPickup: 2026-02-17 17:15 (Lisbon Airport)\nDropoff: 2026-02-19 19:45 (Santa"
+    },
+    {
+        "email_id":"renticop_reservation_506380",
+        "raw_response":"Customer name: John Marques\nCar model: Peugeot 208\nPickup: 2026-01-30 18:30 at Funchal Airport\nDropoff: 2026-02-12 16:00 at"
+    },
+    {
+        "email_id":"renticop_reservation_970300",
+        "raw_response":"Customer name: Rui Fernandes\nCar model: Peugeot 208\nPickup: 2025-10-24 19:30 (Gaia Station)\nDropoff: 2025-11-04 20:15 ("
+    },
+    {
+        "email_id":"renticop_reservation_296059",
+        "raw_response":"Customer name: InÃªs Santos\nCar model: Peugeot 208\nPickup: 2025-09-27 16:00 (Faro Airport)\nDropoff: 2025-10-09 14:00"
+    },
+    {
+        "email_id":"renticop_reservation_105919",
+        "raw_response":"Customer name: Tiago Smith\nCar model: Volkswagen Golf\nPickup: 2025-12-17 19:15 (Porto Airport)\nDropoff: 2025-12-25 08:15 (Santa Cruz Downtown"
+    },
+    {
+        "email_id":"renticop_reservation_984096",
+        "raw_response":"Customer name: InÃªs Pereira\nCar model: Renault Clio\nPickup: 2026-06-04 15:30 at Santa Cruz Downtown\nDropoff: 2026-06-09 09:30"
+    },
+    {
+        "email_id":"renticop_reservation_267112",
+        "raw_response":"Customer name: Diana Costa\nCar model: Seat Ibiza\nPickup: 2026-01-29 16:45 (Lisbon Airport)\nDropoff: 2026-02-07 09:30 (Gaia"
+    },
+    {
+        "email_id":"renticop_reservation_889216",
+        "raw_response":"Customer name: Ana Garcia\nCar model: Toyota Yaris\nPickup: 2026-05-13 15:00 (Faro Airport)\nDropoff: 2026-05-22 09:30 (Lisbon"
+    },
+    {
+        "email_id":"renticop_reservation_499898",
+        "raw_response":"Customer name: InÃªs Johnson\nCar model: Nissan Micra\nPickup: 2025-08-28 12:30 at Santa Cruz Downtown\nDropoff: 2025-09-04 08:30 at"
+    },
+    {
+        "email_id":"renticop_reservation_301863",
+        "raw_response":"Customer name: Joana Coelho\nCar model: Toyota Yaris\nPickup: 2025-12-12 09:00 (Gaia Station)\nDropoff: 2025-12-21 10:00 (F"
+    },
+    {
+        "email_id":"renticop_reservation_818699",
+        "raw_response":"Customer name: Diana Garcia\nCar model: Renault Clio\nPickup: 2026-02-03 09:15 (Gaia Station)\nDropoff: 2026-02-17 16:45 (Funchal"
+    },
+    {
+        "email_id":"renticop_reservation_139726",
+        "raw_response":"Customer name: Carlos Johnson\nCar model: Toyota Yaris\nPickup: 2025-08-14 08:15 (Santa Cruz Downtown)\nDropoff: 2025-08-16 20:30 (Funchal"
+    },
+    {
+        "email_id":"renticop_reservation_573039",
+        "raw_response":"Customer name: Sara Marques\nCar model: Volkswagen Golf\nPickup: 2026-05-19 14:30 at Gaia Station\nDropoff: 2026-05-26 08:45 at Funchal"
+    },
+    {
+        "email_id":"renticop_reservation_892682",
+        "raw_response":"Customer name: Tiago Santos\nCar model: Peugeot 208\nPickup: 2026-04-26 19:00 (Porto Airport)\nDropoff: 2026-04-27 13:00 (Ga"
+    },
+    {
+        "email_id":"renticop_reservation_499941",
+        "raw_response":"Customer name: Ana Fernandes\nCar model: Renault Clio\nPickup: 2026-01-19 18:00 (Santa Cruz Downtown)\nDropoff: 2026-02-02 15:15 (Lis"
+    },
+    {
+        "email_id":"renticop_reservation_409307",
+        "raw_response":"Customer name: Diana Costa\nCar model: Hyundai i20\nPickup: 2026-05-21 12:30 at Funchal Airport\nDropoff: 2026-05-24 08:15 at Santa Cruz"
+    },
+    {
+        "email_id":"renticop_reservation_320256",
+        "raw_response":"Customer name: Maria Smith\nCar model: Peugeot 208\nPickup: 2025-12-24 14:15 (Lisbon Airport)\nDropoff: 2025-12-28 10:15 (Santa"
+    },
+    {
+        "email_id":"renticop_reservation_938504",
+        "raw_response":"Customer name: Pedro Coelho\nCar model: Ford Fiesta\nPickup: 2026-04-17 08:45 (Porto Airport)\nDropoff: 2026-05-01 18:00 (Gaia Station"
+    },
+    {
+        "email_id":"renticop_reservation_708798",
+        "raw_response":"Customer name: Emily Martins\nCar model: Ford Fiesta\nPickup: 2026-03-07 13:15 (Funchal Airport)\nDropoff: 2026-03-13 18:15 (Porto Airport"
+    },
+    {
+        "email_id":"renticop_reservation_572536",
+        "raw_response":"Customer name: Miguel Fernandes\nCar model: Seat Ibiza\nPickup: 2025-12-16 18:30 at Santa Cruz Downtown\nDropoff: 2025-12-26 19:15 at Porto Airport"
+    },
+    {
+        "email_id":"renticop_reservation_428429",
+        "raw_response":"Customer name: Pedro Silva\nCar model: Seat Ibiza\nPickup: 2025-11-04 11:45 (Lisbon Airport)\nDropoff: 2025-11-17 12:30 (Gaia"
+    },
+    {
+        "email_id":"renticop_reservation_476167",
+        "raw_response":"Customer name: David Fernandes\nCar model: Toyota Yaris\nPickup: 2025-12-04 16:00 (Porto Airport)\nDropoff: 2025-12-12 10:00 (Lis"
+    },
+    {
+        "email_id":"renticop_reservation_180176",
+        "raw_response":"Customer name: Joana Coelho\nCar model: Volkswagen Golf\nPickup: 2025-08-08 16:00 (Santa Cruz Downtown)\nDropoff: 2025-08-09 17:45 (Lis"
+    },
+    {
+        "email_id":"renticop_reservation_595036",
+        "raw_response":"Customer name: Laura Costa\nCar model: Peugeot 208\nPickup: 2026-05-31 10:30 at Santa Cruz Downtown\nDropoff: 2026-06-13 14:15 at Gaia"
+    },
+    {
+        "email_id":"renticop_reservation_194952",
+        "raw_response":"Customer name: Laura Costa\nCar model: Renault Clio\nPickup: 2026-01-20 16:00 (Santa Cruz Downtown)\nDropoff: 2026-01-26 18:15 (Gaia Station"
+    },
+    {
+        "email_id":"renticop_reservation_266956",
+        "raw_response":"Customer name: Pedro Fernandes\nCar model: Toyota Yaris\nPickup: 2025-09-30 17:15 (Porto Airport)\nDropoff: 2025-10-10 19:45 (Funch"
+    },
+    {
+        "email_id":"renticop_reservation_377198",
+        "raw_response":"Customer name: Emily Santos\nCar model: Volkswagen Golf\nPickup: 2026-01-06 08:15 (Faro Airport)\nDropoff: 2026-01-10 16:30 (Funchal Airport"
+    },
+    {
+        "email_id":"renticop_reservation_837920",
+        "raw_response":"Customer name: Miguel Santos\nCar model: Hyundai i20\nPickup: 2026-03-24 12:30 (Faro Airport)\nDropoff: 2026-04-04 17:15 (Gaia Station"
+    },
+    {
+        "email_id":"renticop_reservation_641760",
+        "raw_response":"Customer name: InÃªs Santos\nCar model: Volkswagen Golf\nPickup: 2025-11-06 11:45 (Faro Airport)\nDropoff: 2025-11-13 13:30 (Santa"
+    },
+    {
+        "email_id":"direct_booking_273650",
+        "raw_response":"Customer name: Pedro Fernandes\nCar model: Ford Fiesta\nPickup: 2025-10-26 16:30 at Lisbon Airport\nDropoff: 2025-10-28 11:15 at Porto Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"direct_booking_855242",
+        "raw_response":"Customer name: Sara Johnson\nCar model: Hyundai i20\nPickup: 2025-08-28 18:45 at Santa Cruz Downtown\nDropoff: 2025-09-05 15:15 at Lisbon Airport"
+    },
+    {
+        "email_id":"direct_booking_701344",
+        "raw_response":"Customer name: John Oliveira\nCar model: Peugeot 208\nPickup: 2026-04-30 10:00 at Funchal Airport\nDropoff: 2026-05-03 17:15 at Lisbon"
+    },
+    {
+        "email_id":"direct_booking_728471",
+        "raw_response":"Customer name: Laura Marques\nCar model: Nissan Micra\nPickup: 2026-04-15 08:30 at Faro Airport\nDropoff: 2026-04-26 09:15 at Santa Cruz"
+    },
+    {
+        "email_id":"direct_booking_970699",
+        "raw_response":"Customer name: Pedro Garcia\nCar model: Seat Ibiza\nPickup: 2026-01-27 10:15 at Lisbon Airport\nDropoff: 2026-02-06 17:30 at Gaia Station"
+    },
+    {
+        "email_id":"direct_booking_172187",
+        "raw_response":"Customer name: Tiago Pereira\nCar model: Hyundai i20\nPickup: 2025-10-26 14:15 at Lisbon Airport\nDropoff: 2025-11-02 09:00 at Santa Cruz"
+    },
+    {
+        "email_id":"direct_booking_286040",
+        "raw_response":"Customer name: Tiago Santos\nCar model: Renault Clio\nPickup: 2026-03-01 17:00 at Funchal Airport\nDropoff: 2026-03-11 20:00 at Far"
+    },
+    {
+        "email_id":"direct_booking_912510",
+        "raw_response":"Customer name: Laura Silva\nCar model: Hyundai i20\nPickup: 2026-06-13 14:45 at Gaia Station\nDropoff: 2026-06-24 13:00 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"direct_booking_927909",
+        "raw_response":"Customer name: Diana Fernandes\nCar model: Toyota Yaris\nPickup: 2026-01-12 17:00 at Porto Airport\nDropoff: 2026-01-18 14:15 at Faro Airport"
+    },
+    {
+        "email_id":"direct_booking_727354",
+        "raw_response":"Customer name: Maria Smith\nCar model: Volkswagen Golf\nPickup: 2026-04-05 12:15 at Santa Cruz Downtown\nDropoff: 2026-04-12 08:00 at Funchal Airport"
+    },
+    {
+        "email_id":"direct_booking_943356",
+        "raw_response":"Customer name: Emily Martins\nCar model: Peugeot 208\nPickup: 2025-12-09 13:00 at Gaia Station\nDropoff: 2025-12-16 10:45 at Santa Cruz"
+    },
+    {
+        "email_id":"direct_booking_692099",
+        "raw_response":"Customer name: Laura Marques\nCar model: Nissan Micra\nPickup: 2026-01-04 12:45 at Faro Airport\nDropoff: 2026-01-14 20:15 at Santa Cruz"
+    },
+    {
+        "email_id":"direct_booking_607259",
+        "raw_response":"Customer name: Laura Costa\nCar model: Ford Fiesta\nPickup: 2025-11-07 17:30 at Gaia Station\nDropoff: 2025-11-12 20:45 at Lisbon Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"direct_booking_269654",
+        "raw_response":"Customer name: David Martins\nCar model: Volkswagen Golf\nPickup: 2025-08-21 16:45 at Santa Cruz Downtown\nDropoff: 2025-08-25 20:30 at Gaia Station"
+    },
+    {
+        "email_id":"direct_booking_943442",
+        "raw_response":"Customer name: InÃªs Silva\nCar model: Toyota Yaris\nPickup: 2025-08-16 10:45 at Funchal Airport\nDropoff: 2025-08-30 17:45"
+    },
+    {
+        "email_id":"direct_booking_859687",
+        "raw_response":"Customer name: Tiago Silva\nCar model: Nissan Micra\nPickup: 2026-01-13 17:30 at Lisbon Airport\nDropoff: 2026-01-20 19:00 at Gaia Station"
+    },
+    {
+        "email_id":"direct_booking_942960",
+        "raw_response":"Customer name: Emily Coelho\nCar model: Volkswagen Golf\nPickup: 2026-03-23 11:00 at Santa Cruz Downtown\nDropoff: 2026-03-28 20:15 at Lisbon Airport"
+    },
+    {
+        "email_id":"direct_booking_265092",
+        "raw_response":"Customer name: InÃªs Silva\nCar model: Toyota Yaris\nPickup: 2025-08-14 20:45 at Faro Airport\nDropoff: 2025-08-19 13:45 at"
+    },
+    {
+        "email_id":"direct_booking_171950",
+        "raw_response":"Customer name: Carlos Martins\nCar model: Toyota Yaris\nPickup: 2025-08-16 12:30 at Lisbon Airport\nDropoff: 2025-08-25 13:30 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"direct_booking_104877",
+        "raw_response":"Customer name: Sara Pereira\nCar model: Seat Ibiza\nPickup: 2025-11-11 14:00 at Santa Cruz Downtown\nDropoff: 2025-11-14 16:00 at Porto Airport"
+    },
+    {
+        "email_id":"direct_booking_370211",
+        "raw_response":"Customer name: Diana Costa\nCar model: Nissan Micra\nPickup: 2026-04-02 20:30 at Faro Airport\nDropoff: 2026-04-16 19:45 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"direct_booking_913274",
+        "raw_response":"Customer name: Diana Johnson\nCar model: Hyundai i20\nPickup: 2026-02-20 15:00 at Porto Airport\nDropoff: 2026-03-03 15:00 at Funchal Airport"
+    },
+    {
+        "email_id":"direct_booking_835236",
+        "raw_response":"Customer name: Emily Coelho\nCar model: Toyota Yaris\nPickup: 2025-10-26 13:45 at Gaia Station\nDropoff: 2025-11-08 13:00 at Porto Airport"
+    },
+    {
+        "email_id":"direct_booking_885161",
+        "raw_response":"Customer name: Sara Coelho\nCar model: Peugeot 208\nPickup: 2025-12-23 16:15 at Porto Airport\nDropoff: 2025-12-25 15:30 at Lisbon Airport"
+    },
+    {
+        "email_id":"direct_booking_299405",
+        "raw_response":"Customer name: Carlos Coelho\nCar model: Toyota Yaris\nPickup: 2026-03-13 11:15 at Porto Airport\nDropoff: 2026-03-25 19:15 at Lisbon Airport"
+    },
+    {
+        "email_id":"direct_booking_473321",
+        "raw_response":"Customer name: Emily Pereira\nCar model: Volkswagen Golf\nPickup: 2025-09-18 09:00 at Santa Cruz Downtown\nDropoff: 2025-10-01 09:45 at Funchal"
+    },
+    {
+        "email_id":"direct_booking_430738",
+        "raw_response":"Customer name: Miguel Pereira\nCar model: Renault Clio\nPickup: 2026-03-10 12:45 at Faro Airport\nDropoff: 2026-03-20 10:30 at Lisbon Airport"
+    },
+    {
+        "email_id":"direct_booking_601554",
+        "raw_response":"Customer name: Diana Marques\nCar model: Nissan Micra\nPickup: 2026-04-03 16:30 at Faro Airport\nDropoff: 2026-04-04 14:15 at Funch"
+    },
+    {
+        "email_id":"direct_booking_806848",
+        "raw_response":"Customer name: John Silva\nCar model: Renault Clio\nPickup: 2025-10-16 17:00 at Santa Cruz Downtown\nDropoff: 2025-10-23 13:30 at Porto Airport"
+    },
+    {
+        "email_id":"direct_booking_594241",
+        "raw_response":"Customer name: Emily Smith\nCar model: Seat Ibiza\nPickup: 2026-05-10 13:15 at Lisbon Airport\nDropoff: 2026-05-16 15:45 at Faro Airport"
+    },
+    {
+        "email_id":"direct_booking_572623",
+        "raw_response":"Customer name: Sara Smith\nCar model: Hyundai i20\nPickup: 2025-10-01 10:15 at Lisbon Airport\nDropoff: 2025-10-11 09:30 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"direct_booking_938900",
+        "raw_response":"Customer name: Emily Oliveira\nCar model: Seat Ibiza\nPickup: 2025-09-15 20:00 at Faro Airport\nDropoff: 2025-09-23 10:45 at Lisbon Airport"
+    },
+    {
+        "email_id":"direct_booking_689444",
+        "raw_response":"Customer name: Ana Smith\nCar model: Peugeot 208\nPickup: 2026-04-17 14:00 at Funchal Airport\nDropoff: 2026-04-18 19:15 at Lisbon"
+    },
+    {
+        "email_id":"direct_booking_571706",
+        "raw_response":"Customer name: InÃªs Santos\nCar model: Hyundai i20\nPickup: 2025-12-19 13:30 at Porto Airport\nDropoff: 2025-12-24 16:30 at F"
+    },
+    {
+        "email_id":"direct_booking_734992",
+        "raw_response":"Customer name: Rui Coelho\nCar model: Nissan Micra\nPickup: 2025-10-10 17:15 at Porto Airport\nDropoff: 2025-10-20 20:30 at Gaia"
+    },
+    {
+        "email_id":"direct_booking_499581",
+        "raw_response":"Customer name: David Santos\nCar model: Hyundai i20\nPickup: 2026-05-11 15:15 at Faro Airport\nDropoff: 2026-05-16 10:30 at Gaia Station"
+    },
+    {
+        "email_id":"direct_booking_269868",
+        "raw_response":"Customer name: Maria Santos\nCar model: Hyundai i20\nPickup: 2025-12-23 13:30 at Gaia Station\nDropoff: 2025-12-27 18:30 at Porto Airport"
+    },
+    {
+        "email_id":"direct_booking_884225",
+        "raw_response":"Customer name: David Johnson\nCar model: Toyota Yaris\nPickup: 2026-04-27 15:45 at Funchal Airport\nDropoff: 2026-05-06 10:15 at Lisbon Airport"
+    },
+    {
+        "email_id":"direct_booking_886159",
+        "raw_response":"Customer name: Carlos Martins\nCar model: Volkswagen Golf\nPickup: 2025-08-10 10:45 at Funchal Airport\nDropoff: 2025-08-14 09:00 at Faro Airport"
+    },
+    {
+        "email_id":"direct_booking_902156",
+        "raw_response":"Customer name: Sara Costa\nCar model: Toyota Yaris\nPickup: 2025-08-12 12:15 at Porto Airport\nDropoff: 2025-08-14 09:45 at Lisbon Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"direct_booking_232552",
+        "raw_response":"Customer name: David Coelho\nCar model: Nissan Micra\nPickup: 2025-09-06 10:00 at Porto Airport\nDropoff: 2025-09-15 08:30 at Faro Airport"
+    },
+    {
+        "email_id":"direct_booking_675191",
+        "raw_response":"Customer name: Laura Smith\nCar model: Hyundai i20\nPickup: 2026-02-13 19:15 at Gaia Station\nDropoff: 2026-02-16 17:45 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"direct_booking_424703",
+        "raw_response":"Customer name: InÃªs Costa\nCar model: Seat Ibiza\nPickup: 2025-12-25 16:15 at Faro Airport\nDropoff: 2026-01-02 20:00 at"
+    },
+    {
+        "email_id":"direct_booking_111068",
+        "raw_response":"Customer name: Pedro Smith\nCar model: Volkswagen Golf\nPickup: 2025-07-01 20:15 at Faro Airport\nDropoff: 2025-07-10 13:30 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"direct_booking_414164",
+        "raw_response":"Customer name: David Fernandes\nCar model: Seat Ibiza\nPickup: 2025-07-05 14:30 at Funchal Airport\nDropoff: 2025-07-18 17:15 at Santa"
+    },
+    {
+        "email_id":"direct_booking_558339",
+        "raw_response":"Customer name: Joana Costa\nCar model: Hyundai i20\nPickup: 2026-01-19 10:45 at Porto Airport\nDropoff: 2026-01-23 14:15 at Funchal"
+    },
+    {
+        "email_id":"direct_booking_946803",
+        "raw_response":"Customer name: Laura Pereira\nCar model: Ford Fiesta\nPickup: 2026-06-21 12:30 at Faro Airport\nDropoff: 2026-07-02 18:30 at Lisbon Airport"
+    },
+    {
+        "email_id":"direct_booking_767830",
+        "raw_response":"Customer name: Ana Santos\nCar model: Volkswagen Golf\nPickup: 2026-02-19 15:30 at Lisbon Airport\nDropoff: 2026-03-01 19:45 at Porto Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"direct_booking_294969",
+        "raw_response":"Customer name: Laura Silva\nCar model: Toyota Yaris\nPickup: 2025-08-22 12:15 at Gaia Station\nDropoff: 2025-08-27 19:45 at Funchal"
+    },
+    {
+        "email_id":"direct_booking_327738",
+        "raw_response":"Customer name: John Fernandes\nCar model: Seat Ibiza\nPickup: 2025-12-23 12:45 at Gaia Station\nDropoff: 2025-12-30 13:45 at Funch"
+    },
+    {
+        "email_id":"direct_booking_158760",
+        "raw_response":"Customer name: Diana Oliveira\nCar model: Hyundai i20\nPickup: 2025-11-14 14:00 at Lisbon Airport\nDropoff: 2025-11-27 16:45 at Porto Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"direct_booking_361055",
+        "raw_response":"Customer name: Maria Martins\nCar model: Ford Fiesta\nPickup: 2026-01-14 15:15 at Lisbon Airport\nDropoff: 2026-01-27 19:00 at Faro Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"direct_booking_508024",
+        "raw_response":"Customer name: Emily Fernandes\nCar model: Ford Fiesta\nPickup: 2026-06-14 13:15 at Gaia Station\nDropoff: 2026-06-19 18:00 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"direct_booking_308376",
+        "raw_response":"Customer name: InÃªs Smith\nCar model: Seat Ibiza\nPickup: 2026-01-01 18:15 at Gaia Station\nDropoff: 2026-01-02 09:15 at"
+    },
+    {
+        "email_id":"direct_booking_713099",
+        "raw_response":"Customer name: Diana Smith\nCar model: Nissan Micra\nPickup: 2025-08-31 20:15 at Santa Cruz Downtown\nDropoff: 2025-09-07 08:00 at Gaia Station"
+    },
+    {
+        "email_id":"direct_booking_908239",
+        "raw_response":"Customer name: Pedro Johnson\nCar model: Volkswagen Golf\nPickup: 2025-08-15 10:45 at Gaia Station\nDropoff: 2025-08-19 09:30 at Funchal Airport"
+    },
+    {
+        "email_id":"direct_booking_662407",
+        "raw_response":"Customer name: Pedro Martins\nCar model: Toyota Yaris\nPickup: 2025-08-24 15:15 at Faro Airport\nDropoff: 2025-08-27 13:30 at Gaia Station"
+    },
+    {
+        "email_id":"direct_booking_859587",
+        "raw_response":"Customer name: Sara Johnson\nCar model: Nissan Micra\nPickup: 2025-09-07 08:45 at Santa Cruz Downtown\nDropoff: 2025-09-12 19:45 at Porto Airport"
+    },
+    {
+        "email_id":"direct_booking_464552",
+        "raw_response":"Customer name: Pedro Costa\nCar model: Renault Clio\nPickup: 2025-12-13 15:30 at Funchal Airport\nDropoff: 2025-12-25 17:15 at Santa Cruz"
+    },
+    {
+        "email_id":"direct_booking_667915",
+        "raw_response":"Customer name: Rui Smith\nCar model: Seat Ibiza\nPickup: 2026-01-04 08:45 at Funchal Airport\nDropoff: 2026-01-12 19:15 at Santa"
+    },
+    {
+        "email_id":"direct_booking_856027",
+        "raw_response":"Customer name: Emily Johnson\nCar model: Peugeot 208\nPickup: 2025-08-02 16:45 at Santa Cruz Downtown\nDropoff: 2025-08-13 11:45 at Lisbon Airport"
+    },
+    {
+        "email_id":"direct_booking_215830",
+        "raw_response":"Customer name: InÃªs Johnson\nCar model: Toyota Yaris\nPickup: 2025-08-19 18:00 at Lisbon Airport\nDropoff: 2025-08-28 08:15 at F"
+    },
+    {
+        "email_id":"direct_booking_133362",
+        "raw_response":"Customer name: Emily Santos\nCar model: Toyota Yaris\nPickup: 2026-04-19 14:45 at Funchal Airport\nDropoff: 2026-04-30 16:30 at Porto Airport"
+    },
+    {
+        "email_id":"direct_booking_318877",
+        "raw_response":"Customer name: Maria Silva\nCar model: Hyundai i20\nPickup: 2026-06-01 09:45 at Porto Airport\nDropoff: 2026-06-09 20:00 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"direct_booking_161132",
+        "raw_response":"Customer name: Diana Martins\nCar model: Toyota Yaris\nPickup: 2026-05-12 16:00 at Porto Airport\nDropoff: 2026-05-17 19:00 at Funchal Airport"
+    },
+    {
+        "email_id":"direct_booking_860397",
+        "raw_response":"Customer name: Maria Santos\nCar model: Renault Clio\nPickup: 2025-10-27 14:15 at Santa Cruz Downtown\nDropoff: 2025-11-05 11:15 at Gaia Station"
+    },
+    {
+        "email_id":"direct_booking_882351",
+        "raw_response":"Customer name: Laura Marques\nCar model: Ford Fiesta\nPickup: 2025-08-24 18:30 at Gaia Station\nDropoff: 2025-09-06 18:45 at Faro Airport"
+    },
+    {
+        "email_id":"direct_booking_521063",
+        "raw_response":"Customer name: Pedro Costa\nCar model: Seat Ibiza\nPickup: 2026-03-16 18:15 at Porto Airport\nDropoff: 2026-03-22 16:45 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"direct_booking_551504",
+        "raw_response":"Customer name: Sara Coelho\nCar model: Nissan Micra\nPickup: 2025-12-13 11:15 at Porto Airport\nDropoff: 2025-12-23 14:30 at Faro Airport"
+    },
+    {
+        "email_id":"direct_booking_136346",
+        "raw_response":"Customer name: John Martins\nCar model: Toyota Yaris\nPickup: 2025-11-23 08:15 at Porto Airport\nDropoff: 2025-12-03 12:00 at Lisbon Airport\nالإنجليزية"
+    },
+    {
+        "email_id":"direct_booking_962283",
+        "raw_response":"Customer name: John Martins\nCar model: Renault Clio\nPickup: 2025-11-19 16:15 at Faro Airport\nDropoff: 2025-11-28 09:00 at Porto Airport"
+    },
+    {
+        "email_id":"direct_booking_361993",
+        "raw_response":"Customer name: Miguel Pereira\nCar model: Ford Fiesta\nPickup: 2025-10-28 20:30 at Santa Cruz Downtown\nDropoff: 2025-11-02 09:45 at Lisbon Airport"
+    },
+    {
+        "email_id":"direct_booking_281301",
+        "raw_response":"Customer name: Diana Fernandes\nCar model: Hyundai i20\nPickup: 2026-03-07 19:00 at Funchal Airport\nDropoff: 2026-03-21 17:30 at Ga"
+    },
+    {
+        "email_id":"direct_booking_464831",
+        "raw_response":"Customer name: John Johnson\nCar model: Volkswagen Golf\nPickup: 2026-02-08 09:15 at Gaia Station\nDropoff: 2026-02-15 19:00 at Faro Airport"
+    },
+    {
+        "email_id":"direct_booking_666157",
+        "raw_response":"Customer name: John Johnson\nCar model: Nissan Micra\nPickup: 2026-04-16 13:15 at Gaia Station\nDropoff: 2026-04-19 10:00 at Faro Airport"
+    },
+    {
+        "email_id":"direct_booking_194458",
+        "raw_response":"Customer name: Tiago Costa\nCar model: Nissan Micra\nPickup: 2025-10-22 12:45 at Porto Airport\nDropoff: 2025-10-29 10:15 at Funchal"
+    },
+    {
+        "email_id":"direct_booking_518582",
+        "raw_response":"Customer name: John Costa\nCar model: Toyota Yaris\nPickup: 2025-11-12 14:45 at Lisbon Airport\nDropoff: 2025-11-14 20:15 at Faro Airport"
+    },
+    {
+        "email_id":"direct_booking_305625",
+        "raw_response":"Customer name: InÃªs Pereira\nCar model: Seat Ibiza\nPickup: 2026-04-14 19:15 at Porto Airport\nDropoff: 2026-04-24 11:00 at"
+    },
+    {
+        "email_id":"direct_booking_217996",
+        "raw_response":"Customer name: Tiago Santos\nCar model: Volkswagen Golf\nPickup: 2026-06-09 14:30 at Porto Airport\nDropoff: 2026-06-16 13:15 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"direct_booking_746154",
+        "raw_response":"Customer name: Pedro Johnson\nCar model: Seat Ibiza\nPickup: 2026-02-12 10:45 at Lisbon Airport\nDropoff: 2026-02-22 08:15 at Gaia Station"
+    },
+    {
+        "email_id":"direct_booking_217830",
+        "raw_response":"Customer name: Carlos Santos\nCar model: Ford Fiesta\nPickup: 2025-07-28 17:15 at Porto Airport\nDropoff: 2025-08-01 12:00 at Gaia Station\nالإنجليزية"
+    },
+    {
+        "email_id":"direct_booking_447997",
+        "raw_response":"Customer name: David Silva\nCar model: Renault Clio\nPickup: 2025-10-16 16:15 at Santa Cruz Downtown\nDropoff: 2025-10-28 11:30 at Faro Airport"
+    },
+    {
+        "email_id":"direct_booking_494900",
+        "raw_response":"Customer name: InÃªs Silva\nCar model: Toyota Yaris\nPickup: 2026-04-25 16:00 at Funchal Airport\nDropoff: 2026-05-06 12:15"
+    },
+    {
+        "email_id":"direct_booking_155663",
+        "raw_response":"Customer name: Tiago Smith\nCar model: Ford Fiesta\nPickup: 2025-11-12 20:15 em Gaia Station\nDropoff: 2026-03-07 14:30 at Porto Airport"
+    },
+    {
+        "email_id":"direct_booking_505298",
+        "raw_response":"Customer name: Rui Coelho\nCar model: Renault Clio\nPickup: 2025-10-27 16:00 at Santa Cruz Downtown\nDropoff: 2025-11-03 13:45 at F"
+    },
+    {
+        "email_id":"direct_booking_847078",
+        "raw_response":"Customer name: David Costa\nCar model: Renault Clio\nPickup: 2025-07-12 11:30 at Faro Airport\nDropoff: 2025-07-13 13:45 at Gaia Station"
+    },
+    {
+        "email_id":"direct_booking_472640",
+        "raw_response":"Customer name: InÃªs Johnson\nCar model: Hyundai i20\nPickup: 2026-05-17 11:30 at Gaia Station\nDropoff: 2026-05-22 20:00 at"
+    },
+    {
+        "email_id":"direct_booking_681896",
+        "raw_response":"Customer name: Rui Silva\nCar model: Hyundai i20\nPickup: 2025-11-21 10:30 at Funchal Airport\nDropoff: 2025-11-25 14:15 at Ga"
+    },
+    {
+        "email_id":"direct_booking_755910",
+        "raw_response":"Customer name: InÃªs Pereira\nCar model: Seat Ibiza\nPickup: 2026-06-17 14:15 at Faro Airport\nDropoff: 2026-06-21 17:15"
+    },
+    {
+        "email_id":"direct_booking_784167",
+        "raw_response":"Customer name: Pedro Garcia\nCar model: Renault Clio\nPickup: 2025-09-09 16:15 at Gaia Station\nDropoff: 2025-09-19 10:30 at Santa Cruz Downtown"
+    },
+    {
+        "email_id":"direct_booking_788108",
+        "raw_response":"Customer name: Joana Oliveira\nCar model: Renault Clio\nPickup: 2026-04-16 13:00 at Lisbon Airport\nDropoff: 2026-04-19 16:00 at Porto Airport"
+    },
+    {
+        "email_id":"direct_booking_534152",
+        "raw_response":"Customer name: Diana Johnson\nCar model: Renault Clio\nPickup: 2026-01-27 15:30 at Funchal Airport\nDropoff: 2026-02-01 10:15 at Lisbon Airport"
+    },
+    {
+        "email_id":"direct_booking_379825",
+        "raw_response":"Customer name: Tiago Pereira\nCar model: Volkswagen Golf\nPickup: 2026-05-07 17:15 at Lisbon Airport\nDropoff: 2026-05-17 17:15 at Gaia Station"
+    },
+    {
+        "email_id":"direct_booking_240600",
+        "raw_response":"Customer name: Carlos Fernandes\nCar model: Nissan Micra\nPickup: 2026-03-15 17:45 at Lisbon Airport\nDropoff: 2026-03-29 19:30 at Faro Airport"
+    },
+    {
+        "email_id":"direct_booking_337264",
+        "raw_response":"Customer name: Pedro Garcia\nCar model: Toyota Yaris\nPickup: 2025-07-17 20:00 at Lisbon Airport\nDropoff: 2025-07-24 12:45 at Gaia Station"
+    },
+    {
+        "email_id":"direct_booking_560623",
+        "raw_response":"Customer name: Maria Oliveira\nCar model: Hyundai i20\nPickup: 2026-05-12 19:30 at Faro Airport\nDropoff: 2026-05-20 15:15 at Funchal"
+    },
+    {
+        "email_id":"direct_booking_878533",
+        "raw_response":"Customer name: Sara Pereira\nCar model: Toyota Yaris\nPickup: 2026-04-19 16:00 at Faro Airport\nDropoff: 2026-04-29 16:00 at Funch"
+    },
+    {
+        "email_id":"direct_booking_141158",
+        "raw_response":"Customer name: Sara Martins\nCar model: Peugeot 208\nPickup: 2026-04-12 16:00 at Faro Airport\nDropoff: 2026-04-19 11:30 at Porto Airport"
+    },
+    {
+        "email_id":"direct_booking_672949",
+        "raw_response":"Customer name: Tiago Martins\nCar model: Toyota Yaris\nPickup: 2025-09-08 14:30 at Lisbon Airport\nDropoff: 2025-09-15 15:00 at Faro Airport"
+    }
+]

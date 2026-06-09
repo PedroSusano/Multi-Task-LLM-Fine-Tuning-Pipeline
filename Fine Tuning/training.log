@@ -1,0 +1,1426 @@
+nohup: ignoring input
+sagemaker.config INFO - Not applying SDK defaults from location: /etc/xdg/sagemaker/config.yaml
+sagemaker.config INFO - Not applying SDK defaults from location: /home/sagemaker-user/.config/sagemaker/config.yaml
+INFO:sagemaker.image_uris:image_uri is not presented, retrieving image_uri based on instance_type, framework etc.
+INFO:sagemaker:Creating training-job with name: grupo5-fine-tuning-pytorch-20250728-1614
+🚀 Starting training job setup...
+📦 Using S3 bucket: sagemaker-eu-west-1-267567228900
+🔐 Using IAM role: arn:aws:iam::267567228900:role/iseg-prd-sagemaker-role
+🤗 Logging into HuggingFace...
+✅ HuggingFace login successful
+📤 Uploading data to S3...
+Uploading train2.jsonl to s3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/train2.jsonl
+Uploading test2.jsonl to s3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/test2.jsonl
+Uploading validation2.jsonl to s3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/validation2.jsonl
+✅ Train data uploaded: s3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/train2.jsonl
+✅ Test data uploaded: s3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/test2.jsonl
+✅ Validation data uploaded: s3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/validation2.jsonl
+🏗️  Creating PyTorch estimator...
+🎯 Starting training job: grupo5-fine-tuning-pytorch-20250728-1614
+💾 Input channels: {'train': 's3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/train2.jsonl', 'test': 's3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/test2.jsonl', 'validation': 's3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/validation2.jsonl'}
+2025-07-28 16:14:31 Starting - Starting the training job
+2025-07-28 16:14:31 Pending - Training job waiting for capacity...
+2025-07-28 16:14:51 Pending - Preparing the instances for training...
+2025-07-28 16:15:28 Downloading - Downloading input data...
+2025-07-28 16:15:38 Downloading - Downloading the training image..................
+2025-07-28 16:18:50 Training - Training image download completed. Training in progress......bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+CUDA compat package should be installed for NVIDIA driver smaller than 560.35.05
+Current installed NVIDIA driver version is 550.163.01
+Adding CUDA compat to LD_LIBRARY_PATH
+/usr/local/cuda/compat:/opt/amazon/openmpi/lib:/opt/amazon/efa/lib:/lib/x86_64-linux-gnu:/usr/local/lib:/usr/local/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2025-07-28 16:19:46,963 sagemaker-training-toolkit INFO     Imported framework sagemaker_pytorch_container.training
+2025-07-28 16:19:46,982 sagemaker-training-toolkit INFO     No Neurons detected (normal if no neurons installed)
+2025-07-28 16:19:46,991 sagemaker_pytorch_container.training INFO     Block until all host DNS lookups succeed.
+2025-07-28 16:19:46,992 sagemaker_pytorch_container.training INFO     Invoking user training script.
+2025-07-28 16:19:49,014 sagemaker-training-toolkit INFO     Installing dependencies from requirements.txt
+Collecting unsloth>=2025.7.5 (from unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading unsloth-2025.7.8-py3-none-any.whl.metadata (47 kB)
+Collecting evaluate>=0.4.0 (from -r requirements.txt (line 2))
+Downloading evaluate-0.4.5-py3-none-any.whl.metadata (9.5 kB)
+Collecting unsloth_zoo>=2025.7.9 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading unsloth_zoo-2025.7.10-py3-none-any.whl.metadata (8.1 kB)
+Requirement already satisfied: torch>=2.4.0 in /usr/local/lib/python3.12/site-packages (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (2.6.0+cu126)
+Collecting xformers>=0.0.27.post2 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading xformers-0.0.31.post1-cp39-abi3-manylinux_2_28_x86_64.whl.metadata (1.1 kB)
+Collecting bitsandbytes (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading bitsandbytes-0.46.1-py3-none-manylinux_2_24_x86_64.whl.metadata (10 kB)
+Requirement already satisfied: triton>=3.0.0 in /usr/local/lib/python3.12/site-packages (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (3.2.0)
+Requirement already satisfied: packaging in /usr/local/lib/python3.12/site-packages (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (24.2)
+Collecting tyro (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading tyro-0.9.26-py3-none-any.whl.metadata (12 kB)
+Collecting transformers!=4.47.0,!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,>=4.51.3 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading transformers-4.54.0-py3-none-any.whl.metadata (41 kB)
+Collecting datasets<4.0.0,>=3.4.1 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading datasets-3.6.0-py3-none-any.whl.metadata (19 kB)
+Collecting sentencepiece>=0.2.0 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading sentencepiece-0.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.7 kB)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.12/site-packages (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (4.67.1)
+Requirement already satisfied: psutil in /usr/local/lib/python3.12/site-packages (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (7.0.0)
+Collecting wheel>=0.42.0 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+Requirement already satisfied: numpy in /usr/local/lib/python3.12/site-packages (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (1.26.4)
+Requirement already satisfied: accelerate>=0.34.1 in /usr/local/lib/python3.12/site-packages (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (1.9.0)
+Collecting trl!=0.15.0,!=0.19.0,!=0.9.0,!=0.9.1,!=0.9.2,!=0.9.3,>=0.7.9 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading trl-0.19.1-py3-none-any.whl.metadata (10 kB)
+Collecting peft!=0.11.0,>=0.7.1 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading peft-0.16.0-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: protobuf in /usr/local/lib/python3.12/site-packages (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (6.31.1)
+Requirement already satisfied: huggingface_hub in /usr/local/lib/python3.12/site-packages (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (0.33.4)
+Collecting hf_transfer (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading hf_transfer-0.1.9-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.7 kB)
+Collecting diffusers (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading diffusers-0.34.0-py3-none-any.whl.metadata (20 kB)
+Requirement already satisfied: torchvision in /usr/local/lib/python3.12/site-packages (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (0.21.0+cu126)
+Requirement already satisfied: filelock in /usr/local/lib/python3.12/site-packages (from datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (3.18.0)
+Requirement already satisfied: pyarrow>=15.0.0 in /usr/local/lib/python3.12/site-packages (from datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (20.0.0)
+Collecting dill<0.3.9,>=0.3.0 (from datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading dill-0.3.8-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: pandas in /usr/local/lib/python3.12/site-packages (from datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (2.3.1)
+Requirement already satisfied: requests>=2.32.2 in /usr/local/lib/python3.12/site-packages (from datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (2.32.4)
+Collecting xxhash (from datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading xxhash-3.5.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (12 kB)
+Collecting multiprocess<0.70.17 (from datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading multiprocess-0.70.16-py312-none-any.whl.metadata (7.2 kB)
+Collecting fsspec<=2025.3.0,>=2023.1.0 (from fsspec[http]<=2025.3.0,>=2023.1.0->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading fsspec-2025.3.0-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/site-packages (from datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (6.0.2)
+Collecting aiohttp!=4.0.0a0,!=4.0.0a1 (from fsspec[http]<=2025.3.0,>=2023.1.0->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading aiohttp-3.12.14-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.6 kB)
+Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.12/site-packages (from accelerate>=0.34.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (0.5.3)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.12/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (25.3.0)
+Collecting frozenlist>=1.1.1 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading frozenlist-1.7.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading multidict-6.6.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Collecting propcache>=0.2.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading propcache-0.3.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (12 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading yarl-1.20.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (73 kB)
+Requirement already satisfied: idna>=2.0 in /usr/local/lib/python3.12/site-packages (from yarl<2.0,>=1.17.0->aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (3.10)
+Requirement already satisfied: typing-extensions>=4.2 in /usr/local/lib/python3.12/site-packages (from aiosignal>=1.4.0->aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (4.14.1)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.2 in /usr/local/lib/python3.12/site-packages (from huggingface_hub->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (1.1.5)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/site-packages (from requests>=2.32.2->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (3.4.2)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/site-packages (from requests>=2.32.2->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.12/site-packages (from requests>=2.32.2->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (2025.7.14)
+Requirement already satisfied: networkx in /usr/local/lib/python3.12/site-packages (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (3.5)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/site-packages (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (3.1.6)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.12/site-packages (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (80.9.0)
+Requirement already satisfied: sympy==1.13.1 in /usr/local/lib/python3.12/site-packages (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/site-packages (from sympy==1.13.1->torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (1.3.0)
+Collecting huggingface_hub (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading huggingface_hub-0.34.2-py3-none-any.whl.metadata (14 kB)
+Collecting regex!=2019.12.17 (from transformers!=4.47.0,!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,>=4.51.3->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading regex-2024.11.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (40 kB)
+Collecting tokenizers<0.22,>=0.21 (from transformers!=4.47.0,!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,>=4.51.3->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading tokenizers-0.21.4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
+Collecting cut_cross_entropy (from unsloth_zoo>=2025.7.9->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading cut_cross_entropy-25.1.1-py3-none-any.whl.metadata (9.3 kB)
+Requirement already satisfied: pillow in /usr/local/lib/python3.12/site-packages (from unsloth_zoo>=2025.7.9->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (11.3.0)
+Collecting msgspec (from unsloth_zoo>=2025.7.9->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading msgspec-0.19.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.9 kB)
+Collecting torch>=2.4.0 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading torch-2.7.1-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (29 kB)
+Collecting sympy>=1.13.3 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting nvidia-cuda-nvrtc-cu12==12.6.77 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_cuda_nvrtc_cu12-12.6.77-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cuda-runtime-cu12==12.6.77 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_cuda_runtime_cu12-12.6.77-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cuda-cupti-cu12==12.6.80 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_cuda_cupti_cu12-12.6.80-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cudnn-cu12==9.5.1.17 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_cudnn_cu12-9.5.1.17-py3-none-manylinux_2_28_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cublas-cu12==12.6.4.1 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_cublas_cu12-12.6.4.1-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cufft-cu12==11.3.0.4 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_cufft_cu12-11.3.0.4-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-curand-cu12==10.3.7.77 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_curand_cu12-10.3.7.77-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cusolver-cu12==11.7.1.2 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_cusolver_cu12-11.7.1.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cusparse-cu12==12.5.4.2 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_cusparse_cu12-12.5.4.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cusparselt-cu12==0.6.3 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_cusparselt_cu12-0.6.3-py3-none-manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting nvidia-nccl-cu12==2.26.2 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_nccl_cu12-2.26.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.0 kB)
+Collecting nvidia-nvtx-cu12==12.6.77 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_nvtx_cu12-12.6.77-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-nvjitlink-cu12==12.6.85 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_nvjitlink_cu12-12.6.85-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cufile-cu12==1.11.1.6 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading nvidia_cufile_cu12-1.11.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.5 kB)
+Collecting triton>=3.0.0 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading triton-3.3.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (1.5 kB)
+Requirement already satisfied: importlib_metadata in /usr/local/lib/python3.12/site-packages (from diffusers->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (6.11.0)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.12/site-packages (from importlib_metadata->diffusers->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (3.23.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/site-packages (from jinja2->torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (3.0.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.12/site-packages (from pandas->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.12/site-packages (from pandas->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.12/site-packages (from pandas->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (2025.2)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (1.17.0)
+INFO: pip is looking at multiple versions of torchvision to determine which version is compatible with other requirements. This could take a while.
+Collecting torchvision (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading torchvision-0.22.1-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (6.1 kB)
+Collecting docstring-parser>=0.15 (from tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading docstring_parser-0.17.0-py3-none-any.whl.metadata (3.5 kB)
+Requirement already satisfied: rich>=11.1.0 in /usr/local/lib/python3.12/site-packages (from tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (14.0.0)
+Collecting shtab>=1.5.6 (from tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading shtab-1.7.2-py3-none-any.whl.metadata (7.4 kB)
+Collecting typeguard>=4.0.0 (from tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading typeguard-4.4.4-py3-none-any.whl.metadata (3.3 kB)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.12/site-packages (from rich>=11.1.0->tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (3.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.12/site-packages (from rich>=11.1.0->tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (2.19.2)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.12/site-packages (from markdown-it-py>=2.2.0->rich>=11.1.0->tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1)) (0.1.2)
+Collecting xformers>=0.0.27.post2 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading xformers-0.0.29.post3-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (1.2 kB)
+INFO: pip is looking at multiple versions of xformers to determine which version is compatible with other requirements. This could take a while.
+Collecting typeguard>=4.0.0 (from tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading typeguard-4.4.3-py3-none-any.whl.metadata (3.4 kB)
+Collecting shtab>=1.5.6 (from tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading shtab-1.7.1-py3-none-any.whl.metadata (7.3 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=11.1.0->tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=11.1.0->tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=11.1.0->tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting rich>=11.1.0 (from tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading rich-14.1.0-py3-none-any.whl.metadata (18 kB)
+Collecting docstring-parser>=0.15 (from tyro->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading docstring_parser-0.16-py3-none-any.whl.metadata (3.0 kB)
+INFO: pip is still looking at multiple versions of xformers to determine which version is compatible with other requirements. This could take a while.
+Collecting tyro (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading tyro-0.9.25-py3-none-any.whl.metadata (12 kB)
+Collecting torchvision (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading torchvision-0.22.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (6.1 kB)
+Downloading torchvision-0.21.0-cp312-cp312-manylinux1_x86_64.whl.metadata (6.1 kB)
+Downloading torchvision-0.20.1-cp312-cp312-manylinux1_x86_64.whl.metadata (6.1 kB)
+Downloading torchvision-0.20.0-cp312-cp312-manylinux1_x86_64.whl.metadata (6.1 kB)
+Downloading torchvision-0.19.1-cp312-cp312-manylinux1_x86_64.whl.metadata (6.0 kB)
+Downloading torchvision-0.19.0-cp312-cp312-manylinux1_x86_64.whl.metadata (6.0 kB)
+INFO: pip is still looking at multiple versions of torchvision to determine which version is compatible with other requirements. This could take a while.
+Downloading torchvision-0.18.1-cp312-cp312-manylinux1_x86_64.whl.metadata (6.6 kB)
+Downloading torchvision-0.18.0-cp312-cp312-manylinux1_x86_64.whl.metadata (6.6 kB)
+Downloading torchvision-0.17.2-cp312-cp312-manylinux1_x86_64.whl.metadata (6.6 kB)
+Downloading torchvision-0.17.1-cp312-cp312-manylinux1_x86_64.whl.metadata (6.6 kB)
+Downloading torchvision-0.17.0-cp312-cp312-manylinux1_x86_64.whl.metadata (6.6 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+Collecting psutil (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading psutil-7.0.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (22 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+Downloading psutil-6.1.1-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (22 kB)
+Collecting protobuf (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Downloading protobuf-6.31.0-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Collecting pillow (from unsloth_zoo>=2025.7.9->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading pillow-11.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.0 kB)
+Downloading pillow-11.2.1-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (8.9 kB)
+Collecting tzdata>=2022.7 (from pandas->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading tzdata-2025.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting pytz>=2020.1 (from pandas->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Downloading pytz-2025.1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting python-dateutil>=2.8.2 (from pandas->datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Downloading python_dateutil-2.9.0-py2.py3-none-any.whl.metadata (8.3 kB)
+Collecting pandas (from datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading pandas-2.3.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (91 kB)
+Downloading pandas-2.3.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (91 kB)
+Collecting networkx (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading networkx-3.5-py3-none-any.whl.metadata (6.3 kB)
+Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting msgspec (from unsloth_zoo>=2025.7.9->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading msgspec-0.18.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.9 kB)
+Downloading msgspec-0.18.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.9 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading MarkupSafe-3.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+Downloading MarkupSafe-3.0.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+Collecting jinja2 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Downloading jinja2-3.1.5-py3-none-any.whl.metadata (2.6 kB)
+Collecting zipp>=0.5 (from importlib_metadata->diffusers->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading zipp-3.23.0-py3-none-any.whl.metadata (3.6 kB)
+Downloading zipp-3.22.0-py3-none-any.whl.metadata (3.6 kB)
+Collecting importlib_metadata (from diffusers->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading importlib_metadata-8.7.0-py3-none-any.whl.metadata (4.8 kB)
+Downloading importlib_metadata-8.6.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting hf_transfer (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading hf_transfer-0.1.8-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.7 kB)
+Downloading hf_transfer-0.1.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting filelock (from datasets<4.0.0,>=3.4.1->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading filelock-3.18.0-py3-none-any.whl.metadata (2.9 kB)
+Downloading filelock-3.17.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting diffusers (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading diffusers-0.33.1-py3-none-any.whl.metadata (19 kB)
+Downloading diffusers-0.33.0-py3-none-any.whl.metadata (20 kB)
+Collecting cut_cross_entropy (from unsloth_zoo>=2025.7.9->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading cut_cross_entropy-24.12.3-py3-none-any.whl.metadata (9.3 kB)
+Downloading cut_cross_entropy-24.12.2-py3-none-any.whl.metadata (9.3 kB)
+Downloading cut_cross_entropy-24.12.1-py3-none-any.whl.metadata (9.3 kB)
+Downloading cut_cross_entropy-24.11.4-py3-none-any.whl.metadata (9.3 kB)
+Downloading cut_cross_entropy-24.11.3-py3-none-any.whl.metadata (9.4 kB)
+Collecting sympy>=1.13.3 (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading sympy-1.13.3-py3-none-any.whl.metadata (12 kB)
+Collecting setuptools (from torch>=2.4.0->unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+Downloading setuptools-80.8.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting xformers>=0.0.27.post2 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading xformers-0.0.31-cp39-abi3-manylinux_2_28_x86_64.whl.metadata (1.0 kB)
+Downloading xformers-0.0.30-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (1.2 kB)
+Collecting torch>=2.4.0 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading torch-2.7.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (29 kB)
+Collecting triton>=3.0.0 (from unsloth>=2025.7.5->unsloth[cu126-torch260]>=2025.7.5->-r requirements.txt (line 1))
+Downloading triton-3.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (1.5 kB)
+Downloading unsloth-2025.7.8-py3-none-any.whl (299 kB)
+Downloading datasets-3.6.0-py3-none-any.whl (491 kB)
+Downloading dill-0.3.8-py3-none-any.whl (116 kB)
+Downloading fsspec-2025.3.0-py3-none-any.whl (193 kB)
+Downloading multiprocess-0.70.16-py312-none-any.whl (146 kB)
+Downloading evaluate-0.4.5-py3-none-any.whl (84 kB)
+Downloading aiohttp-3.12.14-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 106.7 MB/s eta 0:00:00
+Downloading multidict-6.6.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (256 kB)
+Downloading yarl-1.20.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (355 kB)
+Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Downloading frozenlist-1.7.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (241 kB)
+Downloading peft-0.16.0-py3-none-any.whl (472 kB)
+Downloading propcache-0.3.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (224 kB)
+Downloading sentencepiece-0.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 63.9 MB/s eta 0:00:00
+Downloading transformers-4.54.0-py3-none-any.whl (11.2 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.2/11.2 MB 174.3 MB/s eta 0:00:00
+Downloading huggingface_hub-0.34.2-py3-none-any.whl (558 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 558.8/558.8 kB 59.2 MB/s eta 0:00:00
+Downloading tokenizers-0.21.4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 11.8 MB/s eta 0:00:00
+Downloading regex-2024.11.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (796 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 796.9/796.9 kB 87.3 MB/s eta 0:00:00
+Downloading trl-0.19.1-py3-none-any.whl (376 kB)
+Downloading unsloth_zoo-2025.7.10-py3-none-any.whl (166 kB)
+Downloading bitsandbytes-0.46.1-py3-none-manylinux_2_24_x86_64.whl (72.9 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.9/72.9 MB 178.8 MB/s eta 0:00:00
+Downloading wheel-0.45.1-py3-none-any.whl (72 kB)
+Downloading xformers-0.0.29.post3-cp312-cp312-manylinux_2_28_x86_64.whl (43.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.4/43.4 MB 137.4 MB/s eta 0:00:00
+Downloading cut_cross_entropy-25.1.1-py3-none-any.whl (22 kB)
+Downloading diffusers-0.34.0-py3-none-any.whl (3.8 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 169.5 MB/s eta 0:00:00
+Downloading hf_transfer-0.1.9-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 164.3 MB/s eta 0:00:00
+Downloading msgspec-0.19.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (213 kB)
+Downloading tyro-0.9.26-py3-none-any.whl (128 kB)
+Downloading docstring_parser-0.17.0-py3-none-any.whl (36 kB)
+Downloading shtab-1.7.2-py3-none-any.whl (14 kB)
+Downloading typeguard-4.4.4-py3-none-any.whl (34 kB)
+Downloading xxhash-3.5.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (194 kB)
+Installing collected packages: sentencepiece, xxhash, wheel, typeguard, shtab, regex, propcache, multidict, msgspec, hf_transfer, fsspec, frozenlist, docstring-parser, dill, aiohappyeyeballs, yarl, multiprocess, huggingface_hub, aiosignal, xformers, tyro, tokenizers, diffusers, cut_cross_entropy, bitsandbytes, aiohttp, transformers, peft, datasets, trl, evaluate, unsloth_zoo, unsloth
+Attempting uninstall: fsspec
+Found existing installation: fsspec 2025.7.0
+Uninstalling fsspec-2025.7.0:
+Successfully uninstalled fsspec-2025.7.0
+Attempting uninstall: dill
+Found existing installation: dill 0.4.0
+Uninstalling dill-0.4.0:
+Successfully uninstalled dill-0.4.0
+Attempting uninstall: multiprocess
+Found existing installation: multiprocess 0.70.18
+Uninstalling multiprocess-0.70.18:
+Successfully uninstalled multiprocess-0.70.18
+Attempting uninstall: huggingface_hub
+Found existing installation: huggingface-hub 0.33.4
+Uninstalling huggingface-hub-0.33.4:
+Successfully uninstalled huggingface-hub-0.33.4
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pathos 0.3.4 requires dill>=0.4.0, but you have dill 0.3.8 which is incompatible.
+pathos 0.3.4 requires multiprocess>=0.70.18, but you have multiprocess 0.70.16 which is incompatible.
+Successfully installed aiohappyeyeballs-2.6.1 aiohttp-3.12.14 aiosignal-1.4.0 bitsandbytes-0.46.1 cut_cross_entropy-25.1.1 datasets-3.6.0 diffusers-0.34.0 dill-0.3.8 docstring-parser-0.17.0 evaluate-0.4.5 frozenlist-1.7.0 fsspec-2025.3.0 hf_transfer-0.1.9 huggingface_hub-0.34.2 msgspec-0.19.0 multidict-6.6.3 multiprocess-0.70.16 peft-0.16.0 propcache-0.3.2 regex-2024.11.6 sentencepiece-0.2.0 shtab-1.7.2 tokenizers-0.21.4 transformers-4.54.0 trl-0.19.1 typeguard-4.4.4 tyro-0.9.26 unsloth-2025.7.8 unsloth_zoo-2025.7.10 wheel-0.45.1 xformers-0.0.29.post3 xxhash-3.5.0 yarl-1.20.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+2025-07-28 16:20:23,655 sagemaker-training-toolkit INFO     Waiting for the process to finish and give a return code.
+2025-07-28 16:20:23,655 sagemaker-training-toolkit INFO     Done waiting for a return code. Received 0 from exiting process.
+2025-07-28 16:20:23,696 sagemaker-training-toolkit INFO     No Neurons detected (normal if no neurons installed)
+2025-07-28 16:20:23,726 sagemaker-training-toolkit INFO     No Neurons detected (normal if no neurons installed)
+2025-07-28 16:20:23,756 sagemaker-training-toolkit INFO     No Neurons detected (normal if no neurons installed)
+2025-07-28 16:20:23,767 sagemaker-training-toolkit INFO     Invoking user script
+Training Env:
+{
+    "additional_framework_parameters": {},
+    "channel_input_dirs": {
+        "test": "/opt/ml/input/data/test",
+        "train": "/opt/ml/input/data/train",
+        "validation": "/opt/ml/input/data/validation"
+    },
+    "current_host": "algo-1",
+    "current_instance_group": "homogeneousCluster",
+    "current_instance_group_hosts": [
+        "algo-1"
+    ],
+    "current_instance_type": "ml.g5.16xlarge",
+    "distribution_hosts": [],
+    "distribution_instance_groups": [],
+    "framework_module": "sagemaker_pytorch_container.training:main",
+    "hosts": [
+        "algo-1"
+    ],
+    "hyperparameters": {
+        "batch_size": 16,
+        "epochs": 3,
+        "learning_rate": 0.0002,
+        "max_seq_length": 2048,
+        "test_path": "s3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/test2.jsonl"
+    },
+    "input_config_dir": "/opt/ml/input/config",
+    "input_data_config": {
+        "test": {
+            "TrainingInputMode": "File",
+            "S3DistributionType": "FullyReplicated",
+            "RecordWrapperType": "None"
+        },
+        "train": {
+            "TrainingInputMode": "File",
+            "S3DistributionType": "FullyReplicated",
+            "RecordWrapperType": "None"
+        },
+        "validation": {
+            "TrainingInputMode": "File",
+            "S3DistributionType": "FullyReplicated",
+            "RecordWrapperType": "None"
+        }
+    },
+    "input_dir": "/opt/ml/input",
+    "instance_groups": [
+        "homogeneousCluster"
+    ],
+    "instance_groups_dict": {
+        "homogeneousCluster": {
+            "instance_group_name": "homogeneousCluster",
+            "instance_type": "ml.g5.16xlarge",
+            "hosts": [
+                "algo-1"
+            ]
+        }
+    },
+    "is_hetero": false,
+    "is_master": true,
+    "is_modelparallel_enabled": null,
+    "is_smddpmprun_installed": false,
+    "is_smddprun_installed": false,
+    "job_name": "grupo5-fine-tuning-pytorch-20250728-1614",
+    "log_level": 20,
+    "master_hostname": "algo-1",
+    "model_dir": "/opt/ml/model",
+    "module_dir": "s3://sagemaker-eu-west-1-267567228900/grupo5-fine-tuning-pytorch-20250728-1614/source/sourcedir.tar.gz",
+    "module_name": "train",
+    "network_interface_name": "eth0",
+    "num_cpus": 64,
+    "num_gpus": 1,
+    "num_neurons": 0,
+    "output_data_dir": "/opt/ml/output/data",
+    "output_dir": "/opt/ml/output",
+    "output_intermediate_dir": "/opt/ml/output/intermediate",
+    "resource_config": {
+        "current_host": "algo-1",
+        "current_instance_type": "ml.g5.16xlarge",
+        "current_group_name": "homogeneousCluster",
+        "hosts": [
+            "algo-1"
+        ],
+        "instance_groups": [
+            {
+                "instance_group_name": "homogeneousCluster",
+                "instance_type": "ml.g5.16xlarge",
+                "hosts": [
+                    "algo-1"
+                ]
+            }
+        ],
+        "network_interface_name": "eth0",
+        "topology": null
+    },
+    "user_entry_point": "train.py"
+}
+Environment variables:
+SM_HOSTS=["algo-1"]
+SM_NETWORK_INTERFACE_NAME=eth0
+SM_HPS={"batch_size":16,"epochs":3,"learning_rate":0.0002,"max_seq_length":2048,"test_path":"s3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/test2.jsonl"}
+SM_USER_ENTRY_POINT=train.py
+SM_FRAMEWORK_PARAMS={}
+SM_RESOURCE_CONFIG={"current_group_name":"homogeneousCluster","current_host":"algo-1","current_instance_type":"ml.g5.16xlarge","hosts":["algo-1"],"instance_groups":[{"hosts":["algo-1"],"instance_group_name":"homogeneousCluster","instance_type":"ml.g5.16xlarge"}],"network_interface_name":"eth0","topology":null}
+SM_INPUT_DATA_CONFIG={"test":{"RecordWrapperType":"None","S3DistributionType":"FullyReplicated","TrainingInputMode":"File"},"train":{"RecordWrapperType":"None","S3DistributionType":"FullyReplicated","TrainingInputMode":"File"},"validation":{"RecordWrapperType":"None","S3DistributionType":"FullyReplicated","TrainingInputMode":"File"}}
+SM_OUTPUT_DATA_DIR=/opt/ml/output/data
+SM_CHANNELS=["test","train","validation"]
+SM_CURRENT_HOST=algo-1
+SM_CURRENT_INSTANCE_TYPE=ml.g5.16xlarge
+SM_CURRENT_INSTANCE_GROUP=homogeneousCluster
+SM_CURRENT_INSTANCE_GROUP_HOSTS=["algo-1"]
+SM_INSTANCE_GROUPS=["homogeneousCluster"]
+SM_INSTANCE_GROUPS_DICT={"homogeneousCluster":{"hosts":["algo-1"],"instance_group_name":"homogeneousCluster","instance_type":"ml.g5.16xlarge"}}
+SM_DISTRIBUTION_INSTANCE_GROUPS=[]
+SM_IS_HETERO=false
+SM_MODULE_NAME=train
+SM_LOG_LEVEL=20
+SM_FRAMEWORK_MODULE=sagemaker_pytorch_container.training:main
+SM_INPUT_DIR=/opt/ml/input
+SM_INPUT_CONFIG_DIR=/opt/ml/input/config
+SM_OUTPUT_DIR=/opt/ml/output
+SM_NUM_CPUS=64
+SM_NUM_GPUS=1
+SM_NUM_NEURONS=0
+SM_MODEL_DIR=/opt/ml/model
+SM_MODULE_DIR=s3://sagemaker-eu-west-1-267567228900/grupo5-fine-tuning-pytorch-20250728-1614/source/sourcedir.tar.gz
+SM_TRAINING_ENV={"additional_framework_parameters":{},"channel_input_dirs":{"test":"/opt/ml/input/data/test","train":"/opt/ml/input/data/train","validation":"/opt/ml/input/data/validation"},"current_host":"algo-1","current_instance_group":"homogeneousCluster","current_instance_group_hosts":["algo-1"],"current_instance_type":"ml.g5.16xlarge","distribution_hosts":[],"distribution_instance_groups":[],"framework_module":"sagemaker_pytorch_container.training:main","hosts":["algo-1"],"hyperparameters":{"batch_size":16,"epochs":3,"learning_rate":0.0002,"max_seq_length":2048,"test_path":"s3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/test2.jsonl"},"input_config_dir":"/opt/ml/input/config","input_data_config":{"test":{"RecordWrapperType":"None","S3DistributionType":"FullyReplicated","TrainingInputMode":"File"},"train":{"RecordWrapperType":"None","S3DistributionType":"FullyReplicated","TrainingInputMode":"File"},"validation":{"RecordWrapperType":"None","S3DistributionType":"FullyReplicated","TrainingInputMode":"File"}},"input_dir":"/opt/ml/input","instance_groups":["homogeneousCluster"],"instance_groups_dict":{"homogeneousCluster":{"hosts":["algo-1"],"instance_group_name":"homogeneousCluster","instance_type":"ml.g5.16xlarge"}},"is_hetero":false,"is_master":true,"is_modelparallel_enabled":null,"is_smddpmprun_installed":false,"is_smddprun_installed":false,"job_name":"grupo5-fine-tuning-pytorch-20250728-1614","log_level":20,"master_hostname":"algo-1","model_dir":"/opt/ml/model","module_dir":"s3://sagemaker-eu-west-1-267567228900/grupo5-fine-tuning-pytorch-20250728-1614/source/sourcedir.tar.gz","module_name":"train","network_interface_name":"eth0","num_cpus":64,"num_gpus":1,"num_neurons":0,"output_data_dir":"/opt/ml/output/data","output_dir":"/opt/ml/output","output_intermediate_dir":"/opt/ml/output/intermediate","resource_config":{"current_group_name":"homogeneousCluster","current_host":"algo-1","current_instance_type":"ml.g5.16xlarge","hosts":["algo-1"],"instance_groups":[{"hosts":["algo-1"],"instance_group_name":"homogeneousCluster","instance_type":"ml.g5.16xlarge"}],"network_interface_name":"eth0","topology":null},"user_entry_point":"train.py"}
+SM_USER_ARGS=["--batch_size","16","--epochs","3","--learning_rate","0.0002","--max_seq_length","2048","--test_path","s3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/test2.jsonl"]
+SM_OUTPUT_INTERMEDIATE_DIR=/opt/ml/output/intermediate
+SM_CHANNEL_TEST=/opt/ml/input/data/test
+SM_CHANNEL_TRAIN=/opt/ml/input/data/train
+SM_CHANNEL_VALIDATION=/opt/ml/input/data/validation
+SM_HP_BATCH_SIZE=16
+SM_HP_EPOCHS=3
+SM_HP_LEARNING_RATE=0.0002
+SM_HP_MAX_SEQ_LENGTH=2048
+SM_HP_TEST_PATH=s3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/test2.jsonl
+PYTHONPATH=/opt/ml/code:/usr/local/bin:/usr/local/lib/python312.zip:/usr/local/lib/python3.12:/usr/local/lib/python3.12/lib-dynload:/usr/local/lib/python3.12/site-packages
+Invoking script with the following command:
+/usr/local/bin/python train.py --batch_size 16 --epochs 3 --learning_rate 0.0002 --max_seq_length 2048 --test_path s3://sagemaker-eu-west-1-267567228900/nlp-genai-grupo5/data/test2.jsonl
+2025-07-28 16:20:23,768 sagemaker-training-toolkit INFO     Exceptions not imported for SageMaker Debugger as it is not installed.
+2025-07-28 16:20:23,768 sagemaker-training-toolkit INFO     Exceptions not imported for SageMaker TF as Tensorflow is not installed.
+/opt/ml/code/train.py:33: SyntaxWarning: invalid escape sequence '\*'
+  '''
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+/usr/local/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2025.7.8: Fast Llama patching. Transformers: 4.54.0.
+   \\   /|    NVIDIA A10G. Num GPUs = 1. Max memory: 22.184 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.6.0+cu126. CUDA: 8.6. CUDA Toolkit: 12.6. Triton: 3.2.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.29.post3. FA2 = True]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Total parameters in the original model: 774,440,960
+Unsloth 2025.7.8 patched 16 layers with 16 QKV layers, 16 O layers and 16 MLP layers.
+Unsloth 2025.7.8 patched 16 layers with 16 QKV layers, 16 O layers and 16 MLP layers.
+Trainable parameters after applying LoRA: 11,272,192
+Percentage of trainable parameters: 1.46%
+Unsloth: Tokenizing ["text"]:   0%|          | 0/8579 [00:00<?, ? examples/s]
+Unsloth: Tokenizing ["text"]:  12%|█▏        | 1000/8579 [00:00<00:01, 4025.16 examples/s]
+Unsloth: Tokenizing ["text"]:  23%|██▎       | 2000/8579 [00:00<00:01, 4782.70 examples/s]
+Unsloth: Tokenizing ["text"]:  35%|███▍      | 3000/8579 [00:00<00:01, 5064.06 examples/s]
+Unsloth: Tokenizing ["text"]:  47%|████▋     | 4000/8579 [00:00<00:00, 5203.95 examples/s]
+Unsloth: Tokenizing ["text"]:  58%|█████▊    | 5000/8579 [00:00<00:00, 5257.97 examples/s]
+Unsloth: Tokenizing ["text"]:  70%|██████▉   | 6000/8579 [00:01<00:00, 5323.63 examples/s]
+Unsloth: Tokenizing ["text"]:  82%|████████▏ | 7000/8579 [00:01<00:00, 5378.95 examples/s]
+Unsloth: Tokenizing ["text"]:  93%|█████████▎| 8000/8579 [00:01<00:00, 5385.49 examples/s]
+Unsloth: Tokenizing ["text"]: 100%|██████████| 8579/8579 [00:01<00:00, 5154.83 examples/s]
+Unsloth: Tokenizing ["text"]: 100%|██████████| 8579/8579 [00:01<00:00, 5139.95 examples/s]
+Unsloth: Tokenizing ["text"]:   0%|          | 0/1838 [00:00<?, ? examples/s]
+Unsloth: Tokenizing ["text"]:  54%|█████▍    | 1000/1838 [00:00<00:00, 5778.51 examples/s]
+Unsloth: Tokenizing ["text"]: 100%|██████████| 1838/1838 [00:00<00:00, 5560.77 examples/s]
+Unsloth: Tokenizing ["text"]: 100%|██████████| 1838/1838 [00:00<00:00, 5510.07 examples/s]
+Map (num_proc=64):   0%|          | 0/8579 [00:00<?, ? examples/s]
+Map (num_proc=64):   2%|▏         | 135/8579 [00:00<00:08, 959.11 examples/s]
+Map (num_proc=64):   8%|▊         | 673/8579 [00:00<00:02, 2803.05 examples/s]
+Map (num_proc=64):  13%|█▎        | 1075/8579 [00:00<00:02, 3056.83 examples/s]
+Map (num_proc=64):  19%|█▉        | 1611/8579 [00:00<00:01, 3668.96 examples/s]
+Map (num_proc=64):  23%|██▎       | 2013/8579 [00:00<00:01, 3590.24 examples/s]
+Map (num_proc=64):  30%|██▉       | 2549/8579 [00:00<00:01, 3918.05 examples/s]
+Map (num_proc=64):  36%|███▌      | 3085/8579 [00:00<00:01, 3718.25 examples/s]
+Map (num_proc=64):  42%|████▏     | 3621/8579 [00:01<00:01, 3964.48 examples/s]
+Map (num_proc=64):  48%|████▊     | 4157/8579 [00:01<00:01, 3972.06 examples/s]
+Map (num_proc=64):  55%|█████▍    | 4693/8579 [00:01<00:00, 4142.59 examples/s]
+Map (num_proc=64):  61%|██████    | 5229/8579 [00:01<00:00, 3967.05 examples/s]
+Map (num_proc=64):  67%|██████▋   | 5765/8579 [00:01<00:00, 4108.51 examples/s]
+Map (num_proc=64):  73%|███████▎  | 6301/8579 [00:01<00:00, 4063.36 examples/s]
+Map (num_proc=64):  80%|███████▉  | 6837/8579 [00:01<00:00, 4193.96 examples/s]
+Map (num_proc=64):  86%|████████▌ | 7373/8579 [00:01<00:00, 3928.67 examples/s]
+Map (num_proc=64):  92%|█████████▏| 7909/8579 [00:02<00:00, 4059.31 examples/s]
+Map (num_proc=64): 100%|██████████| 8579/8579 [00:02<00:00, 4523.17 examples/s]
+Map (num_proc=64): 100%|██████████| 8579/8579 [00:02<00:00, 3755.90 examples/s]
+Map (num_proc=64):   0%|          | 0/1838 [00:00<?, ? examples/s]
+Map (num_proc=64):   3%|▎         | 58/1838 [00:00<00:03, 535.40 examples/s]
+Map (num_proc=64):  11%|█         | 203/1838 [00:00<00:01, 969.18 examples/s]
+Map (num_proc=64):  19%|█▉        | 348/1838 [00:00<00:01, 1126.26 examples/s]
+Map (num_proc=64):  27%|██▋       | 493/1838 [00:00<00:01, 1226.96 examples/s]
+Map (num_proc=64):  35%|███▍      | 638/1838 [00:00<00:00, 1242.23 examples/s]
+Map (num_proc=64):  43%|████▎     | 783/1838 [00:00<00:00, 1261.47 examples/s]
+Map (num_proc=64):  50%|█████     | 928/1838 [00:00<00:00, 1279.88 examples/s]
+Map (num_proc=64):  58%|█████▊    | 1073/1838 [00:00<00:00, 1199.87 examples/s]
+Map (num_proc=64):  66%|██████▋   | 1218/1838 [00:01<00:00, 1260.95 examples/s]
+Map (num_proc=64):  74%|███████▍  | 1362/1838 [00:01<00:00, 1303.26 examples/s]
+Map (num_proc=64):  82%|████████▏ | 1502/1838 [00:01<00:00, 1315.89 examples/s]
+Map (num_proc=64):  89%|████████▉ | 1642/1838 [00:01<00:00, 1326.85 examples/s]
+Map (num_proc=64):  97%|█████████▋| 1782/1838 [00:01<00:00, 1333.05 examples/s]
+Map (num_proc=64): 100%|██████████| 1838/1838 [00:01<00:00, 1175.14 examples/s]
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 8,579 | Num Epochs = 3 | Total steps = 405
+O^O/ \_/ \    Batch size per device = 16 | Gradient accumulation steps = 4
+\        /    Data Parallel GPUs = 1 | Total batch size (16 x 4 x 1) = 64
+ "-____-"     Trainable parameters = 11,272,192 of 1,247,086,592 (0.90% trained)
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 8,579 | Num Epochs = 3 | Total steps = 405
+O^O/ \_/ \    Batch size per device = 16 | Gradient accumulation steps = 4
+\        /    Data Parallel GPUs = 1 | Total batch size (16 x 4 x 1) = 64
+ "-____-"     Trainable parameters = 11,272,192 of 1,247,086,592 (0.90% trained)
+0%|          | 0/405 [00:00<?, ?it/s]
+Unsloth: Will smartly offload gradients to save VRAM!
+0%|          | 1/405 [00:17<1:58:01, 17.53s/it]
+0%|          | 2/405 [00:24<1:15:07, 11.18s/it]
+1%|          | 3/405 [00:30<58:31,  8.73s/it]
+1%|          | 4/405 [00:36<52:04,  7.79s/it]
+1%|          | 5/405 [00:41<44:36,  6.69s/it]
+1%|▏         | 6/405 [00:47<43:59,  6.61s/it]
+2%|▏         | 7/405 [00:52<40:55,  6.17s/it]
+2%|▏         | 8/405 [00:58<39:45,  6.01s/it]
+2%|▏         | 9/405 [01:04<39:32,  5.99s/it]
+2%|▏         | 10/405 [01:09<37:05,  5.63s/it]
+{'loss': 1.655, 'grad_norm': 3.4877920150756836, 'learning_rate': 4.390243902439025e-05, 'epoch': 0.07}
+2%|▏         | 10/405 [01:09<37:05,  5.63s/it]
+3%|▎         | 11/405 [01:15<37:20,  5.69s/it]
+3%|▎         | 12/405 [01:21<37:47,  5.77s/it]
+3%|▎         | 13/405 [01:27<39:04,  5.98s/it]
+3%|▎         | 14/405 [01:32<37:18,  5.72s/it]
+4%|▎         | 15/405 [01:39<38:48,  5.97s/it]
+4%|▍         | 16/405 [01:43<35:41,  5.50s/it]
+4%|▍         | 17/405 [01:48<35:03,  5.42s/it]
+4%|▍         | 18/405 [01:53<34:20,  5.32s/it]
+5%|▍         | 19/405 [01:59<34:00,  5.29s/it]
+5%|▍         | 20/405 [02:04<33:23,  5.20s/it]
+{'loss': 0.373, 'grad_norm': 0.4316895604133606, 'learning_rate': 9.26829268292683e-05, 'epoch': 0.15}
+5%|▍         | 20/405 [02:04<33:23,  5.20s/it]
+5%|▌         | 21/405 [02:10<34:52,  5.45s/it]
+5%|▌         | 22/405 [02:16<37:05,  5.81s/it]
+6%|▌         | 23/405 [02:22<35:57,  5.65s/it]
+6%|▌         | 24/405 [02:28<36:56,  5.82s/it]
+6%|▌         | 25/405 [02:33<36:04,  5.70s/it]
+6%|▋         | 26/405 [02:39<36:25,  5.77s/it]
+7%|▋         | 27/405 [02:45<35:38,  5.66s/it]
+7%|▋         | 28/405 [02:51<36:47,  5.86s/it]
+7%|▋         | 29/405 [02:58<39:17,  6.27s/it]
+7%|▋         | 30/405 [03:05<40:07,  6.42s/it]
+{'loss': 0.0682, 'grad_norm': 0.24398501217365265, 'learning_rate': 0.00014146341463414634, 'epoch': 0.22}
+7%|▋         | 30/405 [03:05<40:07,  6.42s/it]
+8%|▊         | 31/405 [03:11<39:27,  6.33s/it]
+8%|▊         | 32/405 [03:16<37:32,  6.04s/it]
+8%|▊         | 33/405 [03:21<35:08,  5.67s/it]
+8%|▊         | 34/405 [03:27<35:38,  5.76s/it]
+9%|▊         | 35/405 [03:33<34:58,  5.67s/it]
+9%|▉         | 36/405 [03:39<36:45,  5.98s/it]
+9%|▉         | 37/405 [03:45<36:37,  5.97s/it]
+9%|▉         | 38/405 [03:51<35:12,  5.76s/it]
+10%|▉         | 39/405 [03:57<35:59,  5.90s/it]
+10%|▉         | 40/405 [04:03<36:01,  5.92s/it]
+{'loss': 0.0597, 'grad_norm': 0.2593231797218323, 'learning_rate': 0.0001902439024390244, 'epoch': 0.3}
+10%|▉         | 40/405 [04:03<36:01,  5.92s/it]
+10%|█         | 41/405 [04:09<36:27,  6.01s/it]
+10%|█         | 42/405 [04:15<36:28,  6.03s/it]
+11%|█         | 43/405 [04:22<37:30,  6.22s/it]
+11%|█         | 44/405 [04:28<37:08,  6.17s/it]
+11%|█         | 45/405 [04:34<36:38,  6.11s/it]
+11%|█▏        | 46/405 [04:38<33:54,  5.67s/it]
+12%|█▏        | 47/405 [04:43<32:37,  5.47s/it]
+12%|█▏        | 48/405 [04:48<31:06,  5.23s/it]
+12%|█▏        | 49/405 [04:53<30:12,  5.09s/it]
+12%|█▏        | 50/405 [04:58<30:44,  5.20s/it]
+{'loss': 0.0572, 'grad_norm': 0.13386741280555725, 'learning_rate': 0.0001997617272301248, 'epoch': 0.37}
+12%|█▏        | 50/405 [04:58<30:44,  5.20s/it]
+13%|█▎        | 51/405 [05:06<34:21,  5.82s/it]
+13%|█▎        | 52/405 [05:11<33:26,  5.68s/it]
+13%|█▎        | 53/405 [05:16<33:03,  5.63s/it]
+13%|█▎        | 54/405 [05:22<32:12,  5.51s/it]
+14%|█▎        | 55/405 [05:28<33:43,  5.78s/it]
+14%|█▍        | 56/405 [05:33<31:20,  5.39s/it]
+14%|█▍        | 57/405 [05:40<34:34,  5.96s/it]
+14%|█▍        | 58/405 [05:47<36:36,  6.33s/it]
+15%|█▍        | 59/405 [05:52<34:52,  6.05s/it]
+15%|█▍        | 60/405 [05:58<33:54,  5.90s/it]
+{'loss': 0.055, 'grad_norm': 0.09410414844751358, 'learning_rate': 0.00019879568983287467, 'epoch': 0.45}
+15%|█▍        | 60/405 [05:58<33:54,  5.90s/it]
+15%|█▌        | 61/405 [06:03<32:35,  5.68s/it]
+15%|█▌        | 62/405 [06:10<34:11,  5.98s/it]
+16%|█▌        | 63/405 [06:15<32:40,  5.73s/it]
+16%|█▌        | 64/405 [06:20<31:18,  5.51s/it]
+16%|█▌        | 65/405 [06:25<30:26,  5.37s/it]
+16%|█▋        | 66/405 [06:31<31:57,  5.66s/it]
+17%|█▋        | 67/405 [06:38<33:21,  5.92s/it]
+17%|█▋        | 68/405 [06:45<35:31,  6.33s/it]
+17%|█▋        | 69/405 [06:51<34:34,  6.17s/it]
+17%|█▋        | 70/405 [06:56<32:20,  5.79s/it]
+{'loss': 0.0546, 'grad_norm': 0.12754321098327637, 'learning_rate': 0.0001970941817426052, 'epoch': 0.52}
+17%|█▋        | 70/405 [06:56<32:20,  5.79s/it]
+18%|█▊        | 71/405 [07:01<30:36,  5.50s/it]
+18%|█▊        | 72/405 [07:07<31:06,  5.61s/it]
+18%|█▊        | 73/405 [07:12<30:16,  5.47s/it]
+18%|█▊        | 74/405 [07:18<31:34,  5.72s/it]
+19%|█▊        | 75/405 [07:24<32:30,  5.91s/it]
+19%|█▉        | 76/405 [07:31<32:50,  5.99s/it]
+19%|█▉        | 77/405 [07:36<31:42,  5.80s/it]
+19%|█▉        | 78/405 [07:43<33:52,  6.22s/it]
+20%|█▉        | 79/405 [07:48<31:36,  5.82s/it]
+20%|█▉        | 80/405 [07:54<31:21,  5.79s/it]
+{'loss': 0.0537, 'grad_norm': 0.11597081273794174, 'learning_rate': 0.0001946698695982806, 'epoch': 0.6}
+20%|█▉        | 80/405 [07:54<31:21,  5.79s/it]
+20%|██        | 81/405 [08:00<32:40,  6.05s/it]
+20%|██        | 82/405 [08:06<31:51,  5.92s/it]
+20%|██        | 83/405 [08:11<30:33,  5.69s/it]
+21%|██        | 84/405 [08:16<29:16,  5.47s/it]
+21%|██        | 85/405 [08:22<30:09,  5.65s/it]
+21%|██        | 86/405 [08:28<31:05,  5.85s/it]
+21%|██▏       | 87/405 [08:34<29:58,  5.66s/it]
+22%|██▏       | 88/405 [08:40<31:20,  5.93s/it]
+22%|██▏       | 89/405 [08:45<29:09,  5.54s/it]
+22%|██▏       | 90/405 [08:52<30:53,  5.88s/it]
+{'loss': 0.0533, 'grad_norm': 0.08990933001041412, 'learning_rate': 0.00019154080085253666, 'epoch': 0.67}
+22%|██▏       | 90/405 [08:52<30:53,  5.88s/it]
+22%|██▏       | 91/405 [08:56<28:37,  5.47s/it]
+23%|██▎       | 92/405 [09:02<29:28,  5.65s/it]
+23%|██▎       | 93/405 [09:07<28:33,  5.49s/it]
+23%|██▎       | 94/405 [09:12<27:36,  5.33s/it]
+23%|██▎       | 95/405 [09:18<28:34,  5.53s/it]
+24%|██▎       | 96/405 [09:25<29:49,  5.79s/it]
+24%|██▍       | 97/405 [09:30<28:38,  5.58s/it]
+24%|██▍       | 98/405 [09:36<29:43,  5.81s/it]
+24%|██▍       | 99/405 [09:42<29:50,  5.85s/it]
+25%|██▍       | 100/405 [09:48<29:33,  5.81s/it]
+{'loss': 0.054, 'grad_norm': 0.10778640955686569, 'learning_rate': 0.0001877302694199442, 'epoch': 0.74}
+25%|██▍       | 100/405 [09:48<29:33,  5.81s/it]
+25%|██▍       | 101/405 [09:54<29:52,  5.90s/it]
+25%|██▌       | 102/405 [10:00<29:35,  5.86s/it]
+25%|██▌       | 103/405 [10:06<30:23,  6.04s/it]
+26%|██▌       | 104/405 [10:11<28:59,  5.78s/it]
+26%|██▌       | 105/405 [10:17<28:30,  5.70s/it]
+26%|██▌       | 106/405 [10:22<27:01,  5.42s/it]
+26%|██▋       | 107/405 [10:27<26:52,  5.41s/it]
+27%|██▋       | 108/405 [10:31<25:36,  5.17s/it]
+27%|██▋       | 109/405 [10:37<25:25,  5.15s/it]
+27%|██▋       | 110/405 [10:42<26:17,  5.35s/it]
+{'loss': 0.0518, 'grad_norm': 0.10526565462350845, 'learning_rate': 0.00018326664226872065, 'epoch': 0.82}
+27%|██▋       | 110/405 [10:42<26:17,  5.35s/it]
+27%|██▋       | 111/405 [10:49<28:06,  5.74s/it]
+28%|██▊       | 112/405 [10:55<27:56,  5.72s/it]
+28%|██▊       | 113/405 [11:01<28:26,  5.85s/it]
+28%|██▊       | 114/405 [11:09<32:22,  6.68s/it]
+28%|██▊       | 115/405 [11:16<32:06,  6.64s/it]
+29%|██▊       | 116/405 [11:22<30:58,  6.43s/it]
+29%|██▉       | 117/405 [11:29<31:46,  6.62s/it]
+29%|██▉       | 118/405 [11:34<29:46,  6.22s/it]
+29%|██▉       | 119/405 [11:40<28:20,  5.95s/it]
+30%|██▉       | 120/405 [11:45<27:17,  5.75s/it]
+{'loss': 0.0514, 'grad_norm': 0.0836913138628006, 'learning_rate': 0.000178183148246803, 'epoch': 0.89}
+30%|██▉       | 120/405 [11:45<27:17,  5.75s/it]
+30%|██▉       | 121/405 [11:51<26:59,  5.70s/it]
+30%|███       | 122/405 [11:57<28:13,  5.98s/it]
+30%|███       | 123/405 [12:02<26:45,  5.69s/it]
+31%|███       | 124/405 [12:09<27:59,  5.98s/it]
+31%|███       | 125/405 [12:15<27:54,  5.98s/it]
+31%|███       | 126/405 [12:20<26:10,  5.63s/it]
+31%|███▏      | 127/405 [12:26<27:02,  5.83s/it]
+32%|███▏      | 128/405 [12:31<25:19,  5.49s/it]
+32%|███▏      | 129/405 [12:36<24:44,  5.38s/it]
+32%|███▏      | 130/405 [12:42<26:31,  5.79s/it]
+{'loss': 0.0554, 'grad_norm': 0.06052055582404137, 'learning_rate': 0.00017251763071433765, 'epoch': 0.97}
+32%|███▏      | 130/405 [12:42<26:31,  5.79s/it]
+32%|███▏      | 131/405 [12:47<25:11,  5.52s/it]
+33%|███▎      | 132/405 [12:52<24:29,  5.38s/it]
+33%|███▎      | 133/405 [12:57<23:31,  5.19s/it]
+33%|███▎      | 134/405 [13:02<23:34,  5.22s/it]
+33%|███▎      | 135/405 [13:03<16:50,  3.74s/it]
+Unsloth: Not an error, but LlamaForCausalLM does not accept `num_items_in_batch`.
+Using gradient accumulation will be very slightly less accurate.
+Read more on gradient accumulation issues here: https://unsloth.ai/blog/gradient
+Unsloth: Not an error, but LlamaForCausalLM does not accept `num_items_in_batch`.
+Using gradient accumulation will be very slightly less accurate.
+Read more on gradient accumulation issues here: https://unsloth.ai/blog/gradient
+0%|          | 0/230 [00:00<?, ?it/s]#033[A
+1%|          | 2/230 [00:00<00:41,  5.56it/s]#033[A
+1%|▏         | 3/230 [00:01<02:01,  1.86it/s]#033[A
+2%|▏         | 4/230 [00:01<01:48,  2.09it/s]#033[A
+2%|▏         | 5/230 [00:02<01:35,  2.37it/s]#033[A
+3%|▎         | 6/230 [00:02<01:23,  2.69it/s]#033[A
+3%|▎         | 7/230 [00:02<01:21,  2.73it/s]#033[A
+3%|▎         | 8/230 [00:03<01:16,  2.90it/s]#033[A
+4%|▍         | 9/230 [00:03<01:19,  2.77it/s]#033[A
+4%|▍         | 10/230 [00:03<01:13,  2.99it/s]#033[A
+5%|▍         | 11/230 [00:04<01:14,  2.93it/s]#033[A
+5%|▌         | 12/230 [00:04<01:09,  3.12it/s]#033[A
+6%|▌         | 13/230 [00:04<01:10,  3.07it/s]#033[A
+6%|▌         | 14/230 [00:04<01:09,  3.13it/s]#033[A
+7%|▋         | 15/230 [00:05<01:07,  3.17it/s]#033[A
+7%|▋         | 16/230 [00:05<01:19,  2.69it/s]#033[A
+7%|▋         | 17/230 [00:06<01:41,  2.10it/s]#033[A
+8%|▊         | 18/230 [00:06<01:29,  2.37it/s]#033[A
+8%|▊         | 19/230 [00:07<01:19,  2.66it/s]#033[A
+9%|▊         | 20/230 [00:07<01:19,  2.64it/s]#033[A
+9%|▉         | 21/230 [00:07<01:17,  2.70it/s]#033[A
+10%|▉         | 22/230 [00:08<01:13,  2.84it/s]#033[A
+10%|█         | 23/230 [00:08<01:25,  2.43it/s]#033[A
+10%|█         | 24/230 [00:08<01:15,  2.74it/s]#033[A
+11%|█         | 25/230 [00:09<01:14,  2.75it/s]#033[A
+11%|█▏        | 26/230 [00:09<01:31,  2.24it/s]#033[A
+12%|█▏        | 27/230 [00:10<01:41,  2.00it/s]#033[A
+12%|█▏        | 28/230 [00:10<01:27,  2.32it/s]#033[A
+13%|█▎        | 29/230 [00:11<01:23,  2.41it/s]#033[A
+13%|█▎        | 30/230 [00:11<01:15,  2.64it/s]#033[A
+13%|█▎        | 31/230 [00:11<01:09,  2.88it/s]#033[A
+14%|█▍        | 32/230 [00:12<01:04,  3.07it/s]#033[A
+14%|█▍        | 33/230 [00:12<01:09,  2.85it/s]#033[A
+15%|█▍        | 34/230 [00:12<01:04,  3.05it/s]#033[A
+15%|█▌        | 35/230 [00:13<01:03,  3.08it/s]#033[A
+16%|█▌        | 36/230 [00:13<01:01,  3.14it/s]#033[A
+16%|█▌        | 37/230 [00:13<01:01,  3.15it/s]#033[A
+17%|█▋        | 38/230 [00:13<00:58,  3.28it/s]#033[A
+17%|█▋        | 39/230 [00:14<01:21,  2.35it/s]#033[A
+17%|█▋        | 40/230 [00:15<01:21,  2.32it/s]#033[A
+18%|█▊        | 41/230 [00:15<01:18,  2.41it/s]#033[A
+18%|█▊        | 42/230 [00:16<01:39,  1.89it/s]#033[A
+19%|█▊        | 43/230 [00:16<01:26,  2.17it/s]#033[A
+19%|█▉        | 44/230 [00:16<01:19,  2.34it/s]#033[A
+20%|█▉        | 45/230 [00:17<01:15,  2.45it/s]#033[A
+20%|██        | 46/230 [00:17<01:09,  2.64it/s]#033[A
+20%|██        | 47/230 [00:17<01:08,  2.68it/s]#033[A
+21%|██        | 48/230 [00:18<01:03,  2.85it/s]#033[A
+21%|██▏       | 49/230 [00:18<01:09,  2.61it/s]#033[A
+22%|██▏       | 50/230 [00:18<01:03,  2.86it/s]#033[A
+22%|██▏       | 51/230 [00:19<00:59,  2.99it/s]#033[A
+23%|██▎       | 52/230 [00:19<00:56,  3.18it/s]#033[A
+23%|██▎       | 53/230 [00:20<01:12,  2.43it/s]#033[A
+23%|██▎       | 54/230 [00:20<01:06,  2.63it/s]#033[A
+24%|██▍       | 55/230 [00:20<01:00,  2.87it/s]#033[A
+24%|██▍       | 56/230 [00:21<01:24,  2.07it/s]#033[A
+25%|██▍       | 57/230 [00:22<01:44,  1.65it/s]#033[A
+25%|██▌       | 58/230 [00:22<01:27,  1.98it/s]#033[A
+26%|██▌       | 59/230 [00:23<01:16,  2.25it/s]#033[A
+26%|██▌       | 60/230 [00:23<01:19,  2.14it/s]#033[A
+27%|██▋       | 61/230 [00:23<01:13,  2.30it/s]#033[A
+27%|██▋       | 62/230 [00:24<01:04,  2.59it/s]#033[A
+27%|██▋       | 63/230 [00:24<00:58,  2.84it/s]#033[A
+28%|██▊       | 64/230 [00:24<00:58,  2.84it/s]#033[A
+28%|██▊       | 65/230 [00:25<00:55,  2.98it/s]#033[A
+29%|██▊       | 66/230 [00:25<00:53,  3.09it/s]#033[A
+29%|██▉       | 67/230 [00:25<00:51,  3.17it/s]#033[A
+30%|██▉       | 68/230 [00:26<00:53,  3.00it/s]#033[A
+30%|███       | 69/230 [00:26<00:56,  2.83it/s]#033[A
+30%|███       | 70/230 [00:26<00:52,  3.03it/s]#033[A
+31%|███       | 71/230 [00:27<00:50,  3.12it/s]#033[A
+31%|███▏      | 72/230 [00:27<00:48,  3.28it/s]#033[A
+32%|███▏      | 73/230 [00:27<00:47,  3.29it/s]#033[A
+32%|███▏      | 74/230 [00:27<00:45,  3.41it/s]#033[A
+33%|███▎      | 75/230 [00:28<00:46,  3.35it/s]#033[A
+33%|███▎      | 76/230 [00:28<00:48,  3.16it/s]#033[A
+33%|███▎      | 77/230 [00:28<00:47,  3.21it/s]#033[A
+34%|███▍      | 78/230 [00:29<00:45,  3.36it/s]#033[A
+34%|███▍      | 79/230 [00:29<00:55,  2.74it/s]#033[A
+35%|███▍      | 80/230 [00:29<00:51,  2.89it/s]#033[A
+35%|███▌      | 81/230 [00:30<00:52,  2.86it/s]#033[A
+36%|███▌      | 82/230 [00:30<00:49,  2.98it/s]#033[A
+36%|███▌      | 83/230 [00:30<00:47,  3.07it/s]#033[A
+37%|███▋      | 84/230 [00:31<01:08,  2.14it/s]#033[A
+37%|███▋      | 85/230 [00:32<01:03,  2.29it/s]#033[A
+37%|███▋      | 86/230 [00:32<00:58,  2.45it/s]#033[A
+38%|███▊      | 87/230 [00:32<00:52,  2.73it/s]#033[A
+38%|███▊      | 88/230 [00:32<00:49,  2.89it/s]#033[A
+39%|███▊      | 89/230 [00:33<00:58,  2.43it/s]#033[A
+39%|███▉      | 90/230 [00:33<00:51,  2.70it/s]#033[A
+40%|███▉      | 91/230 [00:34<00:47,  2.94it/s]#033[A
+40%|████      | 92/230 [00:34<00:46,  2.99it/s]#033[A
+40%|████      | 93/230 [00:34<00:46,  2.94it/s]#033[A
+41%|████      | 94/230 [00:35<00:45,  2.99it/s]#033[A
+41%|████▏     | 95/230 [00:35<00:43,  3.09it/s]#033[A
+42%|████▏     | 96/230 [00:35<00:43,  3.07it/s]#033[A
+42%|████▏     | 97/230 [00:36<00:43,  3.05it/s]#033[A
+43%|████▎     | 98/230 [00:36<01:01,  2.13it/s]#033[A
+43%|████▎     | 99/230 [00:37<00:55,  2.35it/s]#033[A
+43%|████▎     | 100/230 [00:37<01:09,  1.86it/s]#033[A
+44%|████▍     | 101/230 [00:38<01:14,  1.73it/s]#033[A
+44%|████▍     | 102/230 [00:39<01:06,  1.92it/s]#033[A
+45%|████▍     | 103/230 [00:39<00:57,  2.20it/s]#033[A
+45%|████▌     | 104/230 [00:39<00:50,  2.50it/s]#033[A
+46%|████▌     | 105/230 [00:39<00:48,  2.57it/s]#033[A
+46%|████▌     | 106/230 [00:40<00:45,  2.74it/s]#033[A
+47%|████▋     | 107/230 [00:40<00:42,  2.89it/s]#033[A
+47%|████▋     | 108/230 [00:40<00:40,  3.00it/s]#033[A
+47%|████▋     | 109/230 [00:41<00:48,  2.52it/s]#033[A
+48%|████▊     | 110/230 [00:42<00:55,  2.15it/s]#033[A
+48%|████▊     | 111/230 [00:42<00:47,  2.50it/s]#033[A
+49%|████▊     | 112/230 [00:42<00:44,  2.68it/s]#033[A
+49%|████▉     | 113/230 [00:42<00:42,  2.76it/s]#033[A
+50%|████▉     | 114/230 [00:43<00:41,  2.77it/s]#033[A
+50%|█████     | 115/230 [00:43<00:38,  3.00it/s]#033[A
+50%|█████     | 116/230 [00:43<00:36,  3.16it/s]#033[A
+51%|█████     | 117/230 [00:44<00:53,  2.12it/s]#033[A
+51%|█████▏    | 118/230 [00:45<00:55,  2.02it/s]#033[A
+52%|█████▏    | 119/230 [00:45<00:48,  2.29it/s]#033[A
+52%|█████▏    | 120/230 [00:45<00:43,  2.52it/s]#033[A
+53%|█████▎    | 121/230 [00:46<00:44,  2.43it/s]#033[A
+53%|█████▎    | 122/230 [00:46<00:40,  2.65it/s]#033[A
+53%|█████▎    | 123/230 [00:46<00:42,  2.53it/s]#033[A
+54%|█████▍    | 124/230 [00:47<00:38,  2.79it/s]#033[A
+54%|█████▍    | 125/230 [00:47<00:36,  2.88it/s]#033[A
+55%|█████▍    | 126/230 [00:47<00:33,  3.10it/s]#033[A
+55%|█████▌    | 127/230 [00:48<00:31,  3.30it/s]#033[A
+56%|█████▌    | 128/230 [00:48<00:30,  3.39it/s]#033[A
+56%|█████▌    | 129/230 [00:48<00:37,  2.69it/s]#033[A
+57%|█████▋    | 130/230 [00:49<00:34,  2.92it/s]#033[A
+57%|█████▋    | 131/230 [00:49<00:43,  2.27it/s]#033[A
+57%|█████▋    | 132/230 [00:50<00:38,  2.56it/s]#033[A
+58%|█████▊    | 133/230 [00:50<00:37,  2.60it/s]#033[A
+58%|█████▊    | 134/230 [00:50<00:34,  2.79it/s]#033[A
+59%|█████▊    | 135/230 [00:51<00:34,  2.75it/s]#033[A
+59%|█████▉    | 136/230 [00:51<00:31,  2.96it/s]#033[A
+60%|█████▉    | 137/230 [00:51<00:31,  2.96it/s]#033[A
+60%|██████    | 138/230 [00:52<00:30,  3.05it/s]#033[A
+60%|██████    | 139/230 [00:52<00:29,  3.14it/s]#033[A
+61%|██████    | 140/230 [00:52<00:28,  3.19it/s]#033[A
+61%|██████▏   | 141/230 [00:53<00:27,  3.23it/s]#033[A
+62%|██████▏   | 142/230 [00:53<00:27,  3.25it/s]#033[A
+62%|██████▏   | 143/230 [00:53<00:34,  2.52it/s]#033[A
+63%|██████▎   | 144/230 [00:54<00:30,  2.78it/s]#033[A
+63%|██████▎   | 145/230 [00:54<00:31,  2.69it/s]#033[A
+63%|██████▎   | 146/230 [00:54<00:29,  2.86it/s]#033[A
+64%|██████▍   | 147/230 [00:55<00:27,  3.06it/s]#033[A
+64%|██████▍   | 148/230 [00:55<00:26,  3.15it/s]#033[A
+65%|██████▍   | 149/230 [00:55<00:27,  2.90it/s]#033[A
+65%|██████▌   | 150/230 [00:56<00:26,  3.02it/s]#033[A
+66%|██████▌   | 151/230 [00:56<00:27,  2.88it/s]#033[A
+66%|██████▌   | 152/230 [00:56<00:25,  3.00it/s]#033[A
+67%|██████▋   | 153/230 [00:57<00:27,  2.80it/s]#033[A
+67%|██████▋   | 154/230 [00:57<00:26,  2.86it/s]#033[A
+67%|██████▋   | 155/230 [00:57<00:24,  3.10it/s]#033[A
+68%|██████▊   | 156/230 [00:58<00:23,  3.17it/s]#033[A
+68%|██████▊   | 157/230 [00:58<00:24,  2.98it/s]#033[A
+69%|██████▊   | 158/230 [00:58<00:22,  3.16it/s]#033[A
+69%|██████▉   | 159/230 [00:59<00:22,  3.12it/s]#033[A
+70%|██████▉   | 160/230 [00:59<00:22,  3.17it/s]#033[A
+70%|███████   | 161/230 [00:59<00:21,  3.21it/s]#033[A
+70%|███████   | 162/230 [01:00<00:20,  3.35it/s]#033[A
+71%|███████   | 163/230 [01:00<00:20,  3.32it/s]#033[A
+71%|███████▏  | 164/230 [01:00<00:19,  3.32it/s]#033[A
+72%|███████▏  | 165/230 [01:00<00:20,  3.24it/s]#033[A
+72%|███████▏  | 166/230 [01:01<00:20,  3.20it/s]#033[A
+73%|███████▎  | 167/230 [01:01<00:19,  3.24it/s]#033[A
+73%|███████▎  | 168/230 [01:02<00:21,  2.85it/s]#033[A
+73%|███████▎  | 169/230 [01:02<00:21,  2.77it/s]#033[A
+74%|███████▍  | 170/230 [01:02<00:19,  3.01it/s]#033[A
+74%|███████▍  | 171/230 [01:03<00:27,  2.12it/s]#033[A
+75%|███████▍  | 172/230 [01:03<00:24,  2.38it/s]#033[A
+75%|███████▌  | 173/230 [01:04<00:25,  2.27it/s]#033[A
+76%|███████▌  | 174/230 [01:04<00:22,  2.52it/s]#033[A
+76%|███████▌  | 175/230 [01:04<00:20,  2.72it/s]#033[A
+77%|███████▋  | 176/230 [01:05<00:18,  2.88it/s]#033[A
+77%|███████▋  | 177/230 [01:05<00:26,  2.01it/s]#033[A
+77%|███████▋  | 178/230 [01:06<00:25,  2.07it/s]#033[A
+78%|███████▊  | 179/230 [01:06<00:21,  2.39it/s]#033[A
+78%|███████▊  | 180/230 [01:06<00:18,  2.67it/s]#033[A
+79%|███████▊  | 181/230 [01:07<00:19,  2.56it/s]#033[A
+79%|███████▉  | 182/230 [01:07<00:18,  2.56it/s]#033[A
+80%|███████▉  | 183/230 [01:08<00:16,  2.83it/s]#033[A
+80%|████████  | 184/230 [01:08<00:15,  3.04it/s]#033[A
+80%|████████  | 185/230 [01:08<00:14,  3.01it/s]#033[A
+81%|████████  | 186/230 [01:08<00:13,  3.19it/s]#033[A
+81%|████████▏ | 187/230 [01:09<00:12,  3.32it/s]#033[A
+82%|████████▏ | 188/230 [01:09<00:12,  3.41it/s]#033[A
+82%|████████▏ | 189/230 [01:09<00:12,  3.40it/s]#033[A
+83%|████████▎ | 190/230 [01:10<00:11,  3.39it/s]#033[A
+83%|████████▎ | 191/230 [01:10<00:12,  3.14it/s]#033[A
+83%|████████▎ | 192/230 [01:10<00:12,  3.07it/s]#033[A
+84%|████████▍ | 193/230 [01:11<00:12,  3.04it/s]#033[A
+84%|████████▍ | 194/230 [01:11<00:11,  3.20it/s]#033[A
+85%|████████▍ | 195/230 [01:11<00:10,  3.35it/s]#033[A
+85%|████████▌ | 196/230 [01:12<00:10,  3.10it/s]#033[A
+86%|████████▌ | 197/230 [01:12<00:10,  3.04it/s]#033[A
+86%|████████▌ | 198/230 [01:12<00:09,  3.20it/s]#033[A
+87%|████████▋ | 199/230 [01:13<00:14,  2.18it/s]#033[A
+87%|████████▋ | 200/230 [01:13<00:11,  2.52it/s]#033[A
+87%|████████▋ | 201/230 [01:14<00:11,  2.60it/s]#033[A
+88%|████████▊ | 202/230 [01:14<00:09,  2.87it/s]#033[A
+88%|████████▊ | 203/230 [01:14<00:10,  2.63it/s]#033[A
+89%|████████▊ | 204/230 [01:15<00:09,  2.81it/s]#033[A
+89%|████████▉ | 205/230 [01:15<00:11,  2.26it/s]#033[A
+90%|████████▉ | 206/230 [01:16<00:13,  1.82it/s]#033[A
+90%|█████████ | 207/230 [01:16<00:10,  2.15it/s]#033[A
+90%|█████████ | 208/230 [01:17<00:09,  2.27it/s]#033[A
+91%|█████████ | 209/230 [01:17<00:08,  2.40it/s]#033[A
+91%|█████████▏| 210/230 [01:17<00:07,  2.67it/s]#033[A
+92%|█████████▏| 211/230 [01:18<00:07,  2.63it/s]#033[A
+92%|█████████▏| 212/230 [01:18<00:06,  2.87it/s]#033[A
+93%|█████████▎| 213/230 [01:18<00:05,  2.88it/s]#033[A
+93%|█████████▎| 214/230 [01:19<00:07,  2.21it/s]#033[A
+93%|█████████▎| 215/230 [01:19<00:06,  2.46it/s]#033[A
+94%|█████████▍| 216/230 [01:20<00:05,  2.67it/s]#033[A
+94%|█████████▍| 217/230 [01:20<00:04,  2.72it/s]#033[A
+95%|█████████▍| 218/230 [01:20<00:04,  2.96it/s]#033[A
+95%|█████████▌| 219/230 [01:21<00:03,  3.14it/s]#033[A
+96%|█████████▌| 220/230 [01:21<00:03,  3.29it/s]#033[A
+96%|█████████▌| 221/230 [01:21<00:02,  3.06it/s]#033[A
+97%|█████████▋| 222/230 [01:21<00:02,  3.20it/s]#033[A
+97%|█████████▋| 223/230 [01:22<00:03,  2.18it/s]#033[A
+97%|█████████▋| 224/230 [01:23<00:02,  2.49it/s]#033[A
+98%|█████████▊| 225/230 [01:23<00:02,  2.34it/s]#033[A
+98%|█████████▊| 226/230 [01:23<00:01,  2.34it/s]#033[A
+99%|█████████▊| 227/230 [01:24<00:01,  2.56it/s]#033[A
+99%|█████████▉| 228/230 [01:24<00:00,  2.82it/s]#033[A
+100%|█████████▉| 229/230 [01:24<00:00,  2.92it/s]#033[A
+100%|██████████| 230/230 [01:25<00:00,  3.22it/s]#033[A
+#033[A
+{'eval_loss': 0.053364746272563934, 'eval_runtime': 86.4214, 'eval_samples_per_second': 21.268, 'eval_steps_per_second': 2.661, 'epoch': 1.0}
+33%|███▎      | 135/405 [14:29<16:50,  3.74s/it]
+100%|██████████| 230/230 [01:25<00:00,  3.22it/s]#033[A
+#033[A
+34%|███▎      | 136/405 [14:35<2:15:34, 30.24s/it]
+34%|███▍      | 137/405 [14:41<1:42:47, 23.01s/it]
+34%|███▍      | 138/405 [14:47<1:19:04, 17.77s/it]
+34%|███▍      | 139/405 [14:53<1:03:55, 14.42s/it]
+35%|███▍      | 140/405 [14:59<52:26, 11.87s/it]
+{'loss': 0.0515, 'grad_norm': 0.0901617780327797, 'learning_rate': 0.00016631226582407952, 'epoch': 1.04}
+35%|███▍      | 140/405 [14:59<52:26, 11.87s/it]
+35%|███▍      | 141/405 [15:04<43:19,  9.85s/it]
+35%|███▌      | 142/405 [15:11<38:50,  8.86s/it]
+35%|███▌      | 143/405 [15:16<33:36,  7.70s/it]
+36%|███▌      | 144/405 [15:22<31:36,  7.27s/it]
+36%|███▌      | 145/405 [15:28<29:39,  6.84s/it]
+36%|███▌      | 146/405 [15:35<29:53,  6.92s/it]
+36%|███▋      | 147/405 [15:40<28:00,  6.51s/it]
+37%|███▋      | 148/405 [15:46<26:46,  6.25s/it]
+37%|███▋      | 149/405 [15:51<25:24,  5.95s/it]
+37%|███▋      | 150/405 [15:57<24:34,  5.78s/it]
+{'loss': 0.0525, 'grad_norm': 0.091131292283535, 'learning_rate': 0.00015961324854692254, 'epoch': 1.11}
+37%|███▋      | 150/405 [15:57<24:34,  5.78s/it]
+37%|███▋      | 151/405 [16:03<24:25,  5.77s/it]
+38%|███▊      | 152/405 [16:08<24:25,  5.79s/it]
+38%|███▊      | 153/405 [16:14<23:31,  5.60s/it]
+38%|███▊      | 154/405 [16:20<24:48,  5.93s/it]
+38%|███▊      | 155/405 [16:26<24:15,  5.82s/it]
+39%|███▊      | 156/405 [16:31<23:26,  5.65s/it]
+39%|███▉      | 157/405 [16:37<23:36,  5.71s/it]
+39%|███▉      | 158/405 [16:42<22:42,  5.52s/it]
+39%|███▉      | 159/405 [16:47<22:18,  5.44s/it]
+40%|███▉      | 160/405 [16:53<22:51,  5.60s/it]
+{'loss': 0.054, 'grad_norm': 0.08617641776800156, 'learning_rate': 0.0001524704487799008, 'epoch': 1.19}
+40%|███▉      | 160/405 [16:53<22:51,  5.60s/it]
+40%|███▉      | 161/405 [16:59<22:51,  5.62s/it]
+40%|████      | 162/405 [17:05<23:05,  5.70s/it]
+40%|████      | 163/405 [17:10<22:35,  5.60s/it]
+40%|████      | 164/405 [17:16<23:00,  5.73s/it]
+41%|████      | 165/405 [17:22<23:10,  5.79s/it]
+41%|████      | 166/405 [17:28<23:11,  5.82s/it]
+41%|████      | 167/405 [17:36<25:24,  6.41s/it]
+41%|████▏     | 168/405 [17:41<24:20,  6.16s/it]
+42%|████▏     | 169/405 [17:46<22:50,  5.81s/it]
+42%|████▏     | 170/405 [17:52<22:55,  5.85s/it]
+{'loss': 0.0512, 'grad_norm': 0.12261085212230682, 'learning_rate': 0.00014493704009671613, 'epoch': 1.26}
+42%|████▏     | 170/405 [17:52<22:55,  5.85s/it]
+42%|████▏     | 171/405 [17:58<22:43,  5.83s/it]
+42%|████▏     | 172/405 [18:03<22:01,  5.67s/it]
+43%|████▎     | 173/405 [18:09<21:54,  5.67s/it]
+43%|████▎     | 174/405 [18:16<22:58,  5.97s/it]
+43%|████▎     | 175/405 [18:21<22:05,  5.76s/it]
+43%|████▎     | 176/405 [18:27<22:49,  5.98s/it]
+44%|████▎     | 177/405 [18:33<21:52,  5.76s/it]
+44%|████▍     | 178/405 [18:37<20:38,  5.46s/it]
+44%|████▍     | 179/405 [18:42<20:00,  5.31s/it]
+44%|████▍     | 180/405 [18:47<19:38,  5.24s/it]
+{'loss': 0.0497, 'grad_norm': 0.10794287174940109, 'learning_rate': 0.00013706910390450677, 'epoch': 1.34}
+44%|████▍     | 180/405 [18:47<19:38,  5.24s/it]
+45%|████▍     | 181/405 [18:53<19:30,  5.22s/it]
+45%|████▍     | 182/405 [18:58<20:03,  5.40s/it]
+45%|████▌     | 183/405 [19:05<20:43,  5.60s/it]
+45%|████▌     | 184/405 [19:10<20:23,  5.54s/it]
+46%|████▌     | 185/405 [19:16<20:22,  5.56s/it]
+46%|████▌     | 186/405 [19:21<20:18,  5.56s/it]
+46%|████▌     | 187/405 [19:28<21:07,  5.81s/it]
+46%|████▋     | 188/405 [19:34<21:25,  5.93s/it]
+47%|████▋     | 189/405 [19:39<20:54,  5.81s/it]
+47%|████▋     | 190/405 [19:44<20:06,  5.61s/it]
+{'loss': 0.05, 'grad_norm': 0.07522640377283096, 'learning_rate': 0.00012892521195365678, 'epoch': 1.41}
+47%|████▋     | 190/405 [19:44<20:06,  5.61s/it]
+47%|████▋     | 191/405 [19:51<20:57,  5.87s/it]
+47%|████▋     | 192/405 [19:57<21:11,  5.97s/it]
+48%|████▊     | 193/405 [20:03<20:40,  5.85s/it]
+48%|████▊     | 194/405 [20:09<20:51,  5.93s/it]
+48%|████▊     | 195/405 [20:14<19:45,  5.64s/it]
+48%|████▊     | 196/405 [20:19<19:37,  5.64s/it]
+49%|████▊     | 197/405 [20:26<20:53,  6.03s/it]
+49%|████▉     | 198/405 [20:32<20:15,  5.87s/it]
+49%|████▉     | 199/405 [20:37<19:04,  5.56s/it]
+49%|████▉     | 200/405 [20:43<19:23,  5.68s/it]
+{'loss': 0.0516, 'grad_norm': 0.09397035092115402, 'learning_rate': 0.00012056599030859366, 'epoch': 1.48}
+49%|████▉     | 200/405 [20:43<19:23,  5.68s/it]
+50%|████▉     | 201/405 [20:49<20:24,  6.00s/it]
+50%|████▉     | 202/405 [20:55<20:02,  5.92s/it]
+50%|█████     | 203/405 [21:02<20:46,  6.17s/it]
+50%|█████     | 204/405 [21:07<19:14,  5.75s/it]
+51%|█████     | 205/405 [21:12<18:31,  5.56s/it]
+51%|█████     | 206/405 [21:17<17:57,  5.41s/it]
+51%|█████     | 207/405 [21:23<18:20,  5.56s/it]
+51%|█████▏    | 208/405 [21:29<18:56,  5.77s/it]
+52%|█████▏    | 209/405 [21:35<18:43,  5.73s/it]
+52%|█████▏    | 210/405 [21:40<18:20,  5.64s/it]
+{'loss': 0.0484, 'grad_norm': 0.11914842575788498, 'learning_rate': 0.0001120536680255323, 'epoch': 1.56}
+52%|█████▏    | 210/405 [21:40<18:20,  5.64s/it]
+52%|█████▏    | 211/405 [21:47<19:54,  6.16s/it]
+52%|█████▏    | 212/405 [21:53<18:56,  5.89s/it]
+53%|█████▎    | 213/405 [21:58<18:06,  5.66s/it]
+53%|█████▎    | 214/405 [22:04<18:14,  5.73s/it]
+53%|█████▎    | 215/405 [22:10<18:29,  5.84s/it]
+53%|█████▎    | 216/405 [22:15<18:06,  5.75s/it]
+54%|█████▎    | 217/405 [22:20<17:24,  5.56s/it]
+54%|█████▍    | 218/405 [22:26<17:24,  5.59s/it]
+54%|█████▍    | 219/405 [22:31<17:06,  5.52s/it]
+54%|█████▍    | 220/405 [22:37<17:00,  5.52s/it]
+{'loss': 0.0525, 'grad_norm': 0.12998779118061066, 'learning_rate': 0.00010345161389697082, 'epoch': 1.63}
+54%|█████▍    | 220/405 [22:37<17:00,  5.52s/it]
+55%|█████▍    | 221/405 [22:42<16:27,  5.37s/it]
+55%|█████▍    | 222/405 [22:48<16:55,  5.55s/it]
+55%|█████▌    | 223/405 [22:54<16:59,  5.60s/it]
+55%|█████▌    | 224/405 [22:59<17:00,  5.64s/it]
+56%|█████▌    | 225/405 [23:07<18:51,  6.29s/it]
+56%|█████▌    | 226/405 [23:12<17:47,  5.97s/it]
+56%|█████▌    | 227/405 [23:17<16:25,  5.54s/it]
+56%|█████▋    | 228/405 [23:23<17:07,  5.81s/it]
+57%|█████▋    | 229/405 [23:28<16:17,  5.56s/it]
+57%|█████▋    | 230/405 [23:33<15:46,  5.41s/it]
+{'loss': 0.0501, 'grad_norm': 0.09769029915332794, 'learning_rate': 9.482386471157904e-05, 'epoch': 1.71}
+57%|█████▋    | 230/405 [23:33<15:46,  5.41s/it]
+57%|█████▋    | 231/405 [23:39<16:11,  5.58s/it]
+57%|█████▋    | 232/405 [23:45<15:50,  5.50s/it]
+58%|█████▊    | 233/405 [23:50<15:24,  5.37s/it]
+58%|█████▊    | 234/405 [23:56<15:39,  5.50s/it]
+58%|█████▊    | 235/405 [24:03<17:02,  6.01s/it]
+58%|█████▊    | 236/405 [24:09<16:46,  5.95s/it]
+59%|█████▊    | 237/405 [24:14<15:55,  5.69s/it]
+59%|█████▉    | 238/405 [24:19<15:57,  5.74s/it]
+59%|█████▉    | 239/405 [24:25<15:24,  5.57s/it]
+59%|█████▉    | 240/405 [24:30<14:43,  5.36s/it]
+{'loss': 0.0489, 'grad_norm': 0.09091878682374954, 'learning_rate': 8.62346485412832e-05, 'epoch': 1.78}
+59%|█████▉    | 240/405 [24:30<14:43,  5.36s/it]
+60%|█████▉    | 241/405 [24:36<15:58,  5.84s/it]
+60%|█████▉    | 242/405 [24:43<16:02,  5.91s/it]
+60%|██████    | 243/405 [24:48<15:54,  5.89s/it]
+60%|██████    | 244/405 [24:54<15:25,  5.75s/it]
+60%|██████    | 245/405 [25:00<15:36,  5.85s/it]
+61%|██████    | 246/405 [25:06<16:01,  6.05s/it]
+61%|██████    | 247/405 [25:12<15:52,  6.03s/it]
+61%|██████    | 248/405 [25:19<16:16,  6.22s/it]
+61%|██████▏   | 249/405 [25:25<16:02,  6.17s/it]
+62%|██████▏   | 250/405 [25:31<15:38,  6.05s/it]
+{'loss': 0.048, 'grad_norm': 0.10356387495994568, 'learning_rate': 7.774790660436858e-05, 'epoch': 1.86}
+62%|██████▏   | 250/405 [25:31<15:38,  6.05s/it]
+62%|██████▏   | 251/405 [25:36<14:42,  5.73s/it]
+62%|██████▏   | 252/405 [25:42<14:40,  5.75s/it]
+62%|██████▏   | 253/405 [25:47<13:55,  5.50s/it]
+63%|██████▎   | 254/405 [25:52<14:07,  5.61s/it]
+63%|██████▎   | 255/405 [25:58<14:13,  5.69s/it]
+63%|██████▎   | 256/405 [26:05<15:04,  6.07s/it]
+63%|██████▎   | 257/405 [26:11<14:21,  5.82s/it]
+64%|██████▎   | 258/405 [26:17<14:33,  5.94s/it]
+64%|██████▍   | 259/405 [26:22<13:47,  5.67s/it]
+64%|██████▍   | 260/405 [26:28<13:47,  5.71s/it]
+{'loss': 0.0479, 'grad_norm': 0.09278377890586853, 'learning_rate': 6.942681726402473e-05, 'epoch': 1.93}
+64%|██████▍   | 260/405 [26:28<13:47,  5.71s/it]
+64%|██████▍   | 261/405 [26:33<13:27,  5.61s/it]
+65%|██████▍   | 262/405 [26:38<13:13,  5.55s/it]
+65%|██████▍   | 263/405 [26:43<12:35,  5.32s/it]
+65%|██████▌   | 264/405 [26:50<13:15,  5.64s/it]
+65%|██████▌   | 265/405 [26:54<12:25,  5.32s/it]
+66%|██████▌   | 266/405 [27:00<12:34,  5.43s/it]
+66%|██████▌   | 267/405 [27:07<13:33,  5.89s/it]
+66%|██████▌   | 268/405 [27:13<13:22,  5.86s/it]
+66%|██████▋   | 269/405 [27:19<13:40,  6.03s/it]
+67%|██████▋   | 270/405 [27:19<09:41,  4.30s/it]
+{'loss': 0.0518, 'grad_norm': 0.4963057339191437, 'learning_rate': 6.133332570585812e-05, 'epoch': 2.0}
+67%|██████▋   | 270/405 [27:19<09:41,  4.30s/it]
+0%|          | 0/230 [00:00<?, ?it/s]#033[A
+1%|          | 2/230 [00:00<00:40,  5.57it/s]#033[A
+1%|▏         | 3/230 [00:00<00:51,  4.38it/s]#033[A
+2%|▏         | 4/230 [00:01<01:04,  3.51it/s]#033[A
+2%|▏         | 5/230 [00:01<01:06,  3.38it/s]#033[A
+3%|▎         | 6/230 [00:01<01:04,  3.48it/s]#033[A
+3%|▎         | 7/230 [00:01<01:08,  3.24it/s]#033[A
+3%|▎         | 8/230 [00:02<01:07,  3.27it/s]#033[A
+4%|▍         | 9/230 [00:02<01:13,  3.00it/s]#033[A
+4%|▍         | 10/230 [00:02<01:09,  3.17it/s]#033[A
+5%|▍         | 11/230 [00:03<01:11,  3.05it/s]#033[A
+5%|▌         | 12/230 [00:03<01:07,  3.21it/s]#033[A
+6%|▌         | 13/230 [00:03<01:09,  3.13it/s]#033[A
+6%|▌         | 14/230 [00:04<01:08,  3.17it/s]#033[A
+7%|▋         | 15/230 [00:04<01:07,  3.21it/s]#033[A
+7%|▋         | 16/230 [00:05<01:19,  2.70it/s]#033[A
+7%|▋         | 17/230 [00:05<01:41,  2.11it/s]#033[A
+8%|▊         | 18/230 [00:06<01:29,  2.37it/s]#033[A
+8%|▊         | 19/230 [00:06<01:19,  2.67it/s]#033[A
+9%|▊         | 20/230 [00:06<01:19,  2.64it/s]#033[A
+9%|▉         | 21/230 [00:07<01:17,  2.71it/s]#033[A
+10%|▉         | 22/230 [00:07<01:13,  2.85it/s]#033[A
+10%|█         | 23/230 [00:07<01:25,  2.43it/s]#033[A
+10%|█         | 24/230 [00:08<01:15,  2.74it/s]#033[A
+11%|█         | 25/230 [00:08<01:14,  2.75it/s]#033[A
+11%|█▏        | 26/230 [00:09<01:31,  2.24it/s]#033[A
+12%|█▏        | 27/230 [00:09<01:41,  2.00it/s]#033[A
+12%|█▏        | 28/230 [00:10<01:27,  2.32it/s]#033[A
+13%|█▎        | 29/230 [00:10<01:23,  2.41it/s]#033[A
+13%|█▎        | 30/230 [00:10<01:15,  2.64it/s]#033[A
+13%|█▎        | 31/230 [00:11<01:09,  2.88it/s]#033[A
+14%|█▍        | 32/230 [00:11<01:04,  3.07it/s]#033[A
+14%|█▍        | 33/230 [00:11<01:09,  2.85it/s]#033[A
+15%|█▍        | 34/230 [00:11<01:04,  3.05it/s]#033[A
+15%|█▌        | 35/230 [00:12<01:03,  3.08it/s]#033[A
+16%|█▌        | 36/230 [00:12<01:01,  3.14it/s]#033[A
+16%|█▌        | 37/230 [00:12<01:01,  3.15it/s]#033[A
+17%|█▋        | 38/230 [00:13<00:58,  3.28it/s]#033[A
+17%|█▋        | 39/230 [00:13<01:21,  2.35it/s]#033[A
+17%|█▋        | 40/230 [00:14<01:21,  2.32it/s]#033[A
+18%|█▊        | 41/230 [00:14<01:18,  2.41it/s]#033[A
+18%|█▊        | 42/230 [00:15<01:39,  1.89it/s]#033[A
+19%|█▊        | 43/230 [00:15<01:26,  2.17it/s]#033[A
+19%|█▉        | 44/230 [00:16<01:19,  2.34it/s]#033[A
+20%|█▉        | 45/230 [00:16<01:15,  2.45it/s]#033[A
+20%|██        | 46/230 [00:16<01:09,  2.64it/s]#033[A
+20%|██        | 47/230 [00:17<01:08,  2.68it/s]#033[A
+21%|██        | 48/230 [00:17<01:03,  2.85it/s]#033[A
+21%|██▏       | 49/230 [00:17<01:09,  2.61it/s]#033[A
+22%|██▏       | 50/230 [00:18<01:03,  2.86it/s]#033[A
+22%|██▏       | 51/230 [00:18<00:59,  2.99it/s]#033[A
+23%|██▎       | 52/230 [00:18<00:56,  3.18it/s]#033[A
+23%|██▎       | 53/230 [00:19<01:12,  2.43it/s]#033[A
+23%|██▎       | 54/230 [00:19<01:06,  2.63it/s]#033[A
+24%|██▍       | 55/230 [00:19<01:00,  2.87it/s]#033[A
+24%|██▍       | 56/230 [00:20<01:24,  2.07it/s]#033[A
+25%|██▍       | 57/230 [00:21<01:44,  1.65it/s]#033[A
+25%|██▌       | 58/230 [00:21<01:26,  1.98it/s]#033[A
+26%|██▌       | 59/230 [00:22<01:16,  2.25it/s]#033[A
+26%|██▌       | 60/230 [00:22<01:19,  2.14it/s]#033[A
+27%|██▋       | 61/230 [00:23<01:13,  2.30it/s]#033[A
+27%|██▋       | 62/230 [00:23<01:04,  2.59it/s]#033[A
+27%|██▋       | 63/230 [00:23<00:58,  2.84it/s]#033[A
+28%|██▊       | 64/230 [00:24<00:58,  2.84it/s]#033[A
+28%|██▊       | 65/230 [00:24<00:55,  2.98it/s]#033[A
+29%|██▊       | 66/230 [00:24<00:53,  3.09it/s]#033[A
+29%|██▉       | 67/230 [00:24<00:51,  3.17it/s]#033[A
+30%|██▉       | 68/230 [00:25<00:53,  3.00it/s]#033[A
+30%|███       | 69/230 [00:25<00:56,  2.83it/s]#033[A
+30%|███       | 70/230 [00:25<00:52,  3.03it/s]#033[A
+31%|███       | 71/230 [00:26<00:50,  3.12it/s]#033[A
+31%|███▏      | 72/230 [00:26<00:48,  3.28it/s]#033[A
+32%|███▏      | 73/230 [00:26<00:47,  3.29it/s]#033[A
+32%|███▏      | 74/230 [00:27<00:45,  3.41it/s]#033[A
+33%|███▎      | 75/230 [00:27<00:46,  3.35it/s]#033[A
+33%|███▎      | 76/230 [00:27<00:48,  3.16it/s]#033[A
+33%|███▎      | 77/230 [00:28<00:47,  3.21it/s]#033[A
+34%|███▍      | 78/230 [00:28<00:45,  3.36it/s]#033[A
+34%|███▍      | 79/230 [00:28<00:55,  2.74it/s]#033[A
+35%|███▍      | 80/230 [00:29<00:51,  2.89it/s]#033[A
+35%|███▌      | 81/230 [00:29<00:52,  2.86it/s]#033[A
+36%|███▌      | 82/230 [00:29<00:49,  2.98it/s]#033[A
+36%|███▌      | 83/230 [00:30<00:47,  3.07it/s]#033[A
+37%|███▋      | 84/230 [00:30<01:08,  2.14it/s]#033[A
+37%|███▋      | 85/230 [00:31<01:03,  2.29it/s]#033[A
+37%|███▋      | 86/230 [00:31<00:58,  2.45it/s]#033[A
+38%|███▊      | 87/230 [00:31<00:52,  2.73it/s]#033[A
+38%|███▊      | 88/230 [00:32<00:49,  2.89it/s]#033[A
+39%|███▊      | 89/230 [00:32<00:58,  2.43it/s]#033[A
+39%|███▉      | 90/230 [00:33<00:51,  2.70it/s]#033[A
+40%|███▉      | 91/230 [00:33<00:47,  2.93it/s]#033[A
+40%|████      | 92/230 [00:33<00:46,  2.99it/s]#033[A
+40%|████      | 93/230 [00:33<00:46,  2.94it/s]#033[A
+41%|████      | 94/230 [00:34<00:45,  2.99it/s]#033[A
+41%|████▏     | 95/230 [00:34<00:43,  3.09it/s]#033[A
+42%|████▏     | 96/230 [00:34<00:43,  3.07it/s]#033[A
+42%|████▏     | 97/230 [00:35<00:43,  3.05it/s]#033[A
+43%|████▎     | 98/230 [00:36<01:01,  2.13it/s]#033[A
+43%|████▎     | 99/230 [00:36<00:55,  2.35it/s]#033[A
+43%|████▎     | 100/230 [00:37<01:09,  1.86it/s]#033[A
+44%|████▍     | 101/230 [00:37<01:14,  1.73it/s]#033[A
+44%|████▍     | 102/230 [00:38<01:06,  1.92it/s]#033[A
+45%|████▍     | 103/230 [00:38<00:57,  2.21it/s]#033[A
+45%|████▌     | 104/230 [00:38<00:50,  2.51it/s]#033[A
+46%|████▌     | 105/230 [00:39<00:48,  2.57it/s]#033[A
+46%|████▌     | 106/230 [00:39<00:45,  2.74it/s]#033[A
+47%|████▋     | 107/230 [00:39<00:42,  2.89it/s]#033[A
+47%|████▋     | 108/230 [00:40<00:40,  3.00it/s]#033[A
+47%|████▋     | 109/230 [00:40<00:48,  2.52it/s]#033[A
+48%|████▊     | 110/230 [00:41<00:55,  2.15it/s]#033[A
+48%|████▊     | 111/230 [00:41<00:47,  2.50it/s]#033[A
+49%|████▊     | 112/230 [00:41<00:44,  2.68it/s]#033[A
+49%|████▉     | 113/230 [00:42<00:42,  2.76it/s]#033[A
+50%|████▉     | 114/230 [00:42<00:41,  2.77it/s]#033[A
+50%|█████     | 115/230 [00:42<00:38,  3.00it/s]#033[A
+50%|█████     | 116/230 [00:43<00:36,  3.17it/s]#033[A
+51%|█████     | 117/230 [00:43<00:53,  2.12it/s]#033[A
+51%|█████▏    | 118/230 [00:44<00:55,  2.02it/s]#033[A
+52%|█████▏    | 119/230 [00:44<00:48,  2.29it/s]#033[A
+52%|█████▏    | 120/230 [00:45<00:43,  2.53it/s]#033[A
+53%|█████▎    | 121/230 [00:45<00:44,  2.43it/s]#033[A
+53%|█████▎    | 122/230 [00:45<00:40,  2.65it/s]#033[A
+53%|█████▎    | 123/230 [00:46<00:42,  2.53it/s]#033[A
+54%|█████▍    | 124/230 [00:46<00:38,  2.79it/s]#033[A
+54%|█████▍    | 125/230 [00:46<00:36,  2.88it/s]#033[A
+55%|█████▍    | 126/230 [00:47<00:33,  3.10it/s]#033[A
+55%|█████▌    | 127/230 [00:47<00:31,  3.30it/s]#033[A
+56%|█████▌    | 128/230 [00:47<00:30,  3.39it/s]#033[A
+56%|█████▌    | 129/230 [00:48<00:37,  2.69it/s]#033[A
+57%|█████▋    | 130/230 [00:48<00:34,  2.92it/s]#033[A
+57%|█████▋    | 131/230 [00:49<00:43,  2.27it/s]#033[A
+57%|█████▋    | 132/230 [00:49<00:38,  2.56it/s]#033[A
+58%|█████▊    | 133/230 [00:49<00:37,  2.60it/s]#033[A
+58%|█████▊    | 134/230 [00:50<00:34,  2.79it/s]#033[A
+59%|█████▊    | 135/230 [00:50<00:34,  2.75it/s]#033[A
+59%|█████▉    | 136/230 [00:50<00:31,  2.96it/s]#033[A
+60%|█████▉    | 137/230 [00:51<00:31,  2.96it/s]#033[A
+60%|██████    | 138/230 [00:51<00:30,  3.05it/s]#033[A
+60%|██████    | 139/230 [00:51<00:29,  3.14it/s]#033[A
+61%|██████    | 140/230 [00:51<00:28,  3.19it/s]#033[A
+61%|██████▏   | 141/230 [00:52<00:27,  3.22it/s]#033[A
+62%|██████▏   | 142/230 [00:52<00:27,  3.25it/s]#033[A
+62%|██████▏   | 143/230 [00:53<00:34,  2.52it/s]#033[A
+63%|██████▎   | 144/230 [00:53<00:30,  2.78it/s]#033[A
+63%|██████▎   | 145/230 [00:53<00:31,  2.69it/s]
+#033[A
+63%|██████▎   | 146/230 [00:54<00:29,  2.86it/s]#033[A
+64%|██████▍   | 147/230 [00:54<00:27,  3.06it/s]#033[A
+64%|██████▍   | 148/230 [00:54<00:26,  3.15it/s]#033[A
+65%|██████▍   | 149/230 [00:55<00:27,  2.90it/s]#033[A
+65%|██████▌   | 150/230 [00:55<00:26,  3.02it/s]#033[A
+66%|██████▌   | 151/230 [00:55<00:27,  2.88it/s]#033[A
+66%|██████▌   | 152/230 [00:56<00:25,  3.00it/s]#033[A
+67%|██████▋   | 153/230 [00:56<00:27,  2.80it/s]#033[A
+67%|██████▋   | 154/230 [00:56<00:26,  2.86it/s]#033[A
+67%|██████▋   | 155/230 [00:57<00:24,  3.10it/s]#033[A
+68%|██████▊   | 156/230 [00:57<00:23,  3.17it/s]#033[A
+68%|██████▊   | 157/230 [00:57<00:24,  2.99it/s]#033[A
+69%|██████▊   | 158/230 [00:58<00:22,  3.16it/s]#033[A
+69%|██████▉   | 159/230 [00:58<00:22,  3.12it/s]#033[A
+70%|██████▉   | 160/230 [00:58<00:22,  3.18it/s]#033[A
+70%|███████   | 161/230 [00:58<00:21,  3.21it/s]#033[A
+70%|███████   | 162/230 [00:59<00:20,  3.35it/s]#033[A
+71%|███████   | 163/230 [00:59<00:20,  3.32it/s]#033[A
+71%|███████▏  | 164/230 [00:59<00:19,  3.32it/s]#033[A
+72%|███████▏  | 165/230 [01:00<00:20,  3.24it/s]#033[A
+72%|███████▏  | 166/230 [01:00<00:20,  3.20it/s]#033[A
+73%|███████▎  | 167/230 [01:00<00:19,  3.24it/s]#033[A
+73%|███████▎  | 168/230 [01:01<00:21,  2.85it/s]#033[A
+73%|███████▎  | 169/230 [01:01<00:21,  2.77it/s]#033[A
+74%|███████▍  | 170/230 [01:01<00:19,  3.01it/s]#033[A
+74%|███████▍  | 171/230 [01:02<00:27,  2.12it/s]#033[A
+75%|███████▍  | 172/230 [01:03<00:24,  2.38it/s]#033[A
+75%|███████▌  | 173/230 [01:03<00:25,  2.27it/s]#033[A
+76%|███████▌  | 174/230 [01:03<00:22,  2.52it/s]#033[A
+76%|███████▌  | 175/230 [01:04<00:20,  2.72it/s]#033[A
+77%|███████▋  | 176/230 [01:04<00:18,  2.88it/s]#033[A
+77%|███████▋  | 177/230 [01:05<00:26,  2.01it/s]#033[A
+77%|███████▋  | 178/230 [01:05<00:25,  2.07it/s]#033[A
+78%|███████▊  | 179/230 [01:05<00:21,  2.39it/s]#033[A
+78%|███████▊  | 180/230 [01:06<00:18,  2.67it/s]#033[A
+79%|███████▊  | 181/230 [01:06<00:19,  2.56it/s]#033[A
+79%|███████▉  | 182/230 [01:07<00:18,  2.56it/s]#033[A
+80%|███████▉  | 183/230 [01:07<00:16,  2.83it/s]#033[A
+80%|████████  | 184/230 [01:07<00:15,  3.04it/s]#033[A
+80%|████████  | 185/230 [01:07<00:14,  3.01it/s]#033[A
+81%|████████  | 186/230 [01:08<00:13,  3.19it/s]#033[A
+81%|████████▏ | 187/230 [01:08<00:12,  3.32it/s]#033[A
+82%|████████▏ | 188/230 [01:08<00:12,  3.42it/s]#033[A
+82%|████████▏ | 189/230 [01:09<00:12,  3.40it/s]#033[A
+83%|████████▎ | 190/230 [01:09<00:11,  3.39it/s]#033[A
+83%|████████▎ | 191/230 [01:09<00:12,  3.14it/s]#033[A
+83%|████████▎ | 192/230 [01:10<00:12,  3.07it/s]#033[A
+84%|████████▍ | 193/230 [01:10<00:12,  3.04it/s]#033[A
+84%|████████▍ | 194/230 [01:10<00:11,  3.20it/s]#033[A
+85%|████████▍ | 195/230 [01:10<00:10,  3.35it/s]#033[A
+85%|████████▌ | 196/230 [01:11<00:10,  3.10it/s]#033[A
+86%|████████▌ | 197/230 [01:11<00:10,  3.04it/s]#033[A
+86%|████████▌ | 198/230 [01:11<00:09,  3.20it/s]#033[A
+87%|████████▋ | 199/230 [01:12<00:14,  2.18it/s]#033[A
+87%|████████▋ | 200/230 [01:12<00:11,  2.52it/s]#033[A
+87%|████████▋ | 201/230 [01:13<00:11,  2.60it/s]#033[A
+88%|████████▊ | 202/230 [01:13<00:09,  2.87it/s]#033[A
+88%|████████▊ | 203/230 [01:14<00:10,  2.63it/s]#033[A
+89%|████████▊ | 204/230 [01:14<00:09,  2.81it/s]#033[A
+89%|████████▉ | 205/230 [01:15<00:11,  2.26it/s]#033[A
+90%|████████▉ | 206/230 [01:15<00:13,  1.82it/s]#033[A
+90%|█████████ | 207/230 [01:16<00:10,  2.15it/s]#033[A
+90%|█████████ | 208/230 [01:16<00:09,  2.27it/s]#033[A
+91%|█████████ | 209/230 [01:16<00:08,  2.40it/s]#033[A
+91%|█████████▏| 210/230 [01:17<00:07,  2.67it/s]#033[A
+92%|█████████▏| 211/230 [01:17<00:07,  2.63it/s]#033[A
+92%|█████████▏| 212/230 [01:17<00:06,  2.87it/s]#033[A
+93%|█████████▎| 213/230 [01:18<00:05,  2.88it/s]#033[A
+93%|█████████▎| 214/230 [01:18<00:07,  2.21it/s]#033[A
+93%|█████████▎| 215/230 [01:19<00:06,  2.46it/s]#033[A
+94%|█████████▍| 216/230 [01:19<00:05,  2.67it/s]#033[A
+94%|█████████▍| 217/230 [01:19<00:04,  2.72it/s]#033[A
+95%|█████████▍| 218/230 [01:20<00:04,  2.96it/s]#033[A
+95%|█████████▌| 219/230 [01:20<00:03,  3.14it/s]#033[A
+96%|█████████▌| 220/230 [01:20<00:03,  3.29it/s]#033[A
+96%|█████████▌| 221/230 [01:20<00:02,  3.06it/s]#033[A
+97%|█████████▋| 222/230 [01:21<00:02,  3.21it/s]#033[A
+97%|█████████▋| 223/230 [01:22<00:03,  2.18it/s]#033[A
+97%|█████████▋| 224/230 [01:22<00:02,  2.49it/s]#033[A
+98%|█████████▊| 225/230 [01:22<00:02,  2.34it/s]#033[A
+98%|█████████▊| 226/230 [01:23<00:01,  2.34it/s]#033[A
+99%|█████████▊| 227/230 [01:23<00:01,  2.56it/s]#033[A
+99%|█████████▉| 228/230 [01:23<00:00,  2.82it/s]#033[A
+100%|█████████▉| 229/230 [01:24<00:00,  2.92it/s]#033[A
+100%|██████████| 230/230 [01:24<00:00,  3.22it/s]#033[A
+#033[A
+{'eval_loss': 0.05153860151767731, 'eval_runtime': 84.6594, 'eval_samples_per_second': 21.711, 'eval_steps_per_second': 2.717, 'epoch': 2.0}
+67%|██████▋   | 270/405 [28:44<09:41,  4.30s/it]
+100%|██████████| 230/230 [01:24<00:00,  3.22it/s]#033[A
+#033[A
+67%|██████▋   | 271/405 [28:50<1:07:31, 30.24s/it]
+67%|██████▋   | 272/405 [28:56<50:43, 22.88s/it]
+67%|██████▋   | 273/405 [29:02<39:32, 17.98s/it]
+68%|██████▊   | 274/405 [29:07<30:24, 13.93s/it]
+68%|██████▊   | 275/405 [29:12<24:20, 11.23s/it]
+68%|██████▊   | 276/405 [29:16<19:55,  9.27s/it]
+68%|██████▊   | 277/405 [29:22<17:42,  8.30s/it]
+69%|██████▊   | 278/405 [29:28<15:54,  7.52s/it]
+69%|██████▉   | 279/405 [29:35<15:18,  7.29s/it]
+69%|██████▉   | 280/405 [29:40<14:01,  6.73s/it]
+{'loss': 0.0507, 'grad_norm': 0.14387933909893036, 'learning_rate': 5.3527682795623146e-05, 'epoch': 2.07}
+69%|██████▉   | 280/405 [29:40<14:01,  6.73s/it]
+69%|██████▉   | 281/405 [29:46<13:08,  6.36s/it]
+70%|██████▉   | 282/405 [29:51<12:24,  6.05s/it]
+70%|██████▉   | 283/405 [29:58<13:03,  6.42s/it]
+70%|███████   | 284/405 [30:03<12:08,  6.02s/it]
+70%|███████   | 285/405 [30:09<11:33,  5.78s/it]
+71%|███████   | 286/405 [30:16<12:16,  6.19s/it]
+71%|███████   | 287/405 [30:20<11:14,  5.72s/it]
+71%|███████   | 288/405 [30:27<11:32,  5.92s/it]
+71%|███████▏  | 289/405 [30:34<11:59,  6.20s/it]
+72%|███████▏  | 290/405 [30:39<11:20,  5.92s/it]
+{'loss': 0.0502, 'grad_norm': 0.11616145819425583, 'learning_rate': 4.606799655008009e-05, 'epoch': 2.15}
+72%|███████▏  | 290/405 [30:39<11:20,  5.92s/it]
+72%|███████▏  | 291/405 [30:44<10:57,  5.76s/it]
+72%|███████▏  | 292/405 [30:50<10:36,  5.63s/it]
+72%|███████▏  | 293/405 [30:55<10:12,  5.46s/it]
+73%|███████▎  | 294/405 [31:00<10:06,  5.46s/it]
+73%|███████▎  | 295/405 [31:05<09:29,  5.18s/it]
+73%|███████▎  | 296/405 [31:11<09:44,  5.37s/it]
+73%|███████▎  | 297/405 [31:17<10:03,  5.58s/it]
+74%|███████▎  | 298/405 [31:21<09:24,  5.28s/it]
+74%|███████▍  | 299/405 [31:27<09:32,  5.40s/it]
+74%|███████▍  | 300/405 [31:33<09:58,  5.70s/it]
+{'loss': 0.0481, 'grad_norm': 0.08187713474035263, 'learning_rate': 3.900979955999271e-05, 'epoch': 2.22}
+74%|███████▍  | 300/405 [31:33<09:58,  5.70s/it]
+74%|███████▍  | 301/405 [31:38<09:29,  5.48s/it]
+75%|███████▍  | 302/405 [31:45<10:06,  5.89s/it]
+75%|███████▍  | 303/405 [31:51<10:15,  6.03s/it]
+75%|███████▌  | 304/405 [31:57<09:39,  5.74s/it]
+75%|███████▌  | 305/405 [32:02<09:32,  5.72s/it]
+76%|███████▌  | 306/405 [32:07<09:08,  5.54s/it]
+76%|███████▌  | 307/405 [32:13<08:58,  5.49s/it]
+76%|███████▌  | 308/405 [32:18<08:52,  5.49s/it]
+76%|███████▋  | 309/405 [32:23<08:40,  5.42s/it]
+77%|███████▋  | 310/405 [32:30<08:55,  5.64s/it]
+{'loss': 0.0476, 'grad_norm': 0.07137566059827805, 'learning_rate': 3.2405635585524565e-05, 'epoch': 2.3}
+77%|███████▋  | 310/405 [32:30<08:55,  5.64s/it]
+77%|███████▋  | 311/405 [32:35<08:54,  5.69s/it]
+77%|███████▋  | 312/405 [32:42<09:14,  5.96s/it]
+77%|███████▋  | 313/405 [32:47<08:37,  5.62s/it]

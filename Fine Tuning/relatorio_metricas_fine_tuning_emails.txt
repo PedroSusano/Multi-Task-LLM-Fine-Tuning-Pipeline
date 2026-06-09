@@ -1,0 +1,7 @@
+📬 MÉTRICAS - EMAIL EXTRACTION
+==================================================
+- Accuracy em 'Customer Name': 100.00%
+- Accuracy em 'Car Model': 100.00%
+- Accuracy em 'Pickup': 100.00%
+- Accuracy em 'Dropoff': 100.00%
+ - Accuracy total (todos os campos corretos): 100.00%

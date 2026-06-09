@@ -1,0 +1,14 @@
+🚗 MÉTRICAS - CAR REVIEW RATING
+==================================================
+              precision    recall  f1-score   support
+
+    Negative     0.5833    0.6791    0.6276       134
+     Neutral     0.5526    0.1273    0.2069       165
+    Positive     0.9160    0.9821    0.9479      1454
+
+    accuracy                         0.8785      1753
+   macro avg     0.6840    0.5962    0.5941      1753
+weighted avg     0.8563    0.8785    0.8537      1753
+- MAE do rating: 0.432
+- MSE do rating: 0.496
+- Score R²: 0.4705

@@ -1,0 +1,19 @@
+uv pip install \
+  --index-url https://pypi.org/simple \
+  --extra-index-url https://download.pytorch.org/whl/cu126 \
+  --index-strategy=unsafe-best-match \
+  torch==2.6.0+cu126 torchvision==0.21.0+cu126 \
+  flash-attn==2.8.1 \
+  xformers>=0.0.29.post2 \
+  "unsloth[cu126-torch260]>=2025.7.6" unsloth_zoo>=2025.7.7 \
+  transformers>=4.53.2 \
+  datasets==3.4.1 \
+  accelerate==1.2.1 \
+  bitsandbytes>=0.45.0 \
+  scikit-learn==1.6.0 \
+  tensorboard==2.18.0 \
+  "evaluate>=0.4.0" \
+  pandas==2.2.2 \
+  trl>=0.13.0 \
+  peft==0.14.0 \
+  "protobuf>=4"

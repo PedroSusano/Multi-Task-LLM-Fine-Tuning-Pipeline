@@ -1,0 +1,8 @@
+Relatório de Avaliação - Comparação entre Regex e Modelo
+==================================================
+
+Customer name: 100.0%
+Car model: 100.0%
+Pickup: 98.99%
+Dropoff: 44.24%
+Exact Match: 44.24%

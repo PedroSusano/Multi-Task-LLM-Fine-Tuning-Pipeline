@@ -1,0 +1,4 @@
+📊 RELATÓRIO DE MEMÓRIA ESTÁTICA
+==================================================
+Modelo Base - VRAM: 1023.18 MB, RAM: 704.57 MB, Disco: N/A MB
+Modelo Fine-Tuned - VRAM: 1574.37 MB, RAM: 713.69 MB, Disco: 1067.77 MB

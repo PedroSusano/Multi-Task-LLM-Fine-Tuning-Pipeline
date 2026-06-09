@@ -1,0 +1,12 @@
+✅ Base Llama Tempo com KV Cache: 2.831s
+🚫 Base Llama Tempo sem KV Cache: 10.566s
+ Base Llama Tempo sem KV Cache: -7.734s
+
+✅ Fine-tuning Tempo com KV Cache: 0.250s
+🚫 Fine-tuning Tempo sem KV Cache: 0.248s
+ Fine-tuning Tempo sem KV Cache: 0.003s
+
+✅ Endpoint meta-llama-3-2-1b Tempo com KV Cache: 1.130s
+🚫 Endpoint meta-llama-3-2-1b Tempo sem KV Cache: 1.093s
+ Endpoint meta-llama-3-2-1b Tempo sem KV Cache: 0.037s
+

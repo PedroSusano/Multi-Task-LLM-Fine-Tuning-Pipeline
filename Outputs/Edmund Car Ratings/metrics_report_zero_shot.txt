@@ -1,0 +1,17 @@
+📊 Relatório de Classificação - Sentimento
+              precision    recall  f1-score   support
+
+    Negative     0.3707    0.4149    0.3916       940
+     Neutral     0.1655    0.2750    0.2066      1171
+    Positive     0.9065    0.8231    0.8628      9636
+
+    accuracy                         0.7358     11747
+   macro avg     0.4809    0.5043    0.4870     11747
+weighted avg     0.7898    0.7358    0.7597     11747
+
+Acurácia (Sentimento): 0.7358
+
+📊 Métricas de Regressão - Rating
+Erro Quadrático Absoluto: 0.9679
+Erro Quadrático Médio: 1.3378
+Score R²: -0.3956
