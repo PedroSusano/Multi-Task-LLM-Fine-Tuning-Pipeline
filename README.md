@@ -12,7 +12,7 @@ Sumário
 
 ```text
 Estrutura do Projeto
-├ Grupo 5
+├ Multi-Task LLM Fine-Tuning Pipeline
 ├──── Edmunds Car Ratings Data Modifications/
 │   ├──── train.csv
 │   └──── train_fixed.csv
